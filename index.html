@@ -3,80 +3,514 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Evidence-first lecture and reproducibility package on AI for mathematics, MIM UW, 22 June 2026.">
+  <meta name="description" content="Browser-native lecture on AI for mathematics, formalization, Lean, agentic research, benchmarks, and governance. MIM UW, 22 June 2026.">
+  <meta name="theme-color" content="#061b35">
   <title>The Mirages and Twists of Mathematics with AI</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <a class="brand" href="./">MIM UW · 22.06.2026</a>
-      <div class="nav-links">
-        <a href="book/">Book</a>
-        <a href="https://github.com/nasqret/math-ai-mirages-2026">Source</a>
-      </div>
-    </nav>
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">Bartosz Naskręcki · UAM / CCAI PW</p>
-        <h1>The Mirages &amp; Twists<br>of Mathematics with AI</h1>
-        <p class="dek">A technical, evidence-first judgement of what changed in
-        2026—and what did not.</p>
-        <div class="actions">
-          <a class="button primary" href="downloads/the-mirages-and-twists-of-mathematics-with-ai.pptx">Download the deck</a>
-          <a class="button secondary" href="book/">Read the full companion</a>
+  <main class="deck" aria-label="Presentation slides">
+    <section class="slide slide--title" id="title" data-title="Title" data-duration="45">
+      <div class="title-grid">
+        <div>
+          <span class="kicker">MIM UW · 22.06.2026</span>
+          <span class="title-article">The</span>
+          <h1>Mirages <span>&amp;</span> Twists<br>of Mathematics<br>with AI</h1>
+        </div>
+        <div class="title-aside">
+          <p>A technical judgement of what changed—and what did not.</p>
+          <div class="title-meta">
+            <strong>Bartosz Naskręcki</strong>
+            <span>Adam Mickiewicz University</span>
+            <span>Centre for Credible AI, WUT</span>
+          </div>
         </div>
       </div>
-      <aside class="thesis">
-        <p class="eyebrow">The thesis</p>
-        <p>The capability jump is real.</p>
-        <p>The popular theory of it is not.</p>
-      </aside>
-    </div>
-  </header>
-
-  <main>
-    <section class="evidence">
-      <p class="eyebrow coral">Evidence ladder</p>
-      <h2>Use the right noun.</h2>
-      <div class="cards four">
-        <article><span>1</span><h3>Answer</h3><p>A value or candidate object.</p></article>
-        <article><span>2</span><h3>Proof</h3><p>An argument checked by experts or a kernel.</p></article>
-        <article><span>3</span><h3>Theorem</h3><p>A genuinely new mathematical result.</p></article>
-        <article><span>4</span><h3>Theory</h3><p>Reusable concepts, structure, and explanation.</p></article>
-      </div>
+      <aside class="notes">Open with the conclusion: the capability jump is real. The strongest public narrative still confuses a correct answer, a checked proof, a new theorem, and a new theory. This talk separates those achievements.</aside>
     </section>
 
-    <section class="cases">
-      <p class="eyebrow cyan">Inspectable cases</p>
-      <h2>Artifacts before adjectives.</h2>
-      <div class="cards three">
-        <article><h3>Formalization</h3><p>EML, Falenty, Lean, Aristotle, and the specification bottleneck.</p></article>
-        <article><h3>Agentic research</h3><p>ECDSA.fail, SAIR.IGP24, stateful loops, and compute provenance.</p></article>
-        <article><h3>Quartic lines</h3><p>An exact characteristic-zero certificate with Chern slope <strong>14/5</strong>.</p></article>
+    <section class="slide slide--statement" id="verdict" data-title="Verdict" data-duration="70">
+      <span class="kicker">Verdict</span>
+      <h2>The capability jump is <em>real.</em><br>The popular theory of it is <strong>not.</strong></h2>
+      <div class="verdict-row">
+        <span>tool-using research loops work</span>
+        <span>proof assistants close real gaps</span>
+        <span class="muted">autonomy remains conditional</span>
       </div>
+      <aside class="notes">This is neither dismissal nor victory lap. Long tool-using runs, formal proof search, and durable artifacts are real advances. But one benchmark does not describe a profession, fluent prose is not proof, and an isolated success is not general autonomy.</aside>
     </section>
 
-    <section class="status">
+    <section class="slide" id="evidence-ladder" data-title="Evidence ladder" data-duration="75">
+      <header class="slide-header">
+        <span class="kicker">Vocabulary</span>
+        <h2>Use the right noun.</h2>
+      </header>
+      <div class="ladder">
+        <article><b>01</b><h3>Answer</h3><p>candidate object</p></article>
+        <article><b>02</b><h3>Proof</h3><p>checked argument</p></article>
+        <article><b>03</b><h3>Theorem</h3><p>new result</p></article>
+        <article><b>04</b><h3>Theory</h3><p>new structure</p></article>
+      </div>
+      <p class="takeaway">The frontier rises sharply from 1 to 4.</p>
+      <aside class="notes">Use this vocabulary throughout. A formal proof can establish correctness relative to a statement while saying little about novelty, importance, or whether the statement captured the intended mathematics.</aside>
+    </section>
+
+    <section class="slide" id="six-months" data-title="Six months" data-duration="60">
+      <header class="slide-header">
+        <span class="kicker">January → June 2026</span>
+        <h2>Three fronts moved at once.</h2>
+      </header>
+      <div class="three-fronts">
+        <article><span>CAPABILITY</span><b>Erdős #728<br>unit distances</b></article>
+        <article><span>EVALUATION</span><b>FirstProof<br>FrontierMath v2</b></article>
+        <article><span>GOVERNANCE</span><b>Leiden<br>Declaration</b></article>
+      </div>
+      <aside class="notes">The chronology matters less than the collision: capability, evaluation, and governance moved together. That is why press summaries have been hard to calibrate.</aside>
+    </section>
+
+    <section class="slide" id="erdos-counts" data-title="Erdős campaign" data-duration="90">
+      <header class="slide-header compact">
+        <span class="kicker">Erdős Problems · repository snapshot</span>
+        <h2>A remarkable campaign.<br><em>Not a benchmark.</em></h2>
+      </header>
+      <div class="number-wall">
+        <article><b>88</b><span>green full-resolution records</span></article>
+        <article><b>79</b><span>unique Erdős problems</span></article>
+        <article><b>190</b><span>unique primary problems listed</span></article>
+      </div>
+      <p class="source"><a href="https://github.com/teorth/erdosproblems/tree/0f72fdb5f5e57aa9d3cd8e06cc60f9a2aa09993a">community wiki · commit 0f72fdb · audited 21.06.2026</a></p>
+      <aside class="notes">Be exact about the denominator. The primary categories contain 237 contribution records across 190 unique problems. Eighty-eight green full-resolution records cover 79 unique problems. Selection is adaptive, literature is discovered later, and one problem can have multiple contributions. The wiki itself says this is not a benchmark.</aside>
+    </section>
+
+    <section class="slide" id="erdos-728" data-title="Erdős 728" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">Erdős #728</span>
+        <h2>The milestone is the <em>trace.</em></h2>
+      </header>
+      <div class="process process--four">
+        <article><b>1</b><span>GPT Pro</span><p>strategy</p></article>
+        <i>→</i>
+        <article><b>2</b><span>Aristotle</span><p>Lean proof</p></article>
+        <i>→</i>
+        <article><b>3</b><span>Kernel</span><p>type checks</p></article>
+        <i>→</i>
+        <article><b>4</b><span>Experts</span><p>ratification</p></article>
+      </div>
+      <p class="takeaway">Proposal ≠ verification ≠ mathematical assessment.</p>
+      <p class="source"><a href="https://arxiv.org/abs/2601.07421">arXiv:2601.07421</a></p>
+      <aside class="notes">The public record is unusually strong: exact statement, formal artifact, expert inspection, and literature context. Do not compress these different responsibilities into the adjective autonomous.</aside>
+    </section>
+
+    <section class="slide" id="unit-distances" data-title="Unit distances" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">Unit-distance problem · May 2026</span>
+        <h2>Original structure,<br>not merely closure.</h2>
+      </header>
+      <div class="split-cards">
+        <article class="positive"><span>MATHEMATICS</span><b>n<sup>1+δ</sup></b><p>algebraic number theory enters discrete geometry</p></article>
+        <article><span>EVIDENCE BAR</span><ul><li>public proof record</li><li>independent checks</li><li>compute provenance</li><li>ordinary review</li></ul></article>
+      </div>
+      <p class="source"><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">provider-reported · expert-reviewed</a></p>
+      <aside class="notes">This is qualitatively stronger than closing an isolated exercise: the reported construction imports new structure into the problem. The provider calls it autonomous; the proof and independent mathematical assessment should remain the primary evidence objects.</aside>
+    </section>
+
+    <section class="slide slide--section" id="formalization" data-title="Formalization" data-duration="45">
+      <span class="section-number">I</span>
       <div>
-        <p class="eyebrow gold">Reproducibility package</p>
-        <h2>Built to be checked.</h2>
+        <span class="kicker">Formalization</span>
+        <h2>A small kernel is still the strongest trust boundary.</h2>
       </div>
-      <ul>
-        <li>37-slide native PowerPoint with speaker notes</li>
-        <li>Warning-free Jupyter Book build</li>
-        <li>SageMath exact arithmetic and figures</li>
-        <li>Independent Magma verification</li>
-        <li>Lean 4.28 kernel-checked examples</li>
-        <li>Machine-readable claim ledger and Obsidian vault</li>
-      </ul>
+      <aside class="notes">This is the technical core of the talk. Formalization is not decoration added after a model answer. It changes the object being evaluated from persuasive prose to a checkable term.</aside>
+    </section>
+
+    <section class="slide" id="proof-anatomy" data-title="Anatomy of a formal proof" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">Anatomy of a formal proof</span>
+        <h2>Four objects. Two audits.</h2>
+      </header>
+      <div class="formal-stack">
+        <article><span>1</span><b>informal claim</b></article>
+        <i>→</i>
+        <article><span>2</span><b>formal statement</b></article>
+        <i>→</i>
+        <article><span>3</span><b>proof term</b></article>
+        <i>→</i>
+        <article class="kernel"><span>4</span><b>kernel</b></article>
+      </div>
+      <div class="audit-lines">
+        <p><b>semantic audit</b><span>Does 2 mean 1?</span></p>
+        <p><b>kernel audit</b><span>Does 3 inhabit 2?</span></p>
+      </div>
+      <aside class="notes">The kernel checks whether the proof term has the claimed type. The harder upstream question is whether the formal type faithfully encodes the informal mathematics. Current autoformalization progress does not remove this semantic audit.</aside>
+    </section>
+
+    <section class="slide slide--code" id="lean-code" data-title="Lean code" data-duration="100">
+      <header class="slide-header compact">
+        <span class="kicker">Lean 4 · real source</span>
+        <h2>A proof is a term with a type.</h2>
+      </header>
+      <div class="code-stage">
+        <pre class="code-card" aria-label="Lean source code"><code><span class="ln">1</span><span class="kw">theorem</span> <span class="fn">and_symm</span> (a b : Prop) :
+<span class="ln">2</span>    a ∧ b → b ∧ a := <span class="kw">by</span>
+<span class="ln">3</span>  <span class="kw">intro</span> h
+<span class="ln">4</span>  <span class="kw">exact</span> ⟨h.right, h.left⟩</code></pre>
+        <div class="proof-state">
+          <span>AFTER LINE 3</span>
+          <pre>a b : Prop
+h : a ∧ b
+⊢ b ∧ a</pre>
+          <div class="state-result fragment"><b>after line 4</b><strong>no goals</strong></div>
+        </div>
+      </div>
+      <p class="source"><a href="https://github.com/nasqret/math-ai-mirages-2026/blob/main/artifacts/lean/MiragesLeanExamples/AndSymm.lean">artifacts/lean/MiragesLeanExamples/AndSymm.lean</a></p>
+      <aside class="notes">Read the code literally. After introducing h, Lean exposes the local context and target. The final line constructs the pair in reverse order. This is tiny by design: everyone in the room can see the complete trust path without relying on model fluency.</aside>
+    </section>
+
+    <section class="slide" id="lean-kernel" data-title="Lean kernel check" data-duration="75">
+      <header class="slide-header compact">
+        <span class="kicker">Replay, not rhetoric</span>
+        <h2>The artifact compiles now.</h2>
+      </header>
+      <div class="terminal-card">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>artifacts/lean</span></div>
+        <pre><span class="prompt">$</span> lake build
+
+Built MiragesLeanExamples.AndSymm
+Built MiragesLeanExamples.DeMorgan
+Built MiragesLeanExamples
+<strong>Build completed successfully (5 jobs).</strong></pre>
+      </div>
+      <div class="kernel-footer"><span>Lean 4.28.0</span><span>0 <code>sorry</code></span><span>0 <code>admit</code></span></div>
+      <aside class="notes">This repository contains two deliberately small, compiling Falenty examples. The pedagogical Erdős sketch that contains sorry is intentionally excluded from the verified set. That distinction—compiled theorem versus labelled sketch—is the lesson.</aside>
+    </section>
+
+    <section class="slide" id="lean-boundary" data-title="Lean trust boundary" data-duration="75">
+      <header class="slide-header compact">
+        <span class="kicker">Trust boundary</span>
+        <h2>Lean certifies less—and more—than people think.</h2>
+      </header>
+      <div class="trust-grid">
+        <article class="yes"><span>CERTIFIES</span><ul><li>the formal statement</li><li>the proof term</li><li>declared dependencies</li></ul></article>
+        <article class="no"><span>DOES NOT CERTIFY</span><ul><li>the intended theorem</li><li>natural assumptions</li><li>novelty or importance</li></ul></article>
+      </div>
+      <p class="takeaway">Trust the kernel. Audit the statement.</p>
+      <aside class="notes">Formal verification narrows the error surface; it does not erase mathematical judgement. A machine can correctly prove the wrong formalization. Humans still own statement alignment, explanatory value, novelty, and credit.</aside>
+    </section>
+
+    <section class="slide" id="autoformalization" data-title="Autoformalization frontier" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">Agentic autoformalization</span>
+        <h2>The bottleneck moved upstream.</h2>
+      </header>
+      <div class="pipeline">
+        <span>extract<br>statement</span><i>→</i><span>elaborate<br>definitions</span><i>→</i><span>search<br>library</span><i>→</i><span>build<br>proof</span><i>→</i><span class="checked">kernel<br>check</span>
+      </div>
+      <div class="frontier-line"><b>Fast progress</b><span>proof search · tactic repair · replay</span></div>
+      <div class="frontier-line hard"><b>Still hard</b><span>semantic equivalence · implicit conventions · library design</span></div>
+      <aside class="notes">Aristotle, AlphaProof, DeepSeek-Prover, Kimina, and LeanArchitect occupy different parts of this stack. The field is advancing rapidly, but theorem-sized proof search and paper-to-library formalization are different problems.</aside>
+    </section>
+
+    <section class="slide slide--image" id="eml" data-title="EML formalization" data-duration="90">
+      <div class="image-copy">
+        <span class="kicker">My EML project</span>
+        <h2>A formalization factory,<br>not one generated proof.</h2>
+        <div class="metric-row">
+          <div><b>36/36</b><span>primitives</span></div>
+          <div><b>100</b><span>theorems</span></div>
+          <div><b>0</b><span>sorry/admit</span></div>
+          <div><b>8,062</b><span>jobs</span></div>
+        </div>
+      </div>
+      <img class="side-image" src="assets/eml-by-the-numbers.png" alt="EML formalization project metrics">
+      <p class="source"><a href="https://github.com/nasqret/eml-formalization">github.com/nasqret/eml-formalization</a></p>
+      <aside class="notes">The durable result is the compiler architecture and audit trail. Aristotle handled proof search; GPT Pro, Claude, Codex, Mathematica, and human review had distinct roles. These numbers describe the audited release surface.</aside>
+    </section>
+
+    <section class="slide" id="eml-audit" data-title="EML audit loop" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">EML audit loop</span>
+        <h2>The first “complete” report was wrong.</h2>
+      </header>
+      <div class="process process--five">
+        <article><b>1</b><span>catalogue</span></article><i>→</i>
+        <article><b>2</b><span>adversarial audit</span></article><i>→</i>
+        <article><b>3</b><span>repair</span></article><i>→</i>
+        <article><b>4</b><span>structure</span></article><i>→</i>
+        <article><b>5</b><span>replay</span></article>
+      </div>
+      <div class="finding"><b>Independent review found:</b><span><code>sorry</code> · boundary abuse · broken bridges</span></div>
+      <aside class="notes">A separate model family, isolated from the first scratchpad, found real defects and forced a stronger architecture. This is an honest result: independent AI review may be more valuable than another pass from the same model context.</aside>
+    </section>
+
+    <section class="slide" id="aristotle-nathanson" data-title="Aristotle and Nathanson" data-duration="90">
+      <header class="slide-header compact">
+        <span class="kicker">Aristotle · Nathanson questions</span>
+        <h2>Discovery + Lean verification.</h2>
+      </header>
+      <div class="result-package">
+        <article><span>RESULT</span><b>complete classification</b><p>product intersection sets in semigroups</p></article>
+        <article><span>ARTIFACT</span><b>kernel-checked</b><p>autonomously discovered and Lean-verified</p></article>
+        <article><span>RESPONSIBILITY</span><b>human-owned</b><p>review, exposition, publication</p></article>
+      </div>
+      <p class="source"><a href="https://arxiv.org/abs/2604.18869">van Doorn · Monticone · Tang · arXiv:2604.18869</a></p>
+      <aside class="notes">This answers Nathanson's questions rather than a single named conjecture. It is a clean example of a new mathematical result paired with a formal artifact. The authors retain responsibility for checking, exposition, and the published claim.</aside>
+    </section>
+
+    <section class="slide slide--section" id="agentic-research" data-title="Agentic research" data-duration="75">
+      <span class="section-number">II</span>
+      <div>
+        <span class="kicker">Agentic research</span>
+        <h2>Not one brilliant prompt.<br>One controlled state machine.</h2>
+      </div>
+      <div class="loop-ring" aria-label="Plan, execute, test, critique, checkpoint loop">
+        <span>plan</span><span>execute</span><span>test</span><span>critique</span><span>checkpoint</span>
+      </div>
+      <aside class="notes">The operational unit is a durable loop: files, scripts, exact tests, status JSON, checkpoints, and explicit failure states. Context windows help, but external state makes the work auditable and resumable.</aside>
+    </section>
+
+    <section class="slide" id="compute" data-title="Compute provenance" data-duration="70">
+      <header class="slide-header compact">
+        <span class="kicker">Inference-time compute</span>
+        <h2>Compute is part of the proof provenance.</h2>
+      </header>
+      <div class="compute-scale">
+        <article><b>1×</b><span>attempt</span></article>
+        <article><b>10×</b><span>critics</span></article>
+        <article><b>100×</b><span>tool loops</span></article>
+        <article><b>1,000×</b><span>agents + memory</span></article>
+      </div>
+      <p class="takeaway">Report budget · retries · tools · human interventions.</p>
+      <aside class="notes">A score without an inference budget is not a scientific comparison. Search width, retries, tools, and human steering can change outcomes as much as the base model.</aside>
+    </section>
+
+    <section class="slide slide--image" id="ecdsa" data-title="ECDSA.fail" data-duration="90">
+      <div class="image-copy narrow">
+        <span class="kicker">ECDSA.fail · 14 June</span>
+        <h2>Verified engineering,<br>not a cryptographic break.</h2>
+        <div class="hero-number"><b>1.678B</b><span>Q × T score</span></div>
+        <ul class="compact-list"><li>1,170 peak qubits</li><li>1,434,070 Toffoli gates</li><li>9,024 trusted shots · 0 failures</li></ul>
+      </div>
+      <img class="side-image contained" src="assets/ecdsafail-score.png" alt="ECDSA.fail score comparison">
+      <p class="source">nasqret · GPT-Codex · 84.3% below initial circuit</p>
+      <aside class="notes">This is reversible secp256k1 point addition under the challenge evaluator. It is not a break of ECDSA and not a proof for every possible input. The result is strong because the optimization target and test harness are explicit.</aside>
+    </section>
+
+    <section class="slide" id="igp24" data-title="SAIR IGP24" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">SAIR.IGP24 · private snapshot</span>
+        <h2>Campaign logic beats one-shot solving.</h2>
+      </header>
+      <div class="campaign-counts">
+        <article><b>5</b><span>pilot</span><p>manual calibration</p></article>
+        <article><b>18</b><span>autonomous</span><p>stateful search</p></article>
+        <article><b>28</b><span>follow-up</span><p>exact Magma checks</p></article>
+        <strong>= 51 accepted pairs</strong>
+      </div>
+      <p class="caveat-strip">Ongoing competition. Aggregate counts only.</p>
+      <aside class="notes">The public lesson is the protocol: generation, exact Magma verification, live-open checks, and deduplication. Because the repository and competition are private, do not present this as a publicly reproducible benchmark result.</aside>
+    </section>
+
+    <section class="slide slide--image" id="quartic" data-title="Quartic lines" data-duration="105">
+      <div class="image-copy narrow">
+        <span class="kicker">With Piotr Pokora · exact characteristic 0</span>
+        <h2>A new Chern-slope record.</h2>
+        <div class="formula-block">
+          <span>x₀⁴ − x₀x₁³ − x₂⁴ + x₂x₃³ = 0</span>
+          <b>14/5 &gt; 8/3</b>
+        </div>
+        <div class="mini-metrics"><span>(24,0,32,0)</span><span>c̄₁²=112</span><span>c̄₂=40</span><span>G=208</span></div>
+      </div>
+      <img class="side-image contained" src="assets/quartic-slope.png" alt="Exact quartic-line Chern slope compared with the conjectural bound">
+      <p class="source"><a href="https://github.com/nasqret/pokora-optim">finite-field search → QQ̄ reconstruction → Sage + Magma certificates</a></p>
+      <aside class="notes">This is the strongest personal case. The finite-field phase located the configuration; exact reconstruction moved it to characteristic zero; independent SageMath and Magma computations verify the profile and Chern numbers. The model label recorded in the project is not needed for the mathematical claim.</aside>
+    </section>
+
+    <section class="slide" id="quadrics" data-title="Quadrics" data-duration="75">
+      <header class="slide-header compact">
+        <span class="kicker">Quadrics project</span>
+        <h2>Computation found the route.<br>The proof became computer-free.</h2>
+      </header>
+      <div class="bridge">
+        <article><span>DISCOVERY</span><b>Gröbner bases</b><p>exact reconstruction · 800 conics · machine-audited cases</p></article>
+        <i>→</i>
+        <article><span>EXPOSITION</span><b>structural lemmas</b><p>compressed argument · independent reading · no computer dependency</p></article>
+      </div>
+      <p class="source"><a href="https://github.com/nasqret/quadrics">github.com/nasqret/quadrics</a></p>
+      <aside class="notes">This dissolves the false dichotomy between computer proof and human proof. Tool-heavy discovery can be scaffolding for a conceptually cleaner final argument.</aside>
+    </section>
+
+    <section class="slide slide--figure" id="nature-physics" data-title="Nature Physics roadmap" data-duration="90">
+      <div class="figure-heading">
+        <span class="kicker">Naskręcki + Ono · Nature Physics 2025</span>
+        <h2>The amplified human arrived first.</h2>
+      </div>
+      <img src="assets/ono-naskrecki-figure.png" alt="Diagram from the Nature Physics paper on mathematical discovery in the age of AI">
+      <p class="figure-caption">The 2026 evidence fills the workflow. The final arrow still points to the future.</p>
+      <p class="source"><a href="https://doi.org/10.1038/s41567-025-03042-0">doi:10.1038/s41567-025-03042-0</a></p>
+      <aside class="notes">The diagram distinguishes machine-augmented discovery from a hypothetical superhuman mathematician. The intervening evidence validates the workflow on the left far more strongly than the endpoint on the right.</aside>
+    </section>
+
+    <section class="slide" id="campaigns" data-title="Research systems" data-duration="90">
+      <header class="slide-header compact">
+        <span class="kicker">Research systems</span>
+        <h2>Inspectability matters more than branding.</h2>
+      </header>
+      <div class="system-pair">
+        <article><span>ALETHEIA · FIRSTPROOF</span><b>6 / 10</b><p>majority expert acceptance</p><small>raw prompts + outputs · small sample · best-of-two</small></article>
+        <article><span>AI CO-MATHEMATICIAN</span><b>workbench</b><p>state + tools + failed hypotheses</p><small>architecture closer to research than one-turn scoring</small></article>
+      </div>
+      <p class="source"><a href="https://arxiv.org/abs/2602.21201">arXiv:2602.21201</a> · <a href="https://arxiv.org/abs/2605.06651">arXiv:2605.06651</a></p>
+      <aside class="notes">Aletheia is strong because outputs and disagreements are inspectable; problem 8 was not unanimous. The co-mathematician is interesting as a stateful architecture. Keep its architecture separate from old leaderboard claims on benchmark versions that later changed.</aside>
+    </section>
+
+    <section class="slide" id="frontiermath" data-title="FrontierMath v2" data-duration="95">
+      <header class="slide-header compact">
+        <span class="kicker">FrontierMath v2 · 12 June 2026</span>
+        <h2>The correction is the result.</h2>
+      </header>
+      <div class="fm-grid">
+        <article><span>FULL SET</span><b>338</b><p>problems</p></article>
+        <article><span>TIER 4</span><b>43</b><p>private problems</p></article>
+        <article><span>ADDRESSED</span><b>42%</b><p>errors or revisions</p></article>
+      </div>
+      <div class="version-line"><span>v1 scores</span><i>audit</i><span>12 corrected</span><span>7 removed</span><strong>v2 scores pending</strong></div>
+      <p class="source"><a href="https://epoch.ai/benchmarks/frontiermath-tiers-1-3-v2">Epoch AI · benchmark-owner report</a></p>
+      <aside class="notes">Epoch reports 338 total problems, including 43 in Tier 4. Twelve Tier-4 problems were corrected and seven removed. The larger update addressed 42 percent of problems. Old and v2 percentages are not directly comparable. My own Tier-4 attempt remains a private case study, not a public datapoint.</aside>
+    </section>
+
+    <section class="slide" id="benchmark-minimum" data-title="Benchmark minimum" data-duration="75">
+      <header class="slide-header compact">
+        <span class="kicker">Benchmark governance</span>
+        <h2>A score is a protocol claim.</h2>
+      </header>
+      <div class="minimum-report">
+        <article><b>01</b><span>task + version</span></article>
+        <article><b>02</b><span>budget + tools</span></article>
+        <article><b>03</b><span>retries + humans</span></article>
+        <article><b>04</b><span>errors + exclusions</span></article>
+        <article><b>05</b><span>raw traces</span></article>
+      </div>
+      <p class="takeaway">Version the benchmark—not only the model.</p>
+      <aside class="notes">A benchmark can remain valuable after correction if it records its failure transparently. The governance failure would be hiding revisions or continuing to quote obsolete scores.</aside>
+    </section>
+
+    <section class="slide" id="teaching" data-title="Agentic teaching" data-duration="85">
+      <header class="slide-header compact">
+        <span class="kicker">Agentic teaching</span>
+        <h2>The least speculative success.</h2>
+      </header>
+      <div class="teaching-grid">
+        <article><b>45</b><span>cryptography chapters</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/">crypto/</a></article>
+        <article><b>42</b><span>neural-net chapters</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/">nnets/</a></article>
+        <article><b>329</b><span>slides</span><small>+ 22 applets</small></article>
+        <article><b>25 h</b><span>staff course</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/">Codex workshop</a></article>
+      </div>
+      <p class="takeaway">One instructor can now maintain a coherent course ecosystem.</p>
+      <aside class="notes">This is production evidence, not a randomized learning-outcomes study. The observable result is that participants and instructor produced working repositories, documentation, tests, mathematical code, slides, and interactive applets.</aside>
+    </section>
+
+    <section class="slide" id="works-now" data-title="What works now" data-duration="75">
+      <header class="slide-header compact">
+        <span class="kicker">Current practice</span>
+        <h2>What works now.</h2>
+      </header>
+      <div class="works-list">
+        <article><b>SPECIFY</b><span>exact claim + evidence bar</span></article>
+        <article><b>SEARCH</b><span>variants + literature + computation</span></article>
+        <article><b>CHECK</b><span>kernel + CAS + independent tool</span></article>
+        <article><b>CRITIQUE</b><span>isolated second reviewer</span></article>
+        <article><b>PUBLISH</b><span>artifact + budget + failure trace</span></article>
+      </div>
+      <aside class="notes">The exact tooling will change quickly; this protocol should survive model churn. The mathematician must remain able to explain, defend, and extend the result.</aside>
+    </section>
+
+    <section class="slide" id="still-hard" data-title="What remains hard" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">Current limits</span>
+        <h2>Local brilliance is common.<br>Global control is not.</h2>
+      </header>
+      <div class="hard-grid">
+        <article><span>STRONGER</span><p>exact computation</p><p>proof search</p><p>counterexamples</p><p>known-technique recombination</p></article>
+        <article><span>STILL HARD</span><p>choose the representation</p><p>sustain strategy</p><p>invent abstractions</p><p>know what matters</p></article>
+      </div>
+      <aside class="notes">This is the central critical judgement from the case studies. Present systems can produce real novelty, but the modal strength is local search and recombination. Failure often arrives in confident prose.</aside>
+    </section>
+
+    <section class="slide slide--statement" id="creativity" data-title="Creativity" data-duration="90">
+      <span class="kicker">Creativity</span>
+      <h2>The bottleneck is<br><em>new representation.</em></h2>
+      <div class="representation-row">
+        <span>search variants</span><i>→</i><span>compose tools</span><i>→</i><strong>invent the invariant</strong>
+      </div>
+      <p class="statement-tail">World models, latent reasoning, and better memory may help. That is a research agenda—not today’s result.</p>
+      <aside class="notes">Do not claim an architectural impossibility. Say only what the evidence supports: current LLM-centred systems remain inconsistent at representation change and theory building. Future architectures may alter this.</aside>
+    </section>
+
+    <section class="slide" id="leiden" data-title="Leiden Declaration" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">Leiden Declaration · IMU endorsed</span>
+        <h2>Keep mathematical governance.</h2>
+      </header>
+      <div class="principles">
+        <article><b>OPEN</b><span>arguments + infrastructure</span></article>
+        <article><b>DISCLOSE</b><span>tools + compute</span></article>
+        <article><b>OWN</b><span>human credit + responsibility</span></article>
+        <article><b>ACCESS</b><span>capability must not decide voice</span></article>
+      </div>
+      <p class="source"><a href="https://leidendeclaration.ai/">leidendeclaration.ai · 02.06.2026</a></p>
+      <aside class="notes">I am one of the authors and a website convenor. These principles are infrastructure for accelerated mathematics, not anti-technology sentiment. AI remains a tool; proof must remain inspectable; people must retain credit and responsibility.</aside>
+    </section>
+
+    <section class="slide" id="forecast" data-title="Forecast" data-duration="80">
+      <header class="slide-header compact">
+        <span class="kicker">12–24 month forecast</span>
+        <h2>More verified artifacts.<br>Uneven progress on theory.</h2>
+      </header>
+      <div class="forecast">
+        <article><b>NOW</b><span>agent workbenches</span></article>
+        <article><b>6 MO</b><span>paper-to-Lean pipelines</span></article>
+        <article><b>12 MO</b><span>shared research state</span></article>
+        <article><b>24 MO</b><span>selective theory gains</span></article>
+      </div>
+      <p class="caveat-strip">Not general autonomous theory building.</p>
+      <aside class="notes">The safer forecast is architectural: more stateful agents, proof assistants, cross-audits, and disclosed traces. Expect discontinuous examples and slower institutional adaptation. Do not predict universal autonomous theory building.</aside>
+    </section>
+
+    <section class="slide slide--closing" id="discussion" data-title="Discussion" data-duration="50">
+      <span class="kicker">Discussion</span>
+      <h2>Delegate search.<br>Retain judgement.<br><em>Publish the trace.</em></h2>
+      <p>The question is which mathematical responsibilities we automate—and how we know the result deserves trust.</p>
+      <div class="closing-links">
+        <a href="https://x.com/nasqret">x.com/nasqret</a>
+        <a href="book/">full companion</a>
+        <a href="https://github.com/nasqret/math-ai-mirages-2026">source + artifacts</a>
+      </div>
+      <aside class="notes">End on responsibility rather than replacement. Invite challenges to the evidence taxonomy, benchmark methodology, formalization boundary, and forecast.</aside>
     </section>
   </main>
 
-  <footer>
-    <p>Delegate search. Retain judgement. Publish the trace.</p>
-    <p><a href="https://x.com/nasqret">x.com/nasqret</a> · <a href="https://github.com/nasqret">github.com/nasqret</a></p>
-  </footer>
+  <nav class="deck-controls" aria-label="Presentation controls">
+    <a class="control-link" href="book/" aria-label="Open full companion book">BOOK</a>
+    <button type="button" data-overview-toggle aria-label="Toggle slide overview">O</button>
+    <button type="button" data-fullscreen-toggle aria-label="Toggle fullscreen">F</button>
+    <button type="button" data-notes-toggle aria-label="Open speaker notes">N</button>
+    <button type="button" data-prev aria-label="Previous slide">←</button>
+    <button type="button" data-next aria-label="Next slide">→</button>
+  </nav>
+  <div class="progress-shell" aria-hidden="true"><div class="progress-bar" data-progress></div></div>
+  <div class="deck-status"><span data-counter></span><span data-clock>00:00</span></div>
+  <div class="deck-brand">MIRAGES / MIM UW</div>
+
+  <aside class="speaker-panel" data-speaker-panel aria-label="Speaker notes" aria-hidden="true">
+    <button type="button" data-notes-close aria-label="Close speaker notes">×</button>
+    <span class="speaker-kicker">Speaker notes</span>
+    <h3 data-note-title></h3>
+    <div data-note-body></div>
+    <footer><span>slide <b data-slide-time></b></span><span>talk <b data-total-time></b></span></footer>
+  </aside>
+
+  <noscript>This presentation requires JavaScript for navigation.</noscript>
+  <script src="app.js"></script>
 </body>
 </html>
