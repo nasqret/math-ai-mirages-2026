@@ -3,9 +3,9 @@
 .venv/
 __pycache__/
 *.pyc
+*.sage.py
 book/_build/
 outputs/rendered/
 outputs/qa/
 artifacts/**/build/
 artifacts/**/.lake/
-

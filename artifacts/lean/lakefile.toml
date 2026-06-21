@@ -1,0 +1,5 @@
+name = "MiragesLeanExamples"
+defaultTargets = ["MiragesLeanExamples"]
+
+[[lean_lib]]
+name = "MiragesLeanExamples"

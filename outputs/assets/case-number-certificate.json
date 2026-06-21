@@ -1,0 +1,25 @@
+{
+  "quartic": {
+    "surface": "VENIANI-64",
+    "profile": [
+      24,
+      0,
+      32,
+      0
+    ],
+    "c1bar2": 112,
+    "c2bar": 40,
+    "slope": "14/5",
+    "conjectural_bound": "8/3",
+    "G": 208
+  },
+  "ecdsafail": {
+    "initial_score": 10704574395,
+    "promoted_score": 1677861900,
+    "initial_qubits": 2715,
+    "promoted_qubits": 1170,
+    "initial_toffoli": 3942753,
+    "promoted_toffoli": 1434070,
+    "fractional_reduction": "200593611/237879431"
+  }
+}

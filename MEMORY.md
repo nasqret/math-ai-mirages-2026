@@ -46,3 +46,26 @@
 - `review_needed`: evidence found but not sufficient for a public claim
 - `pending`: not yet researched or built
 
+## Frozen release decisions
+
+- The sole native deck template is the `ai-w-praktycznej-edukacji` PowerPoint.
+- Final deck: 37 slides, 47.75 planned speaking minutes, 37 note pages.
+- Erdős counts use community-wiki commit `0f72fdb`; records and unique problems
+  are never conflated.
+- FrontierMath statistics use the 12 June 2026 v2 update.
+- No official GPT-5.6 release source was found; any such label is described only
+  as project-reported provenance.
+- Private IGP24 and Tier-4 material is published only as aggregate or
+  first-person methodology.
+- The quartic certificate is independently replayed in SageMath and Magma.
+- Companion Lean examples use core Lean 4.28 to keep replay independent of the
+  multi-gigabyte Mathlib cache; Falenty itself pins Mathlib 4.28.
+
+## Release artifacts
+
+- `outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx`
+- `research/data/claims.json`
+- `book/`
+- `vault/`
+- `artifacts/{sage,magma,lean}/`
+- `landing/`, `scripts/build_site.sh`, and the `gh-pages` deployment branch

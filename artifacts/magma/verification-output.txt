@@ -1,0 +1,9 @@
+Verified remotely on 2026-06-21 with Magma at
+/opt/magma/current/magma on lts-faculty.wmi.amu.edu.pl.
+
+PASS: quartic is nonsingular over Q
+profile <24, 0, 32, 0>
+c1bar2 112
+c2bar 40
+slope 14/5
+G 208

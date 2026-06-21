@@ -1,0 +1,7 @@
+Lean v4.28.0
+Command: lake build
+
+Built MiragesLeanExamples.AndSymm
+Built MiragesLeanExamples.DeMorgan
+Built MiragesLeanExamples
+Build completed successfully (5 jobs).

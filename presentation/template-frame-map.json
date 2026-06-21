@@ -1,0 +1,895 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "opening thesis bumper",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/nyd0z610",
+            "sh/cj6tovah",
+            "sh/54zidony",
+            "sh/u9knih4b"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 3,
+      "narrativeRole": "thesis comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/o7qpg3ex",
+            "sh/dsji5sne",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/vy90je9c",
+            "sh/6dcbulwv",
+            "sh/vmtwra5g",
+            "sh/61032lsz"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 9,
+      "narrativeRole": "evidence taxonomy",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/ovahoza1",
+            "sh/dg7adsji",
+            "sh/onyd0z61",
+            "sh/d8v6psfi",
+            "sh/6dcbulwv",
+            "sh/y90je9cv",
+            "sh/5wjudg7a",
+            "sh/gbq1oryt",
+            "sh/58z25kb6",
+            "sh/gn29gr2p",
+            "sh/neloj2t8",
+            "sh/vixczed8",
+            "sh/k3q5o7qp",
+            "sh/donyd0z6",
+            "sh/6psfil0r",
+            "sh/kre1w7mp",
+            "sh/dcbulwva"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 4,
+      "narrativeRole": "timeline synthesis",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/qtcj6tov",
+            "sh/je9cvixc",
+            "sh/xs72x4na",
+            "sh/q1orytsv",
+            "sh/x4nap4r6",
+            "sh/1w7mp0bi",
+            "sh/q5o7qpg3",
+            "sh/18jqh0fe",
+            "sh/qh0fepkz",
+            "sh/1cfa9w3m",
+            "sh/h0fepkzu",
+            "sh/a9w3m94f",
+            "sh/zupwb2hw",
+            "sh/hcrmhk3q",
+            "sh/al87ed8b"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 2,
+      "narrativeRole": "Erdos campaign evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/5o7qpg3e",
+            "sh/g3ex0nux",
+            "sh/rytsvu9k",
+            "sh/yd0z6103",
+            "sh/wb2hwfyx",
+            "sh/lwval87e",
+            "sh/w3m94fu1",
+            "sh/loj2t83i"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 3,
+      "narrativeRole": "Erdos 728 proof comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/o7qpg3ex",
+            "sh/dsji5sne",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/vy90je9c",
+            "sh/6dcbulwv",
+            "sh/vmtwra5g",
+            "sh/61032lsz"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 2,
+      "narrativeRole": "unit distance evidence comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/5o7qpg3e",
+            "sh/g3ex0nux",
+            "sh/rytsvu9k",
+            "sh/yd0z6103",
+            "sh/wb2hwfyx",
+            "sh/lwval87e",
+            "sh/w3m94fu1",
+            "sh/loj2t83i"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 3,
+      "narrativeRole": "campaign benchmark comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/o7qpg3ex",
+            "sh/dsji5sne",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/vy90je9c",
+            "sh/6dcbulwv",
+            "sh/vmtwra5g",
+            "sh/61032lsz"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 5,
+      "narrativeRole": "formalization pipeline",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/ovahoza1",
+            "sh/dg7adsji",
+            "sh/onyd0z61",
+            "sh/d8v6psfi",
+            "sh/y90je9cv",
+            "sh/5wjudg7a",
+            "sh/58z25kb6",
+            "sh/gn29gr2p",
+            "sh/vixczed8",
+            "sh/k3q5o7qp",
+            "sh/kre1w7mp",
+            "sh/dcbulwva",
+            "sh/2lszqtcj",
+            "sh/h4byhgn2",
+            "sh/sji5snel"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 8,
+      "narrativeRole": "kernel trust comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/u9knih4b",
+            "sh/judg7ads",
+            "sh/u18jqh0f",
+            "sh/jm1cfa9w",
+            "sh/18jqh0fe",
+            "sh/8nqxs72x",
+            "sh/1w7mp0bi",
+            "sh/8bat47y1",
+            "sh/jqh0fepk",
+            "sh/1kre1w7m",
+            "sh/c3ylc7u5"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 11,
+      "sourceSlide": 2,
+      "narrativeRole": "autoformalization frontier comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/5o7qpg3e",
+            "sh/g3ex0nux",
+            "sh/rytsvu9k",
+            "sh/yd0z6103",
+            "sh/wb2hwfyx",
+            "sh/lwval87e",
+            "sh/w3m94fu1",
+            "sh/loj2t83i"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 12,
+      "sourceSlide": 7,
+      "narrativeRole": "EML evidence metric",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/x4nap4r6",
+            "sh/8jqh0fep",
+            "sh/qpg3ex0n",
+            "sh/xczed8v6",
+            "sh/8v6psfil",
+            "sh/qtcj6tov",
+            "sh/hgn29gr2",
+            "sh/ap4r65wj"
+          ],
+          "action": "rewrite"
+        },
+        {
+          "shapeId": "im/47y1kre1",
+          "action": "replace"
+        }
+      ]
+    },
+    {
+      "outputSlide": 13,
+      "sourceSlide": 5,
+      "narrativeRole": "EML audit loop",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/ovahoza1",
+            "sh/dg7adsji",
+            "sh/onyd0z61",
+            "sh/d8v6psfi",
+            "sh/y90je9cv",
+            "sh/5wjudg7a",
+            "sh/58z25kb6",
+            "sh/gn29gr2p",
+            "sh/vixczed8",
+            "sh/k3q5o7qp",
+            "sh/kre1w7mp",
+            "sh/dcbulwva",
+            "sh/2lszqtcj",
+            "sh/h4byhgn2",
+            "sh/sji5snel"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 14,
+      "sourceSlide": 6,
+      "narrativeRole": "Falenty artifact portfolio",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/ylc7u54z",
+            "sh/r65wjudg",
+            "sh/yxobm58z",
+            "sh/nih4byhg",
+            "sh/onyd0z61",
+            "sh/dg7adsji",
+            "sh/6tovahoz",
+            "sh/dsji5sne",
+            "sh/kjm1cfa9",
+            "sh/94fu18jq"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 15,
+      "sourceSlide": 3,
+      "narrativeRole": "formal tools responsibility comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/o7qpg3ex",
+            "sh/dsji5sne",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/vy90je9c",
+            "sh/6dcbulwv",
+            "sh/vmtwra5g",
+            "sh/61032lsz"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 16,
+      "sourceSlide": 2,
+      "narrativeRole": "Nathanson proof evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/5o7qpg3e",
+            "sh/g3ex0nux",
+            "sh/rytsvu9k",
+            "sh/yd0z6103",
+            "sh/wb2hwfyx",
+            "sh/lwval87e",
+            "sh/w3m94fu1",
+            "sh/loj2t83i"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 17,
+      "sourceSlide": 5,
+      "narrativeRole": "agentic research loop",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/ovahoza1",
+            "sh/dg7adsji",
+            "sh/onyd0z61",
+            "sh/d8v6psfi",
+            "sh/y90je9cv",
+            "sh/5wjudg7a",
+            "sh/58z25kb6",
+            "sh/gn29gr2p",
+            "sh/vixczed8",
+            "sh/k3q5o7qp",
+            "sh/kre1w7mp",
+            "sh/dcbulwva",
+            "sh/2lszqtcj",
+            "sh/h4byhgn2",
+            "sh/sji5snel"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 18,
+      "sourceSlide": 4,
+      "narrativeRole": "compute escalation timeline",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/qtcj6tov",
+            "sh/je9cvixc",
+            "sh/xs72x4na",
+            "sh/q1orytsv",
+            "sh/x4nap4r6",
+            "sh/1w7mp0bi",
+            "sh/q5o7qpg3",
+            "sh/18jqh0fe",
+            "sh/qh0fepkz",
+            "sh/1cfa9w3m",
+            "sh/h0fepkzu",
+            "sh/a9w3m94f",
+            "sh/zupwb2hw",
+            "sh/hcrmhk3q",
+            "sh/al87ed8b"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 19,
+      "sourceSlide": 7,
+      "narrativeRole": "ECDSA benchmark evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/x4nap4r6",
+            "sh/8jqh0fep",
+            "sh/qpg3ex0n",
+            "sh/xczed8v6",
+            "sh/8v6psfil",
+            "sh/qtcj6tov",
+            "sh/hgn29gr2",
+            "sh/ap4r65wj"
+          ],
+          "action": "rewrite"
+        },
+        {
+          "shapeId": "im/47y1kre1",
+          "action": "replace"
+        }
+      ]
+    },
+    {
+      "outputSlide": 20,
+      "sourceSlide": 8,
+      "narrativeRole": "IGP24 campaign summary",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/u9knih4b",
+            "sh/judg7ads",
+            "sh/u18jqh0f",
+            "sh/jm1cfa9w",
+            "sh/18jqh0fe",
+            "sh/8nqxs72x",
+            "sh/1w7mp0bi",
+            "sh/8bat47y1",
+            "sh/jqh0fepk",
+            "sh/1kre1w7m",
+            "sh/c3ylc7u5"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 21,
+      "sourceSlide": 2,
+      "narrativeRole": "Orphic structural comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/5o7qpg3e",
+            "sh/g3ex0nux",
+            "sh/rytsvu9k",
+            "sh/yd0z6103",
+            "sh/wb2hwfyx",
+            "sh/lwval87e",
+            "sh/w3m94fu1",
+            "sh/loj2t83i"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 22,
+      "sourceSlide": 7,
+      "narrativeRole": "quartic Chern slope evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/x4nap4r6",
+            "sh/8jqh0fep",
+            "sh/qpg3ex0n",
+            "sh/xczed8v6",
+            "sh/8v6psfil",
+            "sh/qtcj6tov",
+            "sh/hgn29gr2",
+            "sh/ap4r65wj"
+          ],
+          "action": "rewrite"
+        },
+        {
+          "shapeId": "im/47y1kre1",
+          "action": "replace"
+        }
+      ]
+    },
+    {
+      "outputSlide": 23,
+      "sourceSlide": 3,
+      "narrativeRole": "quadrics proof comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/o7qpg3ex",
+            "sh/dsji5sne",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/vy90je9c",
+            "sh/6dcbulwv",
+            "sh/vmtwra5g",
+            "sh/61032lsz"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 24,
+      "sourceSlide": 7,
+      "narrativeRole": "Nature Physics roadmap evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/x4nap4r6",
+            "sh/8jqh0fep",
+            "sh/qpg3ex0n",
+            "sh/xczed8v6",
+            "sh/8v6psfil",
+            "sh/qtcj6tov",
+            "sh/hgn29gr2",
+            "sh/ap4r65wj"
+          ],
+          "action": "rewrite"
+        },
+        {
+          "shapeId": "im/47y1kre1",
+          "action": "replace"
+        }
+      ]
+    },
+    {
+      "outputSlide": 25,
+      "sourceSlide": 8,
+      "narrativeRole": "Aletheia assessment",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/u9knih4b",
+            "sh/judg7ads",
+            "sh/u18jqh0f",
+            "sh/jm1cfa9w",
+            "sh/18jqh0fe",
+            "sh/8nqxs72x",
+            "sh/1w7mp0bi",
+            "sh/8bat47y1",
+            "sh/jqh0fepk",
+            "sh/1kre1w7m",
+            "sh/c3ylc7u5"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 26,
+      "sourceSlide": 8,
+      "narrativeRole": "co-mathematician portfolio",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/u9knih4b",
+            "sh/judg7ads",
+            "sh/u18jqh0f",
+            "sh/jm1cfa9w",
+            "sh/18jqh0fe",
+            "sh/8nqxs72x",
+            "sh/1w7mp0bi",
+            "sh/8bat47y1",
+            "sh/jqh0fepk",
+            "sh/1kre1w7m",
+            "sh/c3ylc7u5"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 27,
+      "sourceSlide": 9,
+      "narrativeRole": "FrontierMath evidence audit",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/ovahoza1",
+            "sh/dg7adsji",
+            "sh/onyd0z61",
+            "sh/d8v6psfi",
+            "sh/6dcbulwv",
+            "sh/y90je9cv",
+            "sh/5wjudg7a",
+            "sh/gbq1oryt",
+            "sh/58z25kb6",
+            "sh/gn29gr2p",
+            "sh/neloj2t8",
+            "sh/vixczed8",
+            "sh/k3q5o7qp",
+            "sh/donyd0z6",
+            "sh/6psfil0r",
+            "sh/kre1w7mp",
+            "sh/dcbulwva"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 28,
+      "sourceSlide": 3,
+      "narrativeRole": "private Tier 4 analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/o7qpg3ex",
+            "sh/dsji5sne",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/vy90je9c",
+            "sh/6dcbulwv",
+            "sh/vmtwra5g",
+            "sh/61032lsz"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 29,
+      "sourceSlide": 11,
+      "narrativeRole": "benchmark governance analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/6tovahoz",
+            "sh/vahoza1g",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/h4byhgn2",
+            "sh/sji5snel",
+            "sh/lszqtcj6",
+            "sh/s72x4nap",
+            "sh/a5gbq1or",
+            "sh/hoza1gvy",
+            "sh/s36hcrmh",
+            "sh/4zidonyd",
+            "sh/xkf6dcbu",
+            "sh/mtwra5gb",
+            "sh/fepkzupw",
+            "sh/4r65wjud",
+            "sh/mlkjm1cf",
+            "sh/f6dcbulw"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 30,
+      "sourceSlide": 8,
+      "narrativeRole": "teaching portfolio summary",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/u9knih4b",
+            "sh/judg7ads",
+            "sh/u18jqh0f",
+            "sh/jm1cfa9w",
+            "sh/18jqh0fe",
+            "sh/8nqxs72x",
+            "sh/1w7mp0bi",
+            "sh/8bat47y1",
+            "sh/jqh0fepk",
+            "sh/1kre1w7m",
+            "sh/c3ylc7u5"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 31,
+      "sourceSlide": 6,
+      "narrativeRole": "staff course workflow",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/ylc7u54z",
+            "sh/r65wjudg",
+            "sh/yxobm58z",
+            "sh/nih4byhg",
+            "sh/onyd0z61",
+            "sh/dg7adsji",
+            "sh/6tovahoz",
+            "sh/dsji5sne",
+            "sh/kjm1cfa9",
+            "sh/94fu18jq"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 32,
+      "sourceSlide": 10,
+      "narrativeRole": "working practice summary",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/9gr2p8nq",
+            "sh/gvy90je9",
+            "sh/94fu18jq",
+            "sh/25kb6xkf",
+            "sh/m94fu18j",
+            "sh/xobm58z2",
+            "sh/4zidonyd",
+            "sh/8v6psfil",
+            "sh/fa9w3m94",
+            "sh/x4nap4r6",
+            "sh/8jqh0fep"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 33,
+      "sourceSlide": 3,
+      "narrativeRole": "failure boundary comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/o7qpg3ex",
+            "sh/dsji5sne",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/vy90je9c",
+            "sh/6dcbulwv",
+            "sh/vmtwra5g",
+            "sh/61032lsz"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 34,
+      "sourceSlide": 8,
+      "narrativeRole": "creativity structural analysis",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/u9knih4b",
+            "sh/judg7ads",
+            "sh/u18jqh0f",
+            "sh/jm1cfa9w",
+            "sh/18jqh0fe",
+            "sh/8nqxs72x",
+            "sh/1w7mp0bi",
+            "sh/8bat47y1",
+            "sh/jqh0fepk",
+            "sh/1kre1w7m",
+            "sh/c3ylc7u5"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 35,
+      "sourceSlide": 11,
+      "narrativeRole": "Leiden governance summary",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/6tovahoz",
+            "sh/vahoza1g",
+            "sh/6hcrmhk3",
+            "sh/z25kb6xk",
+            "sh/h4byhgn2",
+            "sh/sji5snel",
+            "sh/lszqtcj6",
+            "sh/s72x4nap",
+            "sh/a5gbq1or",
+            "sh/hoza1gvy",
+            "sh/s36hcrmh",
+            "sh/4zidonyd",
+            "sh/xkf6dcbu",
+            "sh/mtwra5gb",
+            "sh/fepkzupw",
+            "sh/4r65wjud",
+            "sh/mlkjm1cf",
+            "sh/f6dcbulw"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 36,
+      "sourceSlide": 4,
+      "narrativeRole": "forecast timeline",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/qtcj6tov",
+            "sh/je9cvixc",
+            "sh/xs72x4na",
+            "sh/q1orytsv",
+            "sh/x4nap4r6",
+            "sh/1w7mp0bi",
+            "sh/q5o7qpg3",
+            "sh/18jqh0fe",
+            "sh/qh0fepkz",
+            "sh/1cfa9w3m",
+            "sh/h0fepkzu",
+            "sh/a9w3m94f",
+            "sh/zupwb2hw",
+            "sh/hcrmhk3q",
+            "sh/al87ed8b"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    },
+    {
+      "outputSlide": 37,
+      "sourceSlide": 12,
+      "narrativeRole": "closing bumper",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeIds": [
+            "sh/3ylc7u54",
+            "sh/sji5snel",
+            "sh/h4byhgn2",
+            "sh/ap4r65wj"
+          ],
+          "action": "rewrite"
+        }
+      ]
+    }
+  ],
+  "omittedSourceSlides": []
+}

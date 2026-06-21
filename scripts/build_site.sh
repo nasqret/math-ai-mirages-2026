@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+OUT="${1:-$ROOT/site}"
+
+if test -e "$OUT"; then
+  echo "Refusing to overwrite existing output directory: $OUT" >&2
+  exit 1
+fi
+
+cd "$ROOT"
+jupyter-book build book -W --keep-going
+
+mkdir -p "$OUT/book" "$OUT/downloads"
+cp landing/index.html landing/styles.css landing/favicon.svg "$OUT/"
+cp -R book/_build/html/. "$OUT/book/"
+cp outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx "$OUT/downloads/"
+
+echo "Built Pages site at $OUT"

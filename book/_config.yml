@@ -14,4 +14,3 @@ repository:
 sphinx:
   config:
     html_show_copyright: true
-

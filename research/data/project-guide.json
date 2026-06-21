@@ -1,7 +1,6 @@
 {
   "title": "The Mirages and Twists of Mathematics with AI",
-  "presentation": "outputs/mirages-and-twists-ai-mathematics-2026.pptx",
-  "presentation_pdf": "outputs/mirages-and-twists-ai-mathematics-2026.pdf",
+  "presentation": "outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx",
   "book_source": "book",
   "vault": "vault",
   "landing": "landing",
@@ -13,4 +12,3 @@
   "status": "research/data/status.json",
   "claims": "research/data/claims.json"
 }
-

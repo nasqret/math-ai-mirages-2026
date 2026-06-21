@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-06-21T20:31:33.396Z",
+  "workspace": "/private/var/folders/0l/p9tttfhx00j1qpcftsjlcxqw0000gn/T/codex-presentations/mirages-ai-math",
+  "finalPptx": "/Users/airbartek/codex/warszawa_22_06_2026/outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx",
+  "starterPptx": "/private/var/folders/0l/p9tttfhx00j1qpcftsjlcxqw0000gn/T/codex-presentations/mirages-ai-math/template-starter.pptx",
+  "mapPath": "/private/var/folders/0l/p9tttfhx00j1qpcftsjlcxqw0000gn/T/codex-presentations/mirages-ai-math/template-frame-map.json",
+  "starterLayoutDir": "/private/var/folders/0l/p9tttfhx00j1qpcftsjlcxqw0000gn/T/codex-presentations/mirages-ai-math/template-starter-layout",
+  "finalLayoutDir": "/private/var/folders/0l/p9tttfhx00j1qpcftsjlcxqw0000gn/T/codex-presentations/mirages-ai-math/final-layout",
+  "editDir": "/private/var/folders/0l/p9tttfhx00j1qpcftsjlcxqw0000gn/T/codex-presentations/mirages-ai-math",
+  "issueCount": 0,
+  "issues": []
+}

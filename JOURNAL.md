@@ -14,3 +14,34 @@
 - Began an exact source and claim inventory; all recent counts remain pending
   until checked live.
 
+## 2026-06-21 — evidence freeze and deck
+
+- Parsed the Erdős Problems primary categories at commit `0f72fdb`: 237 records,
+  190 unique primary problems, 88 green records, and 79 unique green problems.
+- Froze current primary-source claims for FrontierMath v2, Aletheia,
+  AI Co-Mathematician, Nathanson/Monticone, the Leiden Declaration, GPT-5.4,
+  and the unit-distance report.
+- Audited local EML, ECDSA.fail, quartic-lines, teaching, IGP24, and private
+  Tier-4 evidence with explicit public/private boundaries.
+- Built a 37-slide native PowerPoint from the selected reference template.
+- Added 37 speaker-note pages and a 47.75-minute timing plan.
+- Repaired title and card overflows after full-slide render review.
+- Template-plan and final-fidelity checks both passed with zero issues.
+
+## 2026-06-21 — executable artifacts and documentation
+
+- SageMath replay passed and generated machine-readable case numbers plus two
+  charts.
+- Remote Magma replay on `lts-faculty.wmi.amu.edu.pl` passed nonsingularity,
+  profile, log-Chern arithmetic, slope `14/5`, and `G=208`.
+- A Mathlib cache download exhausted disk space; removed only the failed 6.2 GB
+  project-local checkout and converted the companion examples to core Lean.
+- Lean 4.28 build then passed all five jobs.
+- Expanded the Jupyter Book to ten source pages; warnings-as-errors build passed.
+- Expanded the Obsidian vault into linked case, method, benchmark, teaching,
+  governance, and reproducibility notes.
+- Built and browser-tested the Pages landing page at desktop and 390×844 mobile.
+- GitHub created the public repository but rejected a workflow-bearing push
+  because the OAuth token lacked `workflow` scope. Switched the live deployment
+  to a generated `gh-pages` branch and retained the Actions workflow as a
+  non-active template under `deployment/`.

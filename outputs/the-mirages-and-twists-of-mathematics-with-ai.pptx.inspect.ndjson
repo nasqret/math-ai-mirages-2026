@@ -1,0 +1,781 @@
+{"kind":"deck","id":"pr/m7mivd","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/2x4nap4r","slide":1,"title":"MIM UW · 22.06.2026","textShapes":4}
+{"kind":"shape","id":"sh/nap4r65w","slide":1,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":1,"bbox":[548,0,180,720]}
+{"kind":"shape","id":"sh/udg7adsj","slide":1,"bbox":[64,66,344,42]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":1,"text":"MIM UW · 22.06.2026","textPreview":"MIM UW · 22.06.2026","textChars":19,"textLines":1,"bbox":[64,73,344,34]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":1,"text":"MIRAGES & TWISTS\nOF MATHEMATICS\nWITH AI","textPreview":"MIRAGES & TWISTS | OF MATHEMATICS | WITH AI","textChars":39,"textLines":3,"bbox":[64,150,526,230]}
+{"kind":"textbox","id":"sh/54zidony","slide":1,"text":"A technical, evidence-first judgement of what changed—and what did not.","textPreview":"A technical, evidence-first judgement of what changed—and what did not.","textChars":71,"textLines":1,"bbox":[68,410,465,112]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":1,"text":"Bartosz Naskręcki · UAM / CCAI PW · x.com/nasqret","textPreview":"Bartosz Naskręcki · UAM / CCAI PW · x.com/nasqret","textChars":49,"textLines":1,"bbox":[68,610,470,34]}
+{"kind":"image","id":"im/m1cfa9w3","slide":1,"name":"","bbox":[590,0,690,720]}
+{"kind":"notes","id":"nt/2x4nap4r","slide":1,"text":"Pacing: 60 seconds.\nOpen with the conclusion: the capability jump is real, but the strongest public narrative often confuses a correct answer, a checked proof, a new theorem, and a new theory. This lecture separates those four achievements."}
+{"kind":"slide","id":"sl/pg3ex0nu","slide":2,"title":"THE THESIS","textShapes":8}
+{"kind":"shape","id":"sh/yxobm58z","slide":2,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":2,"text":"THE THESIS","textPreview":"THE THESIS","textChars":10,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":2,"text":"The capability jump is real.\nThe popular theory of it is not.","textPreview":"The capability jump is real. | The popular theory of it is not.","textChars":61,"textLines":2,"bbox":[64,86,900,154]}
+{"kind":"shape","id":"sh/r65wjudg","slide":2,"bbox":[64,292,510,300]}
+{"kind":"shape","id":"sh/ylc7u54z","slide":2,"bbox":[706,292,510,300]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":2,"text":"REAL","textPreview":"REAL","textChars":4,"textLines":1,"bbox":[156,329,230,32]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":2,"text":"MIRAGE","textPreview":"MIRAGE","textChars":6,"textLines":1,"bbox":[798,329,310,32]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":2,"text":"• long tool-using runs now work\n• proof assistants close real gaps\n• agents produce durable artifacts\n• some open problems have fallen","textPreview":"• long tool-using runs now work | • proof assistants close real gaps | • agents produce durable artifacts | • some open problems have fallen","textChars":134,"textLines":4,"bbox":[96,398,416,154]}
+{"kind":"textbox","id":"sh/lwval87e","slide":2,"text":"• one benchmark = a profession\n• fluent prose = mathematical proof\n• isolated success = autonomy\n• scale alone = new abstraction","textPreview":"• one benchmark = a profession | • fluent prose = mathematical proof | • isolated success = autonomy | • scale alone = new abstraction","textChars":128,"textLines":4,"bbox":[738,398,420,154]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":2,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":2,"text":"CAPABILITY ≠ AUTONOMY","textPreview":"CAPABILITY ≠ AUTONOMY","textChars":21,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/94fu18jq","slide":2,"name":"","bbox":[96,325,42,42]}
+{"kind":"image","id":"im/kjm1cfa9","slide":2,"name":"","bbox":[738,325,42,42]}
+{"kind":"image","id":"im/rqd4vmtw","slide":2,"name":"","bbox":[605,404,70,70]}
+{"kind":"notes","id":"nt/pg3ex0nu","slide":2,"text":"Pacing: 65 seconds.\nState the two-sided judgement plainly. The talk is neither a dismissal nor a victory lap. The useful unit of analysis is a documented workflow with a verification boundary."}
+{"kind":"slide","id":"sl/s72x4nap","slide":3,"title":"EVIDENCE LADDER","textShapes":17}
+{"kind":"shape","id":"sh/vmtwra5g","slide":3,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":3,"text":"EVIDENCE LADDER","textPreview":"EVIDENCE LADDER","textChars":15,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":3,"text":"Four achievements that press reports routinely collapse.","textPreview":"Four achievements that press reports routinely collapse.","textChars":56,"textLines":1,"bbox":[64,86,850,150]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":3,"bbox":[64,316,250,230]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":3,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[262,340,28,28]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":3,"text":"ANSWER","textPreview":"ANSWER","textChars":6,"textLines":1,"bbox":[90,410,198,34]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":3,"text":"a final value or candidate object","textPreview":"a final value or candidate object","textChars":33,"textLines":1,"bbox":[90,464,198,55]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":3,"bbox":[356,298,250,230]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":3,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[554,322,28,28]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":3,"text":"PROOF","textPreview":"PROOF","textChars":5,"textLines":1,"bbox":[382,392,198,34]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":3,"text":"an argument checked by experts or a kernel","textPreview":"an argument checked by experts or a kernel","textChars":42,"textLines":1,"bbox":[382,446,198,55]}
+{"kind":"shape","id":"sh/vmtwra5g","slide":3,"bbox":[648,280,250,230]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[846,304,28,28]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":3,"text":"THEOREM","textPreview":"THEOREM","textChars":7,"textLines":1,"bbox":[674,374,198,34]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":3,"text":"a genuinely new mathematical result","textPreview":"a genuinely new mathematical result","textChars":35,"textLines":1,"bbox":[674,428,198,55]}
+{"kind":"shape","id":"sh/6tovahoz","slide":3,"bbox":[940,262,250,230]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":3,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1138,286,28,28]}
+{"kind":"textbox","id":"sh/wval87ed","slide":3,"text":"THEORY","textPreview":"THEORY","textChars":6,"textLines":1,"bbox":[966,356,198,34]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":3,"text":"new concepts, structure, and reusable explanation","textPreview":"new concepts, structure, and reusable explanation","textChars":49,"textLines":1,"bbox":[966,410,198,55]}
+{"kind":"textbox","id":"sh/e1w7mp0b","slide":3,"text":"The frontier rises sharply from 1 to 4.","textPreview":"The frontier rises sharply from 1 to 4.","textChars":39,"textLines":1,"bbox":[132,582,1016,64]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":3,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":3,"text":"USE THE RIGHT NOUN","textPreview":"USE THE RIGHT NOUN","textChars":18,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/h0fepkzu","slide":3,"name":"","bbox":[90,342,44,44]}
+{"kind":"image","id":"im/sfil0rqd","slide":3,"name":"","bbox":[382,324,44,44]}
+{"kind":"image","id":"im/ixczed8v","slide":3,"name":"","bbox":[674,306,44,44]}
+{"kind":"image","id":"im/bi9s36hc","slide":3,"name":"","bbox":[966,288,44,44]}
+{"kind":"notes","id":"nt/s72x4nap","slide":3,"text":"Pacing: 70 seconds.\nUse this vocabulary throughout the talk. A formal proof can establish correctness relative to a statement while saying little about novelty, importance, or whether the statement captured the intended mathematics."}
+{"kind":"slide","id":"sl/val87ed8","slide":4,"title":"SIX MONTHS","textShapes":15}
+{"kind":"shape","id":"sh/1gvy90je","slide":4,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":4,"text":"SIX MONTHS","textPreview":"SIX MONTHS","textChars":10,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":4,"text":"2026 compressed several years of expectations.","textPreview":"2026 compressed several years of expectations.","textChars":46,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/87ed8bat","slide":4,"bbox":[64,286,180,120]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":4,"text":"JAN","textPreview":"JAN","textChars":3,"textLines":1,"bbox":[80,301,72,28]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":4,"text":"Erdős #728\nGPT Pro + Aristotle","textPreview":"Erdős #728 | GPT Pro + Aristotle","textChars":30,"textLines":2,"bbox":[80,334,150,52]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":4,"bbox":[240,330,38,4]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":4,"bbox":[240,402,210,120]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":4,"text":"FEB","textPreview":"FEB","textChars":3,"textLines":1,"bbox":[256,417,72,28]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":4,"text":"FirstProof\nAletheia: 6/10","textPreview":"FirstProof | Aletheia: 6/10","textChars":25,"textLines":2,"bbox":[256,450,180,52]}
+{"kind":"shape","id":"sh/8bat47y1","slide":4,"bbox":[446,446,38,4]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":4,"bbox":[446,286,230,120]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":4,"text":"MAR","textPreview":"MAR","textChars":3,"textLines":1,"bbox":[462,301,72,28]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":4,"text":"GPT-5.4\n1M-context agents","textPreview":"GPT-5.4 | 1M-context agents","textChars":25,"textLines":2,"bbox":[462,334,200,52]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":4,"bbox":[672,330,38,4]}
+{"kind":"shape","id":"sh/j2t83itg","slide":4,"bbox":[672,402,255,120]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":4,"text":"MAY","textPreview":"MAY","textChars":3,"textLines":1,"bbox":[688,417,72,28]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":4,"text":"unit distances\nco-mathematician","textPreview":"unit distances | co-mathematician","textChars":31,"textLines":2,"bbox":[688,450,225,52]}
+{"kind":"shape","id":"sh/crmhk3q5","slide":4,"bbox":[923,446,38,4]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":4,"bbox":[923,286,285,120]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":4,"text":"JUN","textPreview":"JUN","textChars":3,"textLines":1,"bbox":[939,301,72,28]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":4,"text":"FrontierMath audit\nLeiden Declaration","textPreview":"FrontierMath audit | Leiden Declaration","textChars":37,"textLines":2,"bbox":[939,334,255,52]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":4,"text":"Capability, evaluation, and governance all moved at once.","textPreview":"Capability, evaluation, and governance all moved at once.","textChars":57,"textLines":1,"bbox":[64,542,1050,68]}
+{"kind":"shape","id":"sh/orytsvu9","slide":4,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":4,"text":"A FAST-MOVING, BADLY CALIBRATED FIELD","textPreview":"A FAST-MOVING, BADLY CALIBRATED FIELD","textChars":37,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"notes","id":"nt/val87ed8","slide":4,"text":"Pacing: 80 seconds.\nThis is a chronology, not a ranking. Sources: arXiv:2601.07421; arXiv:2602.21201; OpenAI GPT-5.4 release (5 March); OpenAI unit-distance report (20 May); Epoch FrontierMath v2 (12 June); Leiden Declaration (2 June)."}
+{"kind":"slide","id":"sl/mlkjm1cf","slide":5,"title":"ERDŐS PROBLEMS CAMPAIGN","textShapes":8}
+{"kind":"shape","id":"sh/vahoza1g","slide":5,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":5,"text":"ERDŐS PROBLEMS CAMPAIGN","textPreview":"ERDŐS PROBLEMS CAMPAIGN","textChars":23,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":5,"text":"A remarkable campaign—and a terrible single-number benchmark.","textPreview":"A remarkable campaign—and a terrible single-number benchmark.","textChars":61,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":5,"bbox":[64,270,500,330]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":5,"bbox":[716,270,500,330]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":5,"text":"WIKI SNAPSHOT","textPreview":"WIKI SNAPSHOT","textChars":13,"textLines":1,"bbox":[160,308,160,35]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":5,"text":"NOT A BENCHMARK","textPreview":"NOT A BENCHMARK","textChars":15,"textLines":1,"bbox":[812,308,180,35]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":5,"text":"88 green full-resolution records\n79 unique Erdős problems\n190 unique primary problems listed\ncommit 0f72fdb · 22 June 2026","textPreview":"88 green full-resolution records | 79 unique Erdős problems | 190 unique primary problems listed | commit 0f72fdb · 22 June 2026","textChars":122,"textLines":4,"bbox":[96,382,404,150]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":5,"text":"selection is adaptive\nliterature is discovered later\nproblem statements can be wrong\nobscurity is not difficulty","textPreview":"selection is adaptive | literature is discovered later | problem statements can be wrong | obscurity is not difficulty","textChars":112,"textLines":4,"bbox":[748,382,412,178]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":5,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":5,"text":"SOURCE: ERDOSPROBLEMS.COM COMMUNITY WIKI","textPreview":"SOURCE: ERDOSPROBLEMS.COM COMMUNITY WIKI","textChars":40,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/ylc7u54z","slide":5,"name":"","bbox":[96,304,46,46]}
+{"kind":"image","id":"im/r65wjudg","slide":5,"name":"","bbox":[748,304,46,46]}
+{"kind":"image","id":"im/gfmlkjm1","slide":5,"name":"","bbox":[608,405,64,64]}
+{"kind":"notes","id":"nt/mlkjm1cf","slide":5,"text":"Pacing: 85 seconds.\nBe exact about the denominator. I parsed the primary categories 1a–1d of the community-maintained wiki at commit 0f72fdb. The wiki itself says this is not a benchmark. Count records and unique problems separately because one problem can have multiple contributions."}
+{"kind":"slide","id":"sl/58z25kb6","slide":6,"title":"ERDŐS #728","textShapes":8}
+{"kind":"shape","id":"sh/9cvixcze","slide":6,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":6,"text":"ERDŐS #728","textPreview":"ERDŐS #728","textChars":10,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":6,"text":"The blueprint case: proposal, formal search, ratification.","textPreview":"The blueprint case: proposal, formal search, ratification.","textChars":58,"textLines":1,"bbox":[64,86,900,154]}
+{"kind":"shape","id":"sh/g3ex0nux","slide":6,"bbox":[64,292,510,300]}
+{"kind":"shape","id":"sh/5o7qpg3e","slide":6,"bbox":[706,292,510,300]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":6,"text":"HAPPENED","textPreview":"HAPPENED","textChars":8,"textLines":1,"bbox":[156,329,230,32]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":6,"text":"WHY STRONG","textPreview":"WHY STRONG","textChars":10,"textLines":1,"bbox":[798,329,310,32]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":6,"text":"• GPT-5.2 Pro proposed the strategy\n• Aristotle produced a Lean proof\n• experts inspected the mathematics\n• comparable literature surfaced later","textPreview":"• GPT-5.2 Pro proposed the strategy | • Aristotle produced a Lean proof | • experts inspected the mathematics | • comparable literature s...","textChars":144,"textLines":4,"bbox":[96,398,416,154]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":6,"text":"• exact statement\n• kernel-checkable artifact\n• public paper and code\n• provenance is discussable","textPreview":"• exact statement | • kernel-checkable artifact | • public paper and code | • provenance is discussable","textChars":97,"textLines":4,"bbox":[738,398,420,154]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":6,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":6,"text":"A MILESTONE WITH A TRACE","textPreview":"A MILESTONE WITH A TRACE","textChars":24,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/4fu18jqh","slide":6,"name":"","bbox":[96,325,42,42]}
+{"kind":"image","id":"im/x0nuxc3y","slide":6,"name":"","bbox":[738,325,42,42]}
+{"kind":"image","id":"im/mlkjm1cf","slide":6,"name":"","bbox":[605,404,70,70]}
+{"kind":"notes","id":"nt/58z25kb6","slide":6,"text":"Pacing: 80 seconds.\nThe lesson is the workflow, not the marketing adjective 'autonomous'. The public record is unusually good: arXiv:2601.07421 and the Erdős wiki include the statement, proof route, and later literature context."}
+{"kind":"slide","id":"sl/0z61032l","slide":7,"title":"A DIFFERENT KIND OF MILESTONE","textShapes":8}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":7,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":7,"text":"A DIFFERENT KIND OF MILESTONE","textPreview":"A DIFFERENT KIND OF MILESTONE","textChars":29,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":7,"text":"Unit distances: original structure, not merely closure.","textPreview":"Unit distances: original structure, not merely closure.","textChars":55,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/fa9w3m94","slide":7,"bbox":[64,270,500,330]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":7,"bbox":[716,270,500,330]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":7,"text":"OPENAI REPORTS","textPreview":"OPENAI REPORTS","textChars":14,"textLines":1,"bbox":[160,308,160,35]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":7,"text":"WHAT I WOULD STILL ASK","textPreview":"WHAT I WOULD STILL ASK","textChars":22,"textLines":1,"bbox":[812,308,180,35]}
+{"kind":"textbox","id":"sh/svu9knih","slide":7,"text":"• n^(1+δ) construction\n• algebraic number theory enters geometry\n• external mathematicians checked it\n• a general-purpose reasoning model","textPreview":"• n^(1+δ) construction | • algebraic number theory enters geometry | • external mathematicians checked it | • a general-purpose reasoning...","textChars":137,"textLines":4,"bbox":[96,382,404,150]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":7,"text":"• release the full proof record\n• separate vendor and independent claims\n• track reproducibility and compute\n• wait for ordinary publication review","textPreview":"• release the full proof record | • separate vendor and independent claims | • track reproducibility and compute | • wait for ordinary pu...","textChars":147,"textLines":4,"bbox":[748,382,412,178]}
+{"kind":"shape","id":"sh/za1gvy90","slide":7,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":7,"text":"PROVIDER-REPORTED, EXPERT-REVIEWED","textPreview":"PROVIDER-REPORTED, EXPERT-REVIEWED","textChars":34,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/tgfmlkjm","slide":7,"name":"","bbox":[96,304,46,46]}
+{"kind":"image","id":"im/4vmtwra5","slide":7,"name":"","bbox":[748,304,46,46]}
+{"kind":"image","id":"im/b2hwfyxo","slide":7,"name":"","bbox":[608,405,64,64]}
+{"kind":"notes","id":"nt/0z61032l","slide":7,"text":"Pacing: 85 seconds.\nOpenAI's 20 May report calls this the first autonomous solution of a prominent central open problem. That is a provider claim, though the proof was checked by external mathematicians and companion remarks are public. The methodological novelty is the cross-domain construction. Source: openai.com/index/model-disproves-discrete-geometry-conjecture/."}
+{"kind":"slide","id":"sl/fu18jqh0","slide":8,"title":"METHODOLOGICAL WARNING","textShapes":8}
+{"kind":"shape","id":"sh/1032lszq","slide":8,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/u9knih4b","slide":8,"text":"METHODOLOGICAL WARNING","textPreview":"METHODOLOGICAL WARNING","textChars":22,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/judg7ads","slide":8,"text":"A campaign is not a benchmark.\nA benchmark is not mathematics.","textPreview":"A campaign is not a benchmark. | A benchmark is not mathematics.","textChars":62,"textLines":2,"bbox":[64,86,900,154]}
+{"kind":"shape","id":"sh/c7u54zid","slide":8,"bbox":[64,292,510,300]}
+{"kind":"shape","id":"sh/1orytsvu","slide":8,"bbox":[706,292,510,300]}
+{"kind":"textbox","id":"sh/cvixczed","slide":8,"text":"CAMPAIGN","textPreview":"CAMPAIGN","textChars":8,"textLines":1,"bbox":[156,329,230,32]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":8,"text":"BENCHMARK","textPreview":"BENCHMARK","textChars":9,"textLines":1,"bbox":[798,329,310,32]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":8,"text":"adaptive problem choice\niterative human attention\nopen literature search\ncredit for partial progress","textPreview":"adaptive problem choice | iterative human attention | open literature search | credit for partial progress","textChars":100,"textLines":4,"bbox":[96,398,416,154]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":8,"text":"fixed sampling rule\nfrozen task versions\npredefined budget\nauditable scoring","textPreview":"fixed sampling rule | frozen task versions | predefined budget | auditable scoring","textChars":76,"textLines":4,"bbox":[738,398,420,154]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":8,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":8,"text":"THEORY BUILDING IS COMPLEMENTARY TO BOTH","textPreview":"THEORY BUILDING IS COMPLEMENTARY TO BOTH","textChars":40,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/4fu18jqh","slide":8,"name":"","bbox":[96,325,42,42]}
+{"kind":"image","id":"im/x0nuxc3y","slide":8,"name":"","bbox":[738,325,42,42]}
+{"kind":"image","id":"im/mlkjm1cf","slide":8,"name":"","bbox":[605,404,70,70]}
+{"kind":"notes","id":"nt/fu18jqh0","slide":8,"text":"Pacing: 70 seconds.\nThis distinction is central. Campaigns measure what a motivated team can accomplish. Benchmarks estimate performance under a protocol. Mathematics asks a third question: what structure did we learn?"}
+{"kind":"slide","id":"sl/qh0fepkz","slide":9,"title":"FORMALIZATION","textShapes":15}
+{"kind":"shape","id":"sh/vahoza1g","slide":9,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":9,"text":"FORMALIZATION","textPreview":"FORMALIZATION","textChars":13,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":9,"text":"The strongest trust boundary is still a small kernel.","textPreview":"The strongest trust boundary is still a small kernel.","textChars":53,"textLines":1,"bbox":[64,86,920,150]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":9,"bbox":[64,332,200,204]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":9,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[82,350,30,32]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":9,"text":"PAPER","textPreview":"PAPER","textChars":5,"textLines":1,"bbox":[80,448,168,40]}
+{"kind":"shape","id":"sh/vy90je9c","slide":9,"bbox":[302,332,200,204]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":9,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[320,350,30,32]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":9,"text":"CHUNKS","textPreview":"CHUNKS","textChars":6,"textLines":1,"bbox":[318,448,168,40]}
+{"kind":"shape","id":"sh/n29gr2p8","slide":9,"bbox":[540,332,200,204]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":9,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[558,350,30,32]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":9,"text":"LEAN","textPreview":"LEAN","textChars":4,"textLines":1,"bbox":[556,448,168,40]}
+{"kind":"shape","id":"sh/ytsvu9kn","slide":9,"bbox":[778,332,200,204]}
+{"kind":"textbox","id":"sh/vixczed8","slide":9,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[796,350,30,32]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":9,"text":"SEARCH","textPreview":"SEARCH","textChars":6,"textLines":1,"bbox":[794,448,168,40]}
+{"kind":"shape","id":"sh/6psfil0r","slide":9,"bbox":[1016,332,200,204]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":9,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1034,350,30,32]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":9,"text":"KERNEL","textPreview":"KERNEL","textChars":6,"textLines":1,"bbox":[1032,448,168,40]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":9,"text":"Statement extraction is now the critical specification step.","textPreview":"Statement extraction is now the critical specification step.","textChars":60,"textLines":1,"bbox":[190,566,900,68]}
+{"kind":"shape","id":"sh/v6psfil0","slide":9,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":9,"text":"PROSE → MACHINE-CHECKED OBJECT","textPreview":"PROSE → MACHINE-CHECKED OBJECT","textChars":30,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/sji5snel","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/cvixczed","slide":9,"name":"","bbox":[136,360,56,56]}
+{"kind":"image","id":"im/5gbq1ory","slide":9,"name":"","bbox":[266,410,34,34]}
+{"kind":"image","id":"im/udg7adsj","slide":9,"name":"","bbox":[374,360,56,56]}
+{"kind":"image","id":"im/nyd0z610","slide":9,"name":"","bbox":[504,410,34,34]}
+{"kind":"image","id":"im/cj6tovah","slide":9,"name":"","bbox":[612,360,56,56]}
+{"kind":"image","id":"im/54zidony","slide":9,"name":"","bbox":[742,410,34,34]}
+{"kind":"image","id":"im/u9knih4b","slide":9,"name":"","bbox":[850,360,56,56]}
+{"kind":"image","id":"im/judg7ads","slide":9,"name":"","bbox":[980,410,34,34]}
+{"kind":"image","id":"im/3q5o7qpg","slide":9,"name":"","bbox":[1088,360,56,56]}
+{"kind":"notes","id":"nt/qh0fepkz","slide":9,"text":"Pacing: 75 seconds.\nReuse the formalization slides from Falenty and EML, but sharpen the claim. Lean does not validate the informal intention automatically. It validates the formal term against the formal statement and trusted environment."}
+{"kind":"slide","id":"sl/29gr2p8n","slide":10,"title":"WHAT LEAN CHANGES","textShapes":11}
+{"kind":"shape","id":"sh/2p8nqxs7","slide":10,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":10,"text":"WHAT LEAN CHANGES","textPreview":"WHAT LEAN CHANGES","textChars":17,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":10,"text":"Correctness becomes local, explicit, and replayable.","textPreview":"Correctness becomes local, explicit, and replayable.","textChars":52,"textLines":1,"bbox":[64,86,930,142]}
+{"kind":"shape","id":"sh/r2p8nqxs","slide":10,"bbox":[64,282,328,296]}
+{"kind":"textbox","id":"sh/94fu18jq","slide":10,"text":"KERNEL GUARANTEE","textPreview":"KERNEL GUARANTEE","textChars":16,"textLines":1,"bbox":[158,320,202,32]}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":10,"text":"type-correct proof term\nexplicit dependencies\nreproducible replay","textPreview":"type-correct proof term | explicit dependencies | reproducible replay","textChars":65,"textLines":3,"bbox":[92,394,270,122]}
+{"kind":"shape","id":"sh/rqd4vmtw","slide":10,"bbox":[456,302,328,296]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":10,"text":"SPECIFICATION RISK","textPreview":"SPECIFICATION RISK","textChars":18,"textLines":1,"bbox":[550,340,202,32]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":10,"text":"wrong theorem formalized\nhidden assumptions\ndefinition mismatch","textPreview":"wrong theorem formalized | hidden assumptions | definition mismatch","textChars":63,"textLines":3,"bbox":[484,414,270,122]}
+{"kind":"shape","id":"sh/m94fu18j","slide":10,"bbox":[848,322,328,296]}
+{"kind":"textbox","id":"sh/83itgfml","slide":10,"text":"MATHEMATICAL RISK","textPreview":"MATHEMATICAL RISK","textChars":17,"textLines":1,"bbox":[942,360,202,32]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":10,"text":"novelty and importance\nexplanatory value\ncredit and authorship","textPreview":"novelty and importance | explanatory value | credit and authorship","textChars":62,"textLines":3,"bbox":[876,434,270,122]}
+{"kind":"textbox","id":"sh/qxs72x4n","slide":10,"text":"Formal verification narrows the error surface. It does not erase judgement.","textPreview":"Formal verification narrows the error surface. It does not erase judgement.","textChars":75,"textLines":1,"bbox":[160,604,960,58]}
+{"kind":"shape","id":"sh/fil0rqd4","slide":10,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":10,"text":"TRUST THE KERNEL; AUDIT THE STATEMENT","textPreview":"TRUST THE KERNEL; AUDIT THE STATEMENT","textChars":37,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/eloj2t83","slide":10,"name":"","bbox":[92,314,48,48]}
+{"kind":"image","id":"im/36hcrmhk","slide":10,"name":"","bbox":[484,334,48,48]}
+{"kind":"image","id":"im/wra5gbq1","slide":10,"name":"","bbox":[876,354,48,48]}
+{"kind":"notes","id":"nt/29gr2p8n","slide":10,"text":"Pacing: 75 seconds.\nGive a concrete Falenty example: a tiny De Morgan theorem has a complete proof term; the pedagogical Erdős #728 file contains sorry and is correctly labelled a sketch. That contrast is pedagogically valuable."}
+{"kind":"slide","id":"sl/re1w7mp0","slide":11,"title":"AUTO-FORMALIZATION FRONTIER","textShapes":8}
+{"kind":"shape","id":"sh/dg7adsji","slide":11,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":11,"text":"AUTO-FORMALIZATION FRONTIER","textPreview":"AUTO-FORMALIZATION FRONTIER","textChars":27,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":11,"text":"Proof search is accelerating. Statement alignment is harder.","textPreview":"Proof search is accelerating. Statement alignment is harder.","textChars":60,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/onyd0z61","slide":11,"bbox":[64,270,500,330]}
+{"kind":"shape","id":"sh/d8v6psfi","slide":11,"bbox":[716,270,500,330]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":11,"text":"NOW ROUTINE ENOUGH","textPreview":"NOW ROUTINE ENOUGH","textChars":18,"textLines":1,"bbox":[160,308,160,35]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":11,"text":"STILL EXPENSIVE","textPreview":"STILL EXPENSIVE","textChars":15,"textLines":1,"bbox":[812,308,180,35]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":11,"text":"• theorem-sized Lean proof search\n• tactic repair and library lookup\n• translating local lemmas\n• checking generated terms","textPreview":"• theorem-sized Lean proof search | • tactic repair and library lookup | • translating local lemmas | • checking generated terms","textChars":122,"textLines":4,"bbox":[96,382,404,150]}
+{"kind":"textbox","id":"sh/sji5snel","slide":11,"text":"• long informal papers\n• implicit conventions\n• semantic equivalence of statements\n• maintainable library architecture","textPreview":"• long informal papers | • implicit conventions | • semantic equivalence of statements | • maintainable library architecture","textChars":118,"textLines":4,"bbox":[748,382,412,178]}
+{"kind":"shape","id":"sh/adsji5sn","slide":11,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":11,"text":"THE BOTTLENECK MOVED UPSTREAM","textPreview":"THE BOTTLENECK MOVED UPSTREAM","textChars":29,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/kf6dcbul","slide":11,"name":"","bbox":[96,304,46,46]}
+{"kind":"image","id":"im/d0z61032","slide":11,"name":"","bbox":[748,304,46,46]}
+{"kind":"image","id":"im/2x4nap4r","slide":11,"name":"","bbox":[608,405,64,64]}
+{"kind":"notes","id":"nt/re1w7mp0","slide":11,"text":"Pacing: 70 seconds.\nMention Aristotle, AlphaProof, DeepSeek-Prover, Kimina, and LeanArchitect as different points in the stack. Avoid treating them as interchangeable: some prove formal statements, some translate, some orchestrate search."}
+{"kind":"slide","id":"sl/4fu18jqh","slide":12,"title":"MY EML PROJECT","textShapes":8}
+{"kind":"shape","id":"sh/3m94fu18","slide":12,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":12,"text":"MY EML PROJECT","textPreview":"MY EML PROJECT","textChars":14,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":12,"text":"A formalization factory, not a single generated proof.","textPreview":"A formalization factory, not a single generated proof.","textChars":54,"textLines":1,"bbox":[64,86,1120,142]}
+{"kind":"shape","id":"sh/adsji5sn","slide":12,"bbox":[64,244,356,370]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":12,"text":"LEAN 4 + MATHLIB 4.28","textPreview":"LEAN 4 + MATHLIB 4.28","textChars":21,"textLines":1,"bbox":[92,278,294,52]}
+{"kind":"textbox","id":"sh/sji5snel","slide":12,"text":"36/36","textPreview":"36/36","textChars":5,"textLines":1,"bbox":[92,360,290,46]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":12,"text":"calculator primitives\n100 public theorems\n0 sorry / 0 admit\n8,062 dispatched jobs","textPreview":"calculator primitives | 100 public theorems | 0 sorry / 0 admit | 8,062 dispatched jobs","textChars":81,"textLines":4,"bbox":[92,432,286,128]}
+{"kind":"textbox","id":"sh/za1gvy90","slide":12,"text":"The durable result is the compiler architecture and the audit trail.","textPreview":"The durable result is the compiler architecture and the audit trail.","textChars":68,"textLines":1,"bbox":[468,614,748,50]}
+{"kind":"shape","id":"sh/z61032ls","slide":12,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":12,"text":"REPO: NASQRET/EML-FORMALIZATION","textPreview":"REPO: NASQRET/EML-FORMALIZATION","textChars":31,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/j6tovaho","slide":12,"name":"","alt":"Evidence image for slide 12","bbox":[543.54,244,596.93,370]}
+{"kind":"notes","id":"nt/4fu18jqh","slide":12,"text":"Pacing: 90 seconds.\nThese numbers come from the repository README and should be read as a project snapshot. Aristotle handled proof search; GPT Pro, Claude, Codex, Mathematica, and human review had distinct roles. Source: github.com/nasqret/eml-formalization."}
+{"kind":"slide","id":"sl/lwval87e","slide":13,"title":"THE EML AUDIT LOOP","textShapes":15}
+{"kind":"shape","id":"sh/ed8bat47","slide":13,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":13,"text":"THE EML AUDIT LOOP","textPreview":"THE EML AUDIT LOOP","textChars":18,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":13,"text":"The first 'complete' report was not a valid formalization.","textPreview":"The first 'complete' report was not a valid formalization.","textChars":58,"textLines":1,"bbox":[64,86,920,150]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":13,"bbox":[64,332,200,204]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":13,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[82,350,30,32]}
+{"kind":"textbox","id":"sh/wra5gbq1","slide":13,"text":"CATALOGUE","textPreview":"CATALOGUE","textChars":9,"textLines":1,"bbox":[80,448,168,40]}
+{"kind":"shape","id":"sh/epkzupwb","slide":13,"bbox":[302,332,200,204]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":13,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[320,350,30,32]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":13,"text":"ADVERSARIAL AUDIT","textPreview":"ADVERSARIAL AUDIT","textChars":17,"textLines":1,"bbox":[318,448,168,40]}
+{"kind":"shape","id":"sh/8v6psfil","slide":13,"bbox":[540,332,200,204]}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":13,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[558,350,30,32]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":13,"text":"REPAIR","textPreview":"REPAIR","textChars":6,"textLines":1,"bbox":[556,448,168,40]}
+{"kind":"shape","id":"sh/1gvy90je","slide":13,"bbox":[778,332,200,204]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":13,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[796,350,30,32]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":13,"text":"STRUCTURE","textPreview":"STRUCTURE","textChars":9,"textLines":1,"bbox":[794,448,168,40]}
+{"kind":"shape","id":"sh/lwval87e","slide":13,"bbox":[1016,332,200,204]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":13,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1034,350,30,32]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":13,"text":"REPLAY","textPreview":"REPLAY","textChars":6,"textLines":1,"bbox":[1032,448,168,40]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":13,"text":"Separate-model review found sorry, boundary abuse, and broken bridges.","textPreview":"Separate-model review found sorry, boundary abuse, and broken bridges.","textChars":70,"textLines":1,"bbox":[190,566,900,68]}
+{"kind":"shape","id":"sh/sneloj2t","slide":13,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":13,"text":"THE SECOND PAIR OF EYES CHANGED THE MATHEMATICS","textPreview":"THE SECOND PAIR OF EYES CHANGED THE MATHEMATICS","textChars":47,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/nqxs72x4","slide":13,"name":"","bbox":[136,360,56,56]}
+{"kind":"image","id":"im/u54zidon","slide":13,"name":"","bbox":[266,410,34,34]}
+{"kind":"image","id":"im/5kb6xkf6","slide":13,"name":"","bbox":[374,360,56,56]}
+{"kind":"image","id":"im/czed8v6p","slide":13,"name":"","bbox":[504,410,34,34]}
+{"kind":"image","id":"im/neloj2t8","slide":13,"name":"","bbox":[612,360,56,56]}
+{"kind":"image","id":"im/ytsvu9kn","slide":13,"name":"","bbox":[742,410,34,34]}
+{"kind":"image","id":"im/58z25kb6","slide":13,"name":"","bbox":[850,360,56,56]}
+{"kind":"image","id":"im/gn29gr2p","slide":13,"name":"","bbox":[980,410,34,34]}
+{"kind":"image","id":"im/032lszqt","slide":13,"name":"","bbox":[1088,360,56,56]}
+{"kind":"notes","id":"nt/lwval87e","slide":13,"text":"Pacing: 80 seconds.\nThis is one of the most honest results in the talk. A second model family, isolated from the first scratchpad, found real defects and forced a stronger architecture. Independent review may be the most immediately valuable AI substitute in the loop."}
+{"kind":"slide","id":"sl/25kb6xkf","slide":14,"title":"FALENTY: TEACH THE TRUST BOUNDARY","textShapes":10}
+{"kind":"shape","id":"sh/val87ed8","slide":14,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":14,"text":"FALENTY: TEACH THE TRUST BOUNDARY","textPreview":"FALENTY: TEACH THE TRUST BOUNDARY","textChars":33,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":14,"text":"One brief. Three inspectable learning artifacts.","textPreview":"One brief. Three inspectable learning artifacts.","textChars":48,"textLines":1,"bbox":[64,86,920,142]}
+{"kind":"shape","id":"sh/2x4nap4r","slide":14,"bbox":[64,268,348,334]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":14,"text":"THE BRIEF","textPreview":"THE BRIEF","textChars":9,"textLines":1,"bbox":[152,300,180,34]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":14,"text":"Choose a theorem. State assumptions.\nCompile it. Expose every gap.\nExplain the proof term in prose.","textPreview":"Choose a theorem. State assumptions. | Compile it. Expose every gap. | Explain the proof term in prose.","textChars":99,"textLines":3,"bbox":[92,370,280,190]}
+{"kind":"shape","id":"sh/vu9knih4","slide":14,"bbox":[548,266,230,142]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":14,"text":"LEAN EXAMPLE","textPreview":"LEAN EXAMPLE","textChars":12,"textLines":1,"bbox":[566,358,194,30]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":14,"bbox":[806,266,230,142]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":14,"text":"TACTIC STATE","textPreview":"TACTIC STATE","textChars":12,"textLines":1,"bbox":[824,358,194,30]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":14,"bbox":[677,442,230,142]}
+{"kind":"textbox","id":"sh/s72x4nap","slide":14,"text":"SPEAKER NOTES","textPreview":"SPEAKER NOTES","textChars":13,"textLines":1,"bbox":[695,534,194,30]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":14,"text":"Students can distinguish a proof, a sketch with sorry, and a polished explanation.","textPreview":"Students can distinguish a proof, a sketch with sorry, and a polished explanation.","textChars":82,"textLines":1,"bbox":[548,594,570,62]}
+{"kind":"shape","id":"sh/a1gvy90j","slide":14,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":14,"text":"REPO: NASQRET/FALENTY-2026","textPreview":"REPO: NASQRET/FALENTY-2026","textChars":26,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/r65wjudg","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/nyd0z610","slide":14,"name":"","bbox":[92,296,44,44]}
+{"kind":"image","id":"im/udg7adsj","slide":14,"name":"","bbox":[448,402,62,62]}
+{"kind":"image","id":"im/5gbq1ory","slide":14,"name":"","bbox":[634,286,54,54]}
+{"kind":"image","id":"im/cvixczed","slide":14,"name":"","bbox":[892,286,54,54]}
+{"kind":"image","id":"im/nap4r65w","slide":14,"name":"","bbox":[763,462,54,54]}
+{"kind":"notes","id":"nt/25kb6xkf","slide":14,"text":"Pacing: 70 seconds.\nThe local release includes a Lean lab, games, teaching notes, and source decks. In this repository I package two compiling Falenty examples and intentionally exclude the sorry-based Erdős sketch from the verified set."}
+{"kind":"slide","id":"sl/7y1kre1w","slide":15,"title":"ARISTOTLE AND ITS PEERS","textShapes":8}
+{"kind":"shape","id":"sh/90je9cvi","slide":15,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":15,"text":"ARISTOTLE AND ITS PEERS","textPreview":"ARISTOTLE AND ITS PEERS","textChars":23,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":15,"text":"Delegate proof search.\nRetain mathematical responsibility.","textPreview":"Delegate proof search. | Retain mathematical responsibility.","textChars":58,"textLines":2,"bbox":[64,86,900,154]}
+{"kind":"shape","id":"sh/g7adsji5","slide":15,"bbox":[64,292,510,300]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":15,"bbox":[706,292,510,300]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":15,"text":"TOOLS CAN","textPreview":"TOOLS CAN","textChars":9,"textLines":1,"bbox":[156,329,230,32]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":15,"text":"HUMANS MUST","textPreview":"HUMANS MUST","textChars":11,"textLines":1,"bbox":[798,329,310,32]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":15,"text":"• search Lean libraries\n• synthesize proof terms\n• close routine gaps\n• replay at scale","textPreview":"• search Lean libraries | • synthesize proof terms | • close routine gaps | • replay at scale","textChars":87,"textLines":4,"bbox":[96,398,416,154]}
+{"kind":"textbox","id":"sh/cvixczed","slide":15,"text":"• choose the statement\n• inspect assumptions\n• assess novelty\n• own the published claim","textPreview":"• choose the statement | • inspect assumptions | • assess novelty | • own the published claim","textChars":87,"textLines":4,"bbox":[738,398,420,154]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":15,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/54zidony","slide":15,"text":"AI IS A TOOL, NOT AN AUTHOR","textPreview":"AI IS A TOOL, NOT AN AUTHOR","textChars":27,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/0fepkzup","slide":15,"name":"","bbox":[96,325,42,42]}
+{"kind":"image","id":"im/p0bi9s36","slide":15,"name":"","bbox":[738,325,42,42]}
+{"kind":"image","id":"im/idonyd0z","slide":15,"name":"","bbox":[605,404,70,70]}
+{"kind":"notes","id":"nt/7y1kre1w","slide":15,"text":"Pacing: 70 seconds.\nAristotle is prominent because it produces Lean artifacts checked by the kernel. Mention alternatives without turning the slide into a leaderboard. This principle anticipates the Leiden Declaration."}
+{"kind":"slide","id":"sl/8z25kb6x","slide":16,"title":"NATHANSON'S QUESTIONS","textShapes":8}
+{"kind":"shape","id":"sh/epkzupwb","slide":16,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":16,"text":"NATHANSON'S QUESTIONS","textPreview":"NATHANSON'S QUESTIONS","textChars":21,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/wval87ed","slide":16,"text":"A clean example of discovery plus formal verification.","textPreview":"A clean example of discovery plus formal verification.","textChars":54,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/7mp0bi9s","slide":16,"bbox":[64,270,500,330]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":16,"bbox":[716,270,500,330]}
+{"kind":"textbox","id":"sh/7u54zido","slide":16,"text":"MATHEMATICAL RESULT","textPreview":"MATHEMATICAL RESULT","textChars":19,"textLines":1,"bbox":[160,308,160,35]}
+{"kind":"textbox","id":"sh/ed8bat47","slide":16,"text":"EVIDENCE PACKAGE","textPreview":"EVIDENCE PACKAGE","textChars":16,"textLines":1,"bbox":[812,308,180,35]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":16,"text":"Complete classification of product intersection sets in semigroups.\nNew result, not only a formalized old proof.","textPreview":"Complete classification of product intersection sets in semigroups. | New result, not only a formalized old proof.","textChars":112,"textLines":2,"bbox":[96,382,404,150]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":16,"text":"Autonomously discovered and verified in Lean by Aristotle.\nPublic preprint; named human authors own review and exposition.","textPreview":"Autonomously discovered and verified in Lean by Aristotle. | Public preprint; named human authors own review and exposition.","textChars":122,"textLines":2,"bbox":[748,382,412,178]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":16,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":16,"text":"ARXIV:2604.18869","textPreview":"ARXIV:2604.18869","textChars":16,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/9s36hcrm","slide":16,"name":"","bbox":[96,304,46,46]}
+{"kind":"image","id":"im/g7adsji5","slide":16,"name":"","bbox":[748,304,46,46]}
+{"kind":"image","id":"im/nih4byhg","slide":16,"name":"","bbox":[608,405,64,64]}
+{"kind":"notes","id":"nt/8z25kb6x","slide":16,"text":"Pacing: 75 seconds.\nCorrect the common shorthand: the paper answers Nathanson's questions rather than a single named conjecture. Authors: van Doorn, Monticone, Tang. The abstract explicitly records autonomous discovery and Lean verification."}
+{"kind":"slide","id":"sl/54zidony","slide":17,"title":"AUTO-RESEARCH","textShapes":15}
+{"kind":"shape","id":"sh/m94fu18j","slide":17,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":17,"text":"AUTO-RESEARCH","textPreview":"AUTO-RESEARCH","textChars":13,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":17,"text":"Not one brilliant prompt.\nOne controlled state machine.","textPreview":"Not one brilliant prompt. | One controlled state machine.","textChars":55,"textLines":2,"bbox":[64,86,920,150]}
+{"kind":"shape","id":"sh/fil0rqd4","slide":17,"bbox":[64,332,200,204]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":17,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[82,350,30,32]}
+{"kind":"textbox","id":"sh/83itgfml","slide":17,"text":"PLAN","textPreview":"PLAN","textChars":4,"textLines":1,"bbox":[80,448,168,40]}
+{"kind":"shape","id":"sh/mtwra5gb","slide":17,"bbox":[302,332,200,204]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":17,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[320,350,30,32]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":17,"text":"EXECUTE","textPreview":"EXECUTE","textChars":7,"textLines":1,"bbox":[318,448,168,40]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":17,"bbox":[540,332,200,204]}
+{"kind":"textbox","id":"sh/61032lsz","slide":17,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[558,350,30,32]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":17,"text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[556,448,168,40]}
+{"kind":"shape","id":"sh/dg7adsji","slide":17,"bbox":[778,332,200,204]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":17,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[796,350,30,32]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":17,"text":"CRITIQUE","textPreview":"CRITIQUE","textChars":8,"textLines":1,"bbox":[794,448,168,40]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":17,"bbox":[1016,332,200,204]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":17,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1034,350,30,32]}
+{"kind":"textbox","id":"sh/ulwval87","slide":17,"text":"CHECKPOINT","textPreview":"CHECKPOINT","textChars":10,"textLines":1,"bbox":[1032,448,168,40]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":17,"text":"Every cycle must leave a state, a test, and a reason to continue.","textPreview":"Every cycle must leave a state, a test, and a reason to continue.","textChars":65,"textLines":1,"bbox":[190,566,900,68]}
+{"kind":"shape","id":"sh/8nqxs72x","slide":17,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":17,"text":"LOOPS BEAT CHAT TRANSCRIPTS","textPreview":"LOOPS BEAT CHAT TRANSCRIPTS","textChars":27,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/f6dcbulw","slide":17,"name":"","bbox":[136,360,56,56]}
+{"kind":"image","id":"im/mlkjm1cf","slide":17,"name":"","bbox":[266,410,34,34]}
+{"kind":"image","id":"im/xkf6dcbu","slide":17,"name":"","bbox":[374,360,56,56]}
+{"kind":"image","id":"im/4zidonyd","slide":17,"name":"","bbox":[504,410,34,34]}
+{"kind":"image","id":"im/fepkzupw","slide":17,"name":"","bbox":[612,360,56,56]}
+{"kind":"image","id":"im/mtwra5gb","slide":17,"name":"","bbox":[742,410,34,34]}
+{"kind":"image","id":"im/xobm58z2","slide":17,"name":"","bbox":[850,360,56,56]}
+{"kind":"image","id":"im/83itgfml","slide":17,"name":"","bbox":[980,410,34,34]}
+{"kind":"image","id":"im/cfa9w3m9","slide":17,"name":"","bbox":[1088,360,56,56]}
+{"kind":"notes","id":"nt/54zidony","slide":17,"text":"Pacing: 75 seconds.\nDefine the operational unit: files, scripts, exact tests, status JSON, checkpoints, and explicit failure states. Context windows help, but durable external state is what makes a research run auditable and resumable."}
+{"kind":"slide","id":"sl/m58z25kb","slide":18,"title":"COMPUTE CHANGES THE METHOD","textShapes":15}
+{"kind":"shape","id":"sh/mhk3q5o7","slide":18,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":18,"text":"COMPUTE CHANGES THE METHOD","textPreview":"COMPUTE CHANGES THE METHOD","textChars":26,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":18,"text":"Inference-time compute is now a mathematical resource.","textPreview":"Inference-time compute is now a mathematical resource.","textChars":54,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/bq1oryts","slide":18,"bbox":[64,286,180,120]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":18,"text":"1×","textPreview":"1×","textChars":2,"textLines":1,"bbox":[80,301,72,28]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":18,"text":"single attempt\nfragile insight","textPreview":"single attempt | fragile insight","textChars":30,"textLines":2,"bbox":[80,334,150,52]}
+{"kind":"shape","id":"sh/4byhgn29","slide":18,"bbox":[240,330,38,4]}
+{"kind":"shape","id":"sh/bm58z25k","slide":18,"bbox":[240,402,210,120]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":18,"text":"10×","textPreview":"10×","textChars":3,"textLines":1,"bbox":[256,417,72,28]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":18,"text":"variants\ncritic passes","textPreview":"variants | critic passes","textChars":22,"textLines":2,"bbox":[256,450,180,52]}
+{"kind":"shape","id":"sh/1032lszq","slide":18,"bbox":[446,446,38,4]}
+{"kind":"shape","id":"sh/u9knih4b","slide":18,"bbox":[446,286,230,120]}
+{"kind":"textbox","id":"sh/judg7ads","slide":18,"text":"100×","textPreview":"100×","textChars":4,"textLines":1,"bbox":[462,301,72,28]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":18,"text":"tool loops\nsearch trees","textPreview":"tool loops | search trees","textChars":23,"textLines":2,"bbox":[462,334,200,52]}
+{"kind":"shape","id":"sh/1orytsvu","slide":18,"bbox":[672,330,38,4]}
+{"kind":"shape","id":"sh/u18jqh0f","slide":18,"bbox":[672,402,255,120]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":18,"text":"1,000×","textPreview":"1,000×","textChars":6,"textLines":1,"bbox":[688,417,72,28]}
+{"kind":"textbox","id":"sh/cvixczed","slide":18,"text":"agents\nexternal memory","textPreview":"agents | external memory","textChars":22,"textLines":2,"bbox":[688,450,225,52]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":18,"bbox":[923,446,38,4]}
+{"kind":"shape","id":"sh/90je9cvi","slide":18,"bbox":[923,286,285,120]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":18,"text":"?","textPreview":"?","textChars":1,"textLines":1,"bbox":[939,301,72,28]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":18,"text":"unequal access\nunclear attribution","textPreview":"unequal access | unclear attribution","textChars":34,"textLines":2,"bbox":[939,334,255,52]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":18,"text":"Report budgets, retries, tools, and human interventions—not only the winner.","textPreview":"Report budgets, retries, tools, and human interventions—not only the winner.","textChars":76,"textLines":1,"bbox":[64,542,1050,68]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":18,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":18,"text":"COMPUTE IS PART OF PROVENANCE","textPreview":"COMPUTE IS PART OF PROVENANCE","textChars":29,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"notes","id":"nt/m58z25kb","slide":18,"text":"Pacing: 75 seconds.\nFrontierMath Tier 4 allows up to one million tokens and Python tools. Agent papers increasingly compare systems at different test-time compute. A score without a budget is not a scientific comparison."}
+{"kind":"slide","id":"sl/bat47y1k","slide":19,"title":"CASE STUDY: ECDSA.FAIL","textShapes":8}
+{"kind":"shape","id":"sh/1gvy90je","slide":19,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":19,"text":"CASE STUDY: ECDSA.FAIL","textPreview":"CASE STUDY: ECDSA.FAIL","textChars":22,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":19,"text":"An agent improved a real benchmark through verified engineering.","textPreview":"An agent improved a real benchmark through verified engineering.","textChars":64,"textLines":1,"bbox":[64,86,1120,142]}
+{"kind":"shape","id":"sh/87ed8bat","slide":19,"bbox":[64,244,356,370]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":19,"text":"PROMOTED RECORD · 14 JUNE","textPreview":"PROMOTED RECORD · 14 JUNE","textChars":25,"textLines":1,"bbox":[92,278,294,52]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":19,"text":"1.678B","textPreview":"1.678B","textChars":6,"textLines":1,"bbox":[92,360,290,46]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":19,"text":"Q×T score\n1,170 peak qubits\n1,434,070 Toffoli\n9,024 trusted shots","textPreview":"Q×T score | 1,170 peak qubits | 1,434,070 Toffoli | 9,024 trusted shots","textChars":65,"textLines":4,"bbox":[92,432,286,128]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":19,"text":"The 84.3% reduction is reproducible challenge evidence—not a proof of all-input correctness.","textPreview":"The 84.3% reduction is reproducible challenge evidence—not a proof of all-input correctness.","textChars":92,"textLines":1,"bbox":[468,614,748,50]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":19,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":19,"text":"SOLVER: NASQRET · ATTRIBUTION: GPT-CODEX","textPreview":"SOLVER: NASQRET · ATTRIBUTION: GPT-CODEX","textChars":40,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/9s36hcrm","slide":19,"name":"","alt":"Evidence image for slide 19","bbox":[543.54,244,596.93,370]}
+{"kind":"notes","id":"nt/bat47y1k","slide":19,"text":"Pacing: 90 seconds.\nBe precise about scope. This is reversible secp256k1 point addition under the challenge evaluator, not a break of ECDSA and not a complete quantum attack. The trusted registry records zero classical, phase, and ancilla failures over 9,024 shots."}
+{"kind":"slide","id":"sl/j2t83itg","slide":20,"title":"CASE STUDY: SAIR.IGP24","textShapes":11}
+{"kind":"shape","id":"sh/t83itgfm","slide":20,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":20,"text":"CASE STUDY: SAIR.IGP24","textPreview":"CASE STUDY: SAIR.IGP24","textChars":22,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":20,"text":"Campaign logic can outperform one-shot problem solving.","textPreview":"Campaign logic can outperform one-shot problem solving.","textChars":55,"textLines":1,"bbox":[64,86,930,142]}
+{"kind":"shape","id":"sh/4byhgn29","slide":20,"bbox":[64,282,328,296]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":20,"text":"PILOT","textPreview":"PILOT","textChars":5,"textLines":1,"bbox":[158,320,202,32]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":20,"text":"5 accepted pairs\nmanual calibration","textPreview":"5 accepted pairs | manual calibration","textChars":35,"textLines":2,"bbox":[92,394,270,122]}
+{"kind":"shape","id":"sh/47y1kre1","slide":20,"bbox":[456,302,328,296]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":20,"text":"AUTONOMOUS","textPreview":"AUTONOMOUS","textChars":10,"textLines":1,"bbox":[550,340,202,32]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":20,"text":"18 accepted pairs\nstateful search","textPreview":"18 accepted pairs | stateful search","textChars":33,"textLines":2,"bbox":[484,414,270,122]}
+{"kind":"shape","id":"sh/rytsvu9k","slide":20,"bbox":[848,322,328,296]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":20,"text":"FOLLOW-UP","textPreview":"FOLLOW-UP","textChars":9,"textLines":1,"bbox":[942,360,202,32]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":20,"text":"28 accepted pairs\nexact Magma checks","textPreview":"28 accepted pairs | exact Magma checks","textChars":36,"textLines":2,"bbox":[876,434,270,122]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":20,"text":"51 accepted distinct pairs in the 17 June repository snapshot.","textPreview":"51 accepted distinct pairs in the 17 June repository snapshot.","textChars":62,"textLines":1,"bbox":[160,604,960,58]}
+{"kind":"shape","id":"sh/y1kre1w7","slide":20,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":20,"text":"PRIVATE REPO · ONGOING COMPETITION","textPreview":"PRIVATE REPO · ONGOING COMPETITION","textChars":34,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":20,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/7ed8bat4","slide":20,"name":"","bbox":[92,314,48,48]}
+{"kind":"image","id":"im/itgfmlkj","slide":20,"name":"","bbox":[484,334,48,48]}
+{"kind":"image","id":"im/pkzupwb2","slide":20,"name":"","bbox":[876,354,48,48]}
+{"kind":"notes","id":"nt/j2t83itg","slide":20,"text":"Pacing: 80 seconds.\nUse only high-level totals because the competition remains open until 15 August and the repository is private. The public lesson is the protocol: generation, exact Magma verification, live-open checks, and deduplication."}
+{"kind":"slide","id":"sl/mhk3q5o7","slide":21,"title":"CASE STUDY: ORPHIC SYMMETRY","textShapes":8}
+{"kind":"shape","id":"sh/z25kb6xk","slide":21,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":21,"text":"CASE STUDY: ORPHIC SYMMETRY","textPreview":"CASE STUDY: ORPHIC SYMMETRY","textChars":27,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":21,"text":"Finding the counterexample was easier than finding the right theorem.","textPreview":"Finding the counterexample was easier than finding the right theorem.","textChars":69,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/6tovahoz","slide":21,"bbox":[64,270,500,330]}
+{"kind":"shape","id":"sh/vahoza1g","slide":21,"bbox":[716,270,500,330]}
+{"kind":"textbox","id":"sh/61032lsz","slide":21,"text":"MODEL CONTRIBUTION","textPreview":"MODEL CONTRIBUTION","textChars":18,"textLines":1,"bbox":[160,308,160,35]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":21,"text":"MATHEMATICIAN CONTRIBUTION","textPreview":"MATHEMATICIAN CONTRIBUTION","textChars":26,"textLines":1,"bbox":[812,308,180,35]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":21,"text":"• diagonal-grid counterexample\n• fast computational exploration\n• exposed a false formulation\n• generated local evidence","textPreview":"• diagonal-grid counterexample | • fast computational exploration | • exposed a false formulation | • generated local evidence","textChars":120,"textLines":4,"bbox":[96,382,404,150]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":21,"text":"• identify the structural defect\n• refine ORD → MEOD → EORD\n• select the durable statement\n• explain why it works","textPreview":"• identify the structural defect | • refine ORD → MEOD → EORD | • select the durable statement | • explain why it works","textChars":113,"textLines":4,"bbox":[748,382,412,178]}
+{"kind":"shape","id":"sh/4nap4r65","slide":21,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":21,"text":"COUNTEREXAMPLES ARE SEARCH; THEOREMS NEED STRUCTURE","textPreview":"COUNTEREXAMPLES ARE SEARCH; THEOREMS NEED STRUCTURE","textChars":51,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":21,"text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/il0rqd4v","slide":21,"name":"","bbox":[96,304,46,46]}
+{"kind":"image","id":"im/b6xkf6dc","slide":21,"name":"","bbox":[748,304,46,46]}
+{"kind":"image","id":"im/032lszqt","slide":21,"name":"","bbox":[608,405,64,64]}
+{"kind":"notes","id":"nt/mhk3q5o7","slide":21,"text":"Pacing: 75 seconds.\nSource: github.com/nasqret/orphic-symmetry-talk-mim. This is a compact example of my main criticism: current models are strong at local search and falsification, but structural repair remains a human-led act of representation and taste."}
+{"kind":"slide","id":"sl/5wjudg7a","slide":22,"title":"CASE STUDY: QUARTIC LINES","textShapes":8}
+{"kind":"shape","id":"sh/yxobm58z","slide":22,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":22,"text":"CASE STUDY: QUARTIC LINES","textPreview":"CASE STUDY: QUARTIC LINES","textChars":25,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":22,"text":"A GPT Pro + Codex campaign broke the conjectural slope bound.","textPreview":"A GPT Pro + Codex campaign broke the conjectural slope bound.","textChars":61,"textLines":1,"bbox":[64,86,1120,142]}
+{"kind":"shape","id":"sh/r65wjudg","slide":22,"bbox":[64,244,356,370]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":22,"text":"VENIANI-64 · EXACT CHAR 0","textPreview":"VENIANI-64 · EXACT CHAR 0","textChars":25,"textLines":1,"bbox":[92,278,294,52]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":22,"text":"14/5","textPreview":"14/5","textChars":4,"textLines":1,"bbox":[92,360,290,46]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":22,"text":"conjectural bound: 8/3\nprofile: (24,0,32,0)\nc̄₁²=112, c̄₂=40\nG=208","textPreview":"conjectural bound: 8/3 | profile: (24,0,32,0) | c̄₁²=112, c̄₂=40 | G=208","textChars":66,"textLines":4,"bbox":[92,432,286,128]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":22,"text":"Finite-field discovery; exact QQbar reconstruction; independent SageMath and Magma certificates.","textPreview":"Finite-field discovery; exact QQbar reconstruction; independent SageMath and Magma certificates.","textChars":96,"textLines":1,"bbox":[468,614,748,50]}
+{"kind":"shape","id":"sh/wb2hwfyx","slide":22,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/lwval87e","slide":22,"text":"WITH PIOTR POKORA · MODEL LABEL IS PROJECT-REPORTED","textPreview":"WITH PIOTR POKORA · MODEL LABEL IS PROJECT-REPORTED","textChars":51,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":22,"text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/oza1gvy9","slide":22,"name":"","alt":"Evidence image for slide 22","bbox":[543.54,244,596.93,370]}
+{"kind":"notes","id":"nt/5wjudg7a","slide":22,"text":"Pacing: 105 seconds.\nThis is the strongest personal example. The equation is x0^4 − x0 x1^3 − x2^4 + x2 x3^3 = 0. The project records two 24-line subconfigurations. The user identifies the run as GPT-5.6; there is no public OpenAI release page for that label, so the deck treats it as project-reported rather than public product metadata."}
+{"kind":"slide","id":"sl/crmhk3q5","slide":23,"title":"CASE STUDY: QUADRICS","textShapes":8}
+{"kind":"shape","id":"sh/m1cfa9w3","slide":23,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":23,"text":"CASE STUDY: QUADRICS","textPreview":"CASE STUDY: QUADRICS","textChars":20,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":23,"text":"Computation can discover the route.\nThe paper can still end computer-free.","textPreview":"Computation can discover the route. | The paper can still end computer-free.","textChars":74,"textLines":2,"bbox":[64,86,900,154]}
+{"kind":"shape","id":"sh/bat47y1k","slide":23,"bbox":[64,292,510,300]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":23,"bbox":[706,292,510,300]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":23,"text":"SEARCH PHASE","textPreview":"SEARCH PHASE","textChars":12,"textLines":1,"bbox":[156,329,230,32]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":23,"text":"EXPOSITION PHASE","textPreview":"EXPOSITION PHASE","textChars":16,"textLines":1,"bbox":[798,329,310,32]}
+{"kind":"textbox","id":"sh/0z61032l","slide":23,"text":"Gröbner bases\nexact reconstruction\n800 conics\nmachine-audited cases","textPreview":"Gröbner bases | exact reconstruction | 800 conics | machine-audited cases","textChars":67,"textLines":4,"bbox":[96,398,416,154]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":23,"text":"human lemma extraction\nstructural compression\ncomputer-free proof\nindependent reading","textPreview":"human lemma extraction | structural compression | computer-free proof | independent reading","textChars":85,"textLines":4,"bbox":[738,398,420,154]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":23,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":23,"text":"COMPUTATION AS SCAFFOLDING, NOT A PERMANENT CRUTCH","textPreview":"COMPUTATION AS SCAFFOLDING, NOT A PERMANENT CRUTCH","textChars":50,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":23,"text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/xs72x4na","slide":23,"name":"","bbox":[96,325,42,42]}
+{"kind":"image","id":"im/87ed8bat","slide":23,"name":"","bbox":[738,325,42,42]}
+{"kind":"image","id":"im/fyxobm58","slide":23,"name":"","bbox":[605,404,70,70]}
+{"kind":"notes","id":"nt/crmhk3q5","slide":23,"text":"Pacing: 75 seconds.\nSource: github.com/nasqret/quadrics. This is a useful answer to the false dichotomy 'computer proof or human proof': tool-heavy discovery can be followed by a conceptually cleaner argument."}
+{"kind":"slide","id":"sl/bq1oryts","slide":24,"title":"A ROADMAP FROM AUGUST 2025","textShapes":8}
+{"kind":"shape","id":"sh/9s36hcrm","slide":24,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":24,"text":"A ROADMAP FROM AUGUST 2025","textPreview":"A ROADMAP FROM AUGUST 2025","textChars":26,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":24,"text":"The amplified human arrived before the superhuman mathematician.","textPreview":"The amplified human arrived before the superhuman mathematician.","textChars":64,"textLines":1,"bbox":[64,86,1120,142]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":24,"bbox":[64,244,356,370]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":24,"text":"NATURE PHYSICS","textPreview":"NATURE PHYSICS","textChars":14,"textLines":1,"bbox":[92,278,294,52]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":24,"text":"2025","textPreview":"2025","textChars":4,"textLines":1,"bbox":[92,360,290,46]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":24,"text":"Naskręcki + Ono\nmathematical discovery\nin the age of AI","textPreview":"Naskręcki + Ono | mathematical discovery | in the age of AI","textChars":55,"textLines":3,"bbox":[92,432,286,128]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":24,"text":"The 2026 evidence fills the right-hand workflow; the final arrow still points to the future.","textPreview":"The 2026 evidence fills the right-hand workflow; the final arrow still points to the future.","textChars":92,"textLines":1,"bbox":[468,614,748,50]}
+{"kind":"shape","id":"sh/tovahoza","slide":24,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/032lszqt","slide":24,"text":"DOI:10.1038/S41567-025-03042-0","textPreview":"DOI:10.1038/S41567-025-03042-0","textChars":30,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":24,"text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/lc7u54zi","slide":24,"name":"","alt":"Evidence image for slide 24","bbox":[543.54,244,596.93,370]}
+{"kind":"notes","id":"nt/bq1oryts","slide":24,"text":"Pacing: 85 seconds.\nReproduce Figure 1 from my Nature Physics paper with Ken Ono. The figure distinguishes machine-augmented discovery from a hypothetical superhuman mathematician. The intervening months validate the workflow more than the endpoint."}
+{"kind":"slide","id":"sl/61032lsz","slide":25,"title":"ALETHEIA + FIRSTPROOF","textShapes":11}
+{"kind":"shape","id":"sh/byhgn29g","slide":25,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":25,"text":"ALETHEIA + FIRSTPROOF","textPreview":"ALETHEIA + FIRSTPROOF","textChars":21,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":25,"text":"A strong result because the failures and outputs are inspectable.","textPreview":"A strong result because the failures and outputs are inspectable.","textChars":65,"textLines":1,"bbox":[64,86,930,142]}
+{"kind":"shape","id":"sh/il0rqd4v","slide":25,"bbox":[64,282,328,296]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":25,"text":"RESULT","textPreview":"RESULT","textChars":6,"textLines":1,"bbox":[158,320,202,32]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":25,"text":"6/10 by majority expert assessment\nProblem 8 not unanimous","textPreview":"6/10 by majority expert assessment | Problem 8 not unanimous","textChars":58,"textLines":2,"bbox":[92,394,270,122]}
+{"kind":"shape","id":"sh/ixczed8v","slide":25,"bbox":[456,302,328,296]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":25,"text":"PROTOCOL","textPreview":"PROTOCOL","textChars":8,"textLines":1,"bbox":[550,340,202,32]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":25,"text":"10 unpublished research lemmas\nhuman solutions withheld\nraw prompts and outputs released","textPreview":"10 unpublished research lemmas | human solutions withheld | raw prompts and outputs released","textChars":88,"textLines":3,"bbox":[484,414,270,122]}
+{"kind":"shape","id":"sh/90je9cvi","slide":25,"bbox":[848,322,328,296]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":25,"text":"LIMIT","textPreview":"LIMIT","textChars":5,"textLines":1,"bbox":[942,360,202,32]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":25,"text":"small sample\nbest-of-two attempts\nhuman grading remains essential","textPreview":"small sample | best-of-two attempts | human grading remains essential","textChars":65,"textLines":3,"bbox":[876,434,270,122]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":25,"text":"The important object is the disclosed experiment, not the headline percentage.","textPreview":"The important object is the disclosed experiment, not the headline percentage.","textChars":78,"textLines":1,"bbox":[160,604,960,58]}
+{"kind":"shape","id":"sh/g7adsji5","slide":25,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":25,"text":"ARXIV:2602.21201","textPreview":"ARXIV:2602.21201","textChars":16,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":25,"text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/p8nqxs72","slide":25,"name":"","bbox":[92,314,48,48]}
+{"kind":"image","id":"im/0nuxc3yl","slide":25,"name":"","bbox":[484,334,48,48]}
+{"kind":"image","id":"im/72x4nap4","slide":25,"name":"","bbox":[876,354,48,48]}
+{"kind":"notes","id":"nt/61032lsz","slide":25,"text":"Pacing: 75 seconds.\nAletheia iteratively generates, verifies, and revises. The paper reports 6/10 according to majority expert assessments and explicitly notes disagreement on P8. Raw prompts and outputs are in google-deepmind/superhuman."}
+{"kind":"slide","id":"sl/psfil0rq","slide":26,"title":"AI CO-MATHEMATICIAN","textShapes":11}
+{"kind":"shape","id":"sh/1gvy90je","slide":26,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":26,"text":"AI CO-MATHEMATICIAN","textPreview":"AI CO-MATHEMATICIAN","textChars":19,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":26,"text":"The product is a workbench, not an oracle.","textPreview":"The product is a workbench, not an oracle.","textChars":42,"textLines":1,"bbox":[64,86,930,142]}
+{"kind":"shape","id":"sh/87ed8bat","slide":26,"bbox":[64,282,328,296]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":26,"text":"WORKSPACE","textPreview":"WORKSPACE","textChars":9,"textLines":1,"bbox":[158,320,202,32]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":26,"text":"stateful, asynchronous\ntracks failed hypotheses","textPreview":"stateful, asynchronous | tracks failed hypotheses","textChars":47,"textLines":2,"bbox":[92,394,270,122]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":26,"bbox":[456,302,328,296]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":26,"text":"TOOLS","textPreview":"TOOLS","textChars":5,"textLines":1,"bbox":[550,340,202,32]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":26,"text":"literature + computation\nproof + theory exploration","textPreview":"literature + computation | proof + theory exploration","textChars":51,"textLines":2,"bbox":[484,414,270,122]}
+{"kind":"shape","id":"sh/jqh0fepk","slide":26,"bbox":[848,322,328,296]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":26,"text":"HUMAN LOOP","textPreview":"HUMAN LOOP","textChars":10,"textLines":1,"bbox":[942,360,202,32]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":26,"text":"intent refinement\nartifact review\nuncertainty management","textPreview":"intent refinement | artifact review | uncertainty management","textChars":56,"textLines":3,"bbox":[876,434,270,122]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":26,"text":"This architecture is closer to research practice than single-turn evaluation.","textPreview":"This architecture is closer to research practice than single-turn evaluation.","textChars":77,"textLines":1,"bbox":[160,604,960,58]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":26,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":26,"text":"ARXIV:2605.06651","textPreview":"ARXIV:2605.06651","textChars":16,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":26,"text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/ji5snelo","slide":26,"name":"","bbox":[92,314,48,48]}
+{"kind":"image","id":"im/uxc3ylc7","slide":26,"name":"","bbox":[484,334,48,48]}
+{"kind":"image","id":"im/1kre1w7m","slide":26,"name":"","bbox":[876,354,48,48]}
+{"kind":"notes","id":"nt/psfil0rq","slide":26,"text":"Pacing: 75 seconds.\nThe paper also reported 23/48 on FrontierMath Tier 4 v1. That score is now superseded by the v2 benchmark audit, so discuss the architecture separately from the old leaderboard claim."}
+{"kind":"slide","id":"sl/gfmlkjm1","slide":27,"title":"FRONTIERMATH TIER 4","textShapes":17}
+{"kind":"shape","id":"sh/fyxobm58","slide":27,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":27,"text":"FRONTIERMATH TIER 4","textPreview":"FRONTIERMATH TIER 4","textChars":19,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":27,"text":"The benchmark correction is itself the most important result.","textPreview":"The benchmark correction is itself the most important result.","textChars":61,"textLines":1,"bbox":[64,86,850,150]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":27,"bbox":[64,316,250,230]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":27,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[262,340,28,28]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":27,"text":"V1 CLAIMS","textPreview":"V1 CLAIMS","textChars":9,"textLines":1,"bbox":[90,410,198,34]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":27,"text":"model scores on 48 private problems","textPreview":"model scores on 48 private problems","textChars":35,"textLines":1,"bbox":[90,464,198,55]}
+{"kind":"shape","id":"sh/je9cvixc","slide":27,"bbox":[356,298,250,230]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":27,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[554,322,28,28]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":27,"text":"AUDIT","textPreview":"AUDIT","textChars":5,"textLines":1,"bbox":[382,392,198,34]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":27,"text":"AI review flags fatal issues","textPreview":"AI review flags fatal issues","textChars":28,"textLines":1,"bbox":[382,446,198,55]}
+{"kind":"shape","id":"sh/r65wjudg","slide":27,"bbox":[648,280,250,230]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":27,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[846,304,28,28]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":27,"text":"V2 · 12 JUNE","textPreview":"V2 · 12 JUNE","textChars":12,"textLines":1,"bbox":[674,374,198,34]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":27,"text":"12 Tier-4 problems corrected; 7 removed","textPreview":"12 Tier-4 problems corrected; 7 removed","textChars":39,"textLines":1,"bbox":[674,428,198,55]}
+{"kind":"shape","id":"sh/yd0z6103","slide":27,"bbox":[940,262,250,230]}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":27,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1138,286,28,28]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":27,"text":"NOW","textPreview":"NOW","textChars":3,"textLines":1,"bbox":[966,356,198,34]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":27,"text":"43 Tier-4 problems; corrected scores pending","textPreview":"43 Tier-4 problems; corrected scores pending","textChars":44,"textLines":1,"bbox":[966,410,198,55]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":27,"text":"42% of all FrontierMath problems were addressed in the update.","textPreview":"42% of all FrontierMath problems were addressed in the update.","textChars":62,"textLines":1,"bbox":[132,582,1016,64]}
+{"kind":"shape","id":"sh/z61032ls","slide":27,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":27,"text":"VERSION THE BENCHMARK, NOT ONLY THE MODEL","textPreview":"VERSION THE BENCHMARK, NOT ONLY THE MODEL","textChars":41,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":27,"text":"27","textPreview":"27","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/1gvy90je","slide":27,"name":"","bbox":[90,342,44,44]}
+{"kind":"image","id":"im/8z25kb6x","slide":27,"name":"","bbox":[382,324,44,44]}
+{"kind":"image","id":"im/2hwfyxob","slide":27,"name":"","bbox":[674,306,44,44]}
+{"kind":"image","id":"im/r2p8nqxs","slide":27,"name":"","bbox":[966,288,44,44]}
+{"kind":"notes","id":"nt/gfmlkjm1","slide":27,"text":"Pacing: 95 seconds.\nEpoch says v2 corrected 123 Tier 1–3 problems and 12 Tier-4 problems, and removed 5 plus 7 respectively. The full dataset now has 338 problems, with 43 in Tier 4. Do not compare old percentages to v2 as if the task set were unchanged."}
+{"kind":"slide","id":"sl/vahoza1g","slide":28,"title":"MY PRIVATE TIER-4 CASE","textShapes":8}
+{"kind":"shape","id":"sh/94fu18jq","slide":28,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/2hwfyxob","slide":28,"text":"MY PRIVATE TIER-4 CASE","textPreview":"MY PRIVATE TIER-4 CASE","textChars":22,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":28,"text":"A useful case study.\nNot a public benchmark datapoint.","textPreview":"A useful case study. | Not a public benchmark datapoint.","textChars":54,"textLines":2,"bbox":[64,86,900,154]}
+{"kind":"shape","id":"sh/gvy90je9","slide":28,"bbox":[64,292,510,300]}
+{"kind":"shape","id":"sh/9gr2p8nq","slide":28,"bbox":[706,292,510,300]}
+{"kind":"textbox","id":"sh/kzupwb2h","slide":28,"text":"WHAT I OBSERVED","textPreview":"WHAT I OBSERVED","textChars":15,"textLines":1,"bbox":[156,329,230,32]}
+{"kind":"textbox","id":"sh/9knih4by","slide":28,"text":"WHAT I CANNOT SHOW","textPreview":"WHAT I CANNOT SHOW","textChars":18,"textLines":1,"bbox":[798,329,310,32]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":28,"text":"sustained technical attempt\nlocal tools + calculations\ncandidate solution produced\nstrategy weakness exposed","textPreview":"sustained technical attempt | local tools + calculations | candidate solution produced | strategy weakness exposed","textChars":108,"textLines":4,"bbox":[96,398,416,154]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":28,"text":"private task\nheld-out reference\nno complete evaluation trace\nconfidential benchmark details","textPreview":"private task | held-out reference | no complete evaluation trace | confidential benchmark details","textChars":91,"textLines":4,"bbox":[738,398,420,154]}
+{"kind":"shape","id":"sh/ih4byhgn","slide":28,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":28,"text":"FIRST-PERSON REPORT · DETAILS WITHHELD","textPreview":"FIRST-PERSON REPORT · DETAILS WITHHELD","textChars":38,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/0z61032l","slide":28,"text":"28","textPreview":"28","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/crmhk3q5","slide":28,"name":"","bbox":[96,325,42,42]}
+{"kind":"image","id":"im/1cfa9w3m","slide":28,"name":"","bbox":[738,325,42,42]}
+{"kind":"image","id":"im/qh0fepkz","slide":28,"name":"","bbox":[605,404,70,70]}
+{"kind":"notes","id":"nt/vahoza1g","slide":28,"text":"Pacing: 80 seconds.\nThis slide uses my retained project memory and session record, not a public source. The honest message is methodological: long context and tools made the attempt qualitatively different, but privacy prevents turning it into a reproducible public claim."}
+{"kind":"slide","id":"sl/a1gvy90j","slide":29,"title":"BENCHMARK GOVERNANCE","textShapes":18}
+{"kind":"shape","id":"sh/ji5snelo","slide":29,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":29,"text":"BENCHMARK GOVERNANCE","textPreview":"BENCHMARK GOVERNANCE","textChars":20,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":29,"text":"A score is a claim about a protocol, not intelligence in general.","textPreview":"A score is a claim about a protocol, not intelligence in general.","textChars":65,"textLines":1,"bbox":[64,86,990,142]}
+{"kind":"shape","id":"sh/ulwval87","slide":29,"bbox":[64,274,548,84]}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":29,"text":"GREEN","textPreview":"GREEN","textChars":5,"textLines":1,"bbox":[142,290,148,28]}
+{"kind":"textbox","id":"sh/1cfa9w3m","slide":29,"text":"versioned tasks\nexpert re-review","textPreview":"versioned tasks | expert re-review","textChars":32,"textLines":2,"bbox":[302,286,280,54]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":29,"bbox":[64,378,548,84]}
+{"kind":"textbox","id":"sh/byhgn29g","slide":29,"text":"YELLOW","textPreview":"YELLOW","textChars":6,"textLines":1,"bbox":[142,394,148,28]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":29,"text":"private data\nunequal compute","textPreview":"private data | unequal compute","textChars":28,"textLines":2,"bbox":[302,390,280,54]}
+{"kind":"shape","id":"sh/t47y1kre","slide":29,"bbox":[64,482,548,84]}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":29,"text":"RED","textPreview":"RED","textChars":3,"textLines":1,"bbox":[142,498,148,28]}
+{"kind":"textbox","id":"sh/il0rqd4v","slide":29,"text":"moving graders\nundisclosed retries","textPreview":"moving graders | undisclosed retries","textChars":34,"textLines":2,"bbox":[302,494,280,54]}
+{"kind":"shape","id":"sh/tcj6tova","slide":29,"bbox":[694,274,522,322]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":29,"text":"MINIMUM REPORT","textPreview":"MINIMUM REPORT","textChars":14,"textLines":1,"bbox":[730,308,430,46]}
+{"kind":"textbox","id":"sh/bi9s36hc","slide":29,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[752,382,42,38]}
+{"kind":"textbox","id":"sh/ixczed8v","slide":29,"text":"task + version","textPreview":"task + version","textChars":14,"textLines":1,"bbox":[812,385,330,34]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":29,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[752,436,42,38]}
+{"kind":"textbox","id":"sh/z61032ls","slide":29,"text":"budget + tools","textPreview":"budget + tools","textChars":14,"textLines":1,"bbox":[812,439,330,34]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":29,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[752,490,42,38]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":29,"text":"errors + exclusions","textPreview":"errors + exclusions","textChars":19,"textLines":1,"bbox":[812,493,330,34]}
+{"kind":"textbox","id":"sh/a9w3m94f","slide":29,"text":"Then publish raw traces where confidentiality permits.","textPreview":"Then publish raw traces where confidentiality permits.","textChars":54,"textLines":1,"bbox":[730,550,450,24]}
+{"kind":"shape","id":"sh/zupwb2hw","slide":29,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":29,"text":"EVALUATION IS INFRASTRUCTURE","textPreview":"EVALUATION IS INFRASTRUCTURE","textChars":28,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":29,"text":"29","textPreview":"29","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/dg7adsji","slide":29,"name":"","bbox":[84,296,40,40]}
+{"kind":"image","id":"im/ovahoza1","slide":29,"name":"","bbox":[84,400,40,40]}
+{"kind":"image","id":"im/yxobm58z","slide":29,"name":"","bbox":[84,504,40,40]}
+{"kind":"notes","id":"nt/a1gvy90j","slide":29,"text":"Pacing: 75 seconds.\nA benchmark can still be valuable after correction if it records its failure transparently. The governance failure would be hiding the correction or continuing to quote obsolete scores."}
+{"kind":"slide","id":"sl/kre1w7mp","slide":30,"title":"AGENTIC TEACHING","textShapes":11}
+{"kind":"shape","id":"sh/ap4r65wj","slide":30,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/hgn29gr2","slide":30,"text":"AGENTIC TEACHING","textPreview":"AGENTIC TEACHING","textChars":16,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/svu9knih","slide":30,"text":"The least speculative success is building rich learning environments.","textPreview":"The least speculative success is building rich learning environments.","textChars":69,"textLines":1,"bbox":[64,86,930,142]}
+{"kind":"shape","id":"sh/zidonyd0","slide":30,"bbox":[64,282,328,296]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":30,"text":"CRYPTO","textPreview":"CRYPTO","textChars":6,"textLines":1,"bbox":[158,320,202,32]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":30,"text":"45 chapters\nslides + applets\nproofs + code","textPreview":"45 chapters | slides + applets | proofs + code","textChars":42,"textLines":3,"bbox":[92,394,270,122]}
+{"kind":"shape","id":"sh/3m94fu18","slide":30,"bbox":[456,302,328,296]}
+{"kind":"textbox","id":"sh/kf6dcbul","slide":30,"text":"NEURAL NETS","textPreview":"NEURAL NETS","textChars":11,"textLines":1,"bbox":[550,340,202,32]}
+{"kind":"textbox","id":"sh/d0z61032","slide":30,"text":"42 chapters\n329 slides\n22 applets","textPreview":"42 chapters | 329 slides | 22 applets","textChars":33,"textLines":3,"bbox":[484,414,270,122]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":30,"bbox":[848,322,328,296]}
+{"kind":"textbox","id":"sh/knih4byh","slide":30,"text":"CODEX WORKSHOP","textPreview":"CODEX WORKSHOP","textChars":14,"textLines":1,"bbox":[942,360,202,32]}
+{"kind":"textbox","id":"sh/d8bat47y","slide":30,"text":"memory + plans\nGit workflows\nresearch artifacts","textPreview":"memory + plans | Git workflows | research artifacts","textChars":47,"textLines":3,"bbox":[876,434,270,122]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":30,"text":"Agentic tools make coherent course ecosystems feasible for one instructor.","textPreview":"Agentic tools make coherent course ecosystems feasible for one instructor.","textChars":74,"textLines":1,"bbox":[160,604,960,58]}
+{"kind":"shape","id":"sh/v6psfil0","slide":30,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":30,"text":"BNASKRECKI.FACULTY.WMI.AMU.EDU.PL","textPreview":"BNASKRECKI.FACULTY.WMI.AMU.EDU.PL","textChars":33,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":30,"text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/2t83itgf","slide":30,"name":"","bbox":[92,314,48,48]}
+{"kind":"image","id":"im/re1w7mp0","slide":30,"name":"","bbox":[484,334,48,48]}
+{"kind":"image","id":"im/kzupwb2h","slide":30,"name":"","bbox":[876,354,48,48]}
+{"kind":"notes","id":"nt/kre1w7mp","slide":30,"text":"Pacing: 80 seconds.\nThese numbers come from the live course landing pages. The cryptanalysis course advertises 45 chapters in 15 parts; the neural-network course advertises 42 chapters, 329 slides, and 22 applets. Treat this as a production case, not a controlled learning-outcomes study."}
+{"kind":"slide","id":"sl/h0fepkzu","slide":31,"title":"25 HOURS WITH UNIVERSITY STAFF","textShapes":10}
+{"kind":"shape","id":"sh/9s36hcrm","slide":31,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":31,"text":"25 HOURS WITH UNIVERSITY STAFF","textPreview":"25 HOURS WITH UNIVERSITY STAFF","textChars":30,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":31,"text":"One research brief. A durable project, not a disposable answer.","textPreview":"One research brief. A durable project, not a disposable answer.","textChars":63,"textLines":1,"bbox":[64,86,920,142]}
+{"kind":"shape","id":"sh/gfmlkjm1","slide":31,"bbox":[64,268,348,334]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":31,"text":"PARTICIPANT BRIEF","textPreview":"PARTICIPANT BRIEF","textChars":17,"textLines":1,"bbox":[152,300,180,34]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":31,"text":"Bring a real task, source files, and a success criterion.\nEnd with a repository that another person can inspect.","textPreview":"Bring a real task, source files, and a success criterion. | End with a repository that another person can inspect.","textChars":112,"textLines":2,"bbox":[92,370,280,190]}
+{"kind":"shape","id":"sh/9cvixcze","slide":31,"bbox":[548,266,230,142]}
+{"kind":"textbox","id":"sh/032lszqt","slide":31,"text":"ARTIFACT","textPreview":"ARTIFACT","textChars":8,"textLines":1,"bbox":[566,358,194,30]}
+{"kind":"shape","id":"sh/bi9s36hc","slide":31,"bbox":[806,266,230,142]}
+{"kind":"textbox","id":"sh/p0bi9s36","slide":31,"text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[824,358,194,30]}
+{"kind":"shape","id":"sh/0fepkzup","slide":31,"bbox":[677,442,230,142]}
+{"kind":"textbox","id":"sh/i9s36hcr","slide":31,"text":"HANDOFF","textPreview":"HANDOFF","textChars":7,"textLines":1,"bbox":[695,534,194,30]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":31,"text":"Participants built substantial discipline-specific code; the strongest gains came from iteration and verification.","textPreview":"Participants built substantial discipline-specific code; the strongest gains came from iteration and verification.","textChars":114,"textLines":1,"bbox":[548,594,570,62]}
+{"kind":"shape","id":"sh/0je9cvix","slide":31,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":31,"text":"WORKSHOP: CODEX FOR RESEARCH WORKFLOWS","textPreview":"WORKSHOP: CODEX FOR RESEARCH WORKFLOWS","textChars":38,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/9s36hcrm","slide":31,"text":"31","textPreview":"31","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/5gbq1ory","slide":31,"name":"","bbox":[92,296,44,44]}
+{"kind":"image","id":"im/cvixczed","slide":31,"name":"","bbox":[448,402,62,62]}
+{"kind":"image","id":"im/nyd0z610","slide":31,"name":"","bbox":[634,286,54,54]}
+{"kind":"image","id":"im/udg7adsj","slide":31,"name":"","bbox":[892,286,54,54]}
+{"kind":"image","id":"im/54zidony","slide":31,"name":"","bbox":[763,462,54,54]}
+{"kind":"notes","id":"nt/h0fepkzu","slide":31,"text":"Pacing: 75 seconds.\nThis is my teaching experience, not a randomized trial. Emphasize what is observable: participants produced working repositories, documentation, and tests. Avoid converting enthusiasm into an unsupported causal claim about learning."}
+{"kind":"slide","id":"sl/yhgn29gr","slide":32,"title":"WHAT WORKS NOW","textShapes":11}
+{"kind":"shape","id":"sh/ed8bat47","slide":32,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":32,"text":"WHAT WORKS NOW","textPreview":"WHAT WORKS NOW","textChars":14,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":32,"text":"A protocol for serious mathematical use","textPreview":"A protocol for serious mathematical use","textChars":39,"textLines":1,"bbox":[64,86,950,142]}
+{"kind":"shape","id":"sh/36hcrmhk","slide":32,"bbox":[64,258,880,58]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":32,"text":"SPECIFY — write the exact claim and evidence bar","textPreview":"SPECIFY — write the exact claim and evidence bar","textChars":48,"textLines":1,"bbox":[132,271,706,32]}
+{"kind":"shape","id":"sh/wra5gbq1","slide":32,"bbox":[98,330,830,58]}
+{"kind":"textbox","id":"sh/epkzupwb","slide":32,"text":"SEARCH — let agents explore variants and literature","textPreview":"SEARCH — let agents explore variants and literature","textChars":51,"textLines":1,"bbox":[166,343,656,32]}
+{"kind":"shape","id":"sh/8jqh0fep","slide":32,"bbox":[132,402,780,58]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":32,"text":"CHECK — compile, test, and use independent tools","textPreview":"CHECK — compile, test, and use independent tools","textChars":48,"textLines":1,"bbox":[200,415,606,32]}
+{"kind":"shape","id":"sh/fyxobm58","slide":32,"bbox":[166,474,730,58]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":32,"text":"CRITIQUE — isolate a second reviewer and attack assumptions","textPreview":"CRITIQUE — isolate a second reviewer and attack assumptions","textChars":59,"textLines":1,"bbox":[234,487,556,32]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":32,"bbox":[200,546,680,58]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":32,"text":"PUBLISH — artifacts, budgets, failures, provenance","textPreview":"PUBLISH — artifacts, budgets, failures, provenance","textChars":50,"textLines":1,"bbox":[268,559,506,32]}
+{"kind":"shape","id":"sh/1gvy90je","slide":32,"bbox":[974,286,242,282]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":32,"text":"GOAL","textPreview":"GOAL","textChars":4,"textLines":1,"bbox":[1010,438,170,30]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":32,"text":"The mathematician remains able to explain, defend, and extend the result.","textPreview":"The mathematician remains able to explain, defend, and extend the result.","textChars":73,"textLines":1,"bbox":[1002,480,186,70]}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":32,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/lwval87e","slide":32,"text":"DELEGATE STEPS; RETAIN JUDGEMENT","textPreview":"DELEGATE STEPS; RETAIN JUDGEMENT","textChars":32,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/wb2hwfyx","slide":32,"text":"32","textPreview":"32","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/wra5gbq1","slide":32,"name":"","bbox":[82,271,31,31]}
+{"kind":"image","id":"im/lc7u54zi","slide":32,"name":"","bbox":[116,343,31,31]}
+{"kind":"image","id":"im/epkzupwb","slide":32,"name":"","bbox":[150,415,31,31]}
+{"kind":"image","id":"im/7adsji5s","slide":32,"name":"","bbox":[184,487,31,31]}
+{"kind":"image","id":"im/tgfmlkjm","slide":32,"name":"","bbox":[218,559,31,31]}
+{"kind":"image","id":"im/4vmtwra5","slide":32,"name":"","bbox":[1048,322,92,92]}
+{"kind":"notes","id":"nt/yhgn29gr","slide":32,"text":"Pacing: 75 seconds.\nThis is the practical recommendation. The exact tooling can change next month; the protocol survives model churn."}
+{"kind":"slide","id":"sl/3ex0nuxc","slide":33,"title":"WHAT STILL FAILS","textShapes":8}
+{"kind":"shape","id":"sh/ex0nuxc3","slide":33,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/loj2t83i","slide":33,"text":"WHAT STILL FAILS","textPreview":"WHAT STILL FAILS","textChars":16,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/w3m94fu1","slide":33,"text":"Local brilliance is common.\nGlobal mathematical control is not.","textPreview":"Local brilliance is common. | Global mathematical control is not.","textChars":63,"textLines":2,"bbox":[64,86,900,154]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":33,"bbox":[64,292,510,300]}
+{"kind":"shape","id":"sh/e9cvixcz","slide":33,"bbox":[706,292,510,300]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":33,"text":"RELIABLY IMPROVING","textPreview":"RELIABLY IMPROVING","textChars":18,"textLines":1,"bbox":[156,329,230,32]}
+{"kind":"textbox","id":"sh/ahoza1gv","slide":33,"text":"CONSISTENTLY HARD","textPreview":"CONSISTENTLY HARD","textChars":17,"textLines":1,"bbox":[798,329,310,32]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":33,"text":"• code and exact computation\n• library-scale proof search\n• counterexample generation\n• recombining known techniques","textPreview":"• code and exact computation | • library-scale proof search | • counterexample generation | • recombining known techniques","textChars":116,"textLines":4,"bbox":[96,398,416,154]}
+{"kind":"textbox","id":"sh/54zidony","slide":33,"text":"• choosing the right representation\n• sustaining long strategic coherence\n• inventing reusable abstractions\n• knowing what is worth proving","textPreview":"• choosing the right representation | • sustaining long strategic coherence | • inventing reusable abstractions | • knowing what is worth...","textChars":139,"textLines":4,"bbox":[738,398,420,154]}
+{"kind":"shape","id":"sh/nyd0z610","slide":33,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/cvixczed","slide":33,"text":"FAILURE OFTEN LOOKS LIKE CONFIDENCE","textPreview":"FAILURE OFTEN LOOKS LIKE CONFIDENCE","textChars":35,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":33,"text":"33","textPreview":"33","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/dg7adsji","slide":33,"name":"","bbox":[96,325,42,42]}
+{"kind":"image","id":"im/ovahoza1","slide":33,"name":"","bbox":[738,325,42,42]}
+{"kind":"image","id":"im/vmtwra5g","slide":33,"name":"","bbox":[605,404,70,70]}
+{"kind":"notes","id":"nt/3ex0nuxc","slide":33,"text":"Pacing: 80 seconds.\nThis is my critical judgement from the case studies. Current systems can produce real novelty, but the modal pattern is powerful recombination plus search. Structural creativity is rarer and harder to recognize."}
+{"kind":"slide","id":"sl/kb6xkf6d","slide":34,"title":"THE CREATIVITY QUESTION","textShapes":11}
+{"kind":"shape","id":"sh/itgfmlkj","slide":34,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":34,"text":"THE CREATIVITY QUESTION","textPreview":"THE CREATIVITY QUESTION","textChars":23,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/0z61032l","slide":34,"text":"New representation is the bottleneck.","textPreview":"New representation is the bottleneck.","textChars":37,"textLines":1,"bbox":[64,86,930,142]}
+{"kind":"shape","id":"sh/72x4nap4","slide":34,"bbox":[64,282,328,296]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":34,"text":"SEARCH","textPreview":"SEARCH","textChars":6,"textLines":1,"bbox":[158,320,202,32]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":34,"text":"many variants\ncheap falsification\nstrong local moves","textPreview":"many variants | cheap falsification | strong local moves","textChars":52,"textLines":3,"bbox":[92,394,270,122]}
+{"kind":"shape","id":"sh/7y1kre1w","slide":34,"bbox":[456,302,328,296]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":34,"text":"COMPOSITION","textPreview":"COMPOSITION","textChars":11,"textLines":1,"bbox":[550,340,202,32]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":34,"text":"transfer known ideas\ncombine tools\nrepair local gaps","textPreview":"transfer known ideas | combine tools | repair local gaps","textChars":52,"textLines":3,"bbox":[484,414,270,122]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":34,"bbox":[848,322,328,296]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":34,"text":"ABSTRACTION","textPreview":"ABSTRACTION","textChars":11,"textLines":1,"bbox":[942,360,202,32]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":34,"text":"invent the invariant\nreframe the problem\nbuild a reusable theory","textPreview":"invent the invariant | reframe the problem | build a reusable theory","textChars":64,"textLines":3,"bbox":[876,434,270,122]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":34,"text":"World models, latent-space reasoning, and better memory may help—but that is a research agenda, not today's result.","textPreview":"World models, latent-space reasoning, and better memory may help—but that is a research agenda, not today's result.","textChars":115,"textLines":1,"bbox":[160,604,960,58]}
+{"kind":"shape","id":"sh/fyxobm58","slide":34,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":34,"text":"STRUCTURE REMAINS THE FRONTIER","textPreview":"STRUCTURE REMAINS THE FRONTIER","textChars":30,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":34,"text":"34","textPreview":"34","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/upwb2hwf","slide":34,"name":"","bbox":[92,314,48,48]}
+{"kind":"image","id":"im/nap4r65w","slide":34,"name":"","bbox":[484,334,48,48]}
+{"kind":"image","id":"im/cvixczed","slide":34,"name":"","bbox":[876,354,48,48]}
+{"kind":"notes","id":"nt/kb6xkf6d","slide":34,"text":"Pacing: 85 seconds.\nAvoid claiming an architectural impossibility. Say that present LLM-centred systems remain inconsistent at representation change and theory building. World models or latent reasoning may alter this, but the evidence is not here yet."}
+{"kind":"slide","id":"sl/xs72x4na","slide":35,"title":"THE LEIDEN DECLARATION","textShapes":18}
+{"kind":"shape","id":"sh/twra5gbq","slide":35,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":35,"text":"THE LEIDEN DECLARATION","textPreview":"THE LEIDEN DECLARATION","textChars":22,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":35,"text":"Keep mathematical governance while capability accelerates.","textPreview":"Keep mathematical governance while capability accelerates.","textChars":58,"textLines":1,"bbox":[64,86,990,142]}
+{"kind":"shape","id":"sh/4nap4r65","slide":35,"bbox":[64,274,548,84]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":35,"text":"OPEN","textPreview":"OPEN","textChars":4,"textLines":1,"bbox":[142,290,148,28]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":35,"text":"transparent arguments\npublic infrastructure","textPreview":"transparent arguments | public infrastructure","textChars":43,"textLines":2,"bbox":[302,286,280,54]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":35,"bbox":[64,378,548,84]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":35,"text":"DISCLOSE","textPreview":"DISCLOSE","textChars":8,"textLines":1,"bbox":[142,394,148,28]}
+{"kind":"textbox","id":"sh/4r65wjud","slide":35,"text":"tools + compute\nmeaningful AI use","textPreview":"tools + compute | meaningful AI use","textChars":33,"textLines":2,"bbox":[302,390,280,54]}
+{"kind":"shape","id":"sh/f6dcbulw","slide":35,"bbox":[64,482,548,84]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":35,"text":"OWN","textPreview":"OWN","textChars":3,"textLines":1,"bbox":[142,498,148,28]}
+{"kind":"textbox","id":"sh/4zidonyd","slide":35,"text":"humans take credit\nand responsibility","textPreview":"humans take credit | and responsibility","textChars":37,"textLines":2,"bbox":[302,494,280,54]}
+{"kind":"shape","id":"sh/fepkzupw","slide":35,"bbox":[694,274,522,322]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":35,"text":"PRACTICE","textPreview":"PRACTICE","textChars":8,"textLines":1,"bbox":[730,308,430,46]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":35,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[752,382,42,38]}
+{"kind":"textbox","id":"sh/83itgfml","slide":35,"text":"AI is a tool","textPreview":"AI is a tool","textChars":12,"textLines":1,"bbox":[812,385,330,34]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":35,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[752,436,42,38]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":35,"text":"proof remains inspectable","textPreview":"proof remains inspectable","textChars":25,"textLines":1,"bbox":[812,439,330,34]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":35,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[752,490,42,38]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":35,"text":"access must not decide voice","textPreview":"access must not decide voice","textChars":28,"textLines":1,"bbox":[812,493,330,34]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":35,"text":"Policies should preserve autonomy without freezing methods.","textPreview":"Policies should preserve autonomy without freezing methods.","textChars":59,"textLines":1,"bbox":[730,550,450,24]}
+{"kind":"shape","id":"sh/t83itgfm","slide":35,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":35,"text":"LEIDENDECLARATION.AI · IMU ENDORSED","textPreview":"LEIDENDECLARATION.AI · IMU ENDORSED","textChars":35,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":35,"text":"35","textPreview":"35","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"image","id":"im/neloj2t8","slide":35,"name":"","bbox":[84,296,40,40]}
+{"kind":"image","id":"im/ytsvu9kn","slide":35,"name":"","bbox":[84,400,40,40]}
+{"kind":"image","id":"im/4zidonyd","slide":35,"name":"","bbox":[84,504,40,40]}
+{"kind":"notes","id":"nt/xs72x4na","slide":35,"text":"Pacing: 80 seconds.\nThe Declaration was published 2 June 2026, reflects practice as of May, and is endorsed by the IMU. I am one of the authors and a website convenor. Its principles are scientific infrastructure, not anti-technology sentiment."}
+{"kind":"slide","id":"sl/i5sneloj","slide":36,"title":"A 12–24 MONTH FORECAST","textShapes":15}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":36,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":36,"text":"A 12–24 MONTH FORECAST","textPreview":"A 12–24 MONTH FORECAST","textChars":22,"textLines":1,"bbox":[64,48,760,28]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":36,"text":"More verified artifacts; uneven progress on theory.","textPreview":"More verified artifacts; uneven progress on theory.","textChars":51,"textLines":1,"bbox":[64,86,1040,142]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":36,"bbox":[64,286,180,120]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":36,"text":"NOW","textPreview":"NOW","textChars":3,"textLines":1,"bbox":[80,301,72,28]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":36,"text":"agent workbenches\nformal proof search","textPreview":"agent workbenches | formal proof search","textChars":37,"textLines":2,"bbox":[80,334,150,52]}
+{"kind":"shape","id":"sh/1gvy90je","slide":36,"bbox":[240,330,38,4]}
+{"kind":"shape","id":"sh/qpg3ex0n","slide":36,"bbox":[240,402,210,120]}
+{"kind":"textbox","id":"sh/fa9w3m94","slide":36,"text":"6 MO","textPreview":"6 MO","textChars":4,"textLines":1,"bbox":[256,417,72,28]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":36,"text":"routine paper-to-Lean\nstronger cross-audit","textPreview":"routine paper-to-Lean | stronger cross-audit","textChars":42,"textLines":2,"bbox":[256,450,180,52]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":36,"bbox":[446,446,38,4]}
+{"kind":"shape","id":"sh/1gvy90je","slide":36,"bbox":[446,286,230,120]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":36,"text":"12 MO","textPreview":"12 MO","textChars":5,"textLines":1,"bbox":[462,301,72,28]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":36,"text":"research loops\nshared state + tools","textPreview":"research loops | shared state + tools","textChars":35,"textLines":2,"bbox":[462,334,200,52]}
+{"kind":"shape","id":"sh/q1orytsv","slide":36,"bbox":[672,330,38,4]}
+{"kind":"shape","id":"sh/xs72x4na","slide":36,"bbox":[672,402,255,120]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":36,"text":"18 MO","textPreview":"18 MO","textChars":5,"textLines":1,"bbox":[688,417,72,28]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":36,"text":"better representation search\ncompute pressure","textPreview":"better representation search | compute pressure","textChars":45,"textLines":2,"bbox":[688,450,225,52]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":36,"bbox":[923,446,38,4]}
+{"kind":"shape","id":"sh/yhgn29gr","slide":36,"bbox":[923,286,285,120]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":36,"text":"24 MO","textPreview":"24 MO","textChars":5,"textLines":1,"bbox":[939,301,72,28]}
+{"kind":"textbox","id":"sh/gn29gr2p","slide":36,"text":"selective theory gains\nnot general autonomy","textPreview":"selective theory gains | not general autonomy","textChars":43,"textLines":2,"bbox":[939,334,255,52]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":36,"text":"Expect discontinuous examples and slow institutional adaptation.","textPreview":"Expect discontinuous examples and slow institutional adaptation.","textChars":64,"textLines":1,"bbox":[64,542,1050,68]}
+{"kind":"shape","id":"sh/y90je9cv","slide":36,"bbox":[64,676,1152,2]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":36,"text":"FORECAST, NOT A PRODUCT ROADMAP","textPreview":"FORECAST, NOT A PRODUCT ROADMAP","textChars":31,"textLines":1,"bbox":[64,686,420,20]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":36,"text":"36","textPreview":"36","textChars":2,"textLines":1,"bbox":[1160,682,56,24]}
+{"kind":"notes","id":"nt/i5sneloj","slide":36,"text":"Pacing: 75 seconds.\nThe safest forecast is architectural: more stateful agents, proof assistants, and disclosed traces. The riskiest claim is universal autonomous theory building; do not make it."}
+{"kind":"slide","id":"sl/nuxc3ylc","slide":37,"title":"DISCUSSION","textShapes":4}
+{"kind":"shape","id":"sh/1032lszq","slide":37,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/judg7ads","slide":37,"bbox":[0,0,1280,720]}
+{"kind":"shape","id":"sh/c7u54zid","slide":37,"bbox":[64,66,242,42]}
+{"kind":"textbox","id":"sh/1orytsvu","slide":37,"text":"DISCUSSION","textPreview":"DISCUSSION","textChars":10,"textLines":1,"bbox":[64,73,242,34]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":37,"text":"DELEGATE SEARCH.\nRETAIN JUDGEMENT.\nPUBLISH THE TRACE.","textPreview":"DELEGATE SEARCH. | RETAIN JUDGEMENT. | PUBLISH THE TRACE.","textChars":53,"textLines":3,"bbox":[64,148,950,284]}
+{"kind":"textbox","id":"sh/jm1cfa9w","slide":37,"text":"The right question is not whether AI can do mathematics.\nIt is which mathematical responsibilities we choose to automate—and how we will know that the result deserves trust.","textPreview":"The right question is not whether AI can do mathematics. | It is which mathematical responsibilities we choose to automate—and how we wil...","textChars":173,"textLines":2,"bbox":[70,480,850,90]}
+{"kind":"textbox","id":"sh/cvixczed","slide":37,"text":"x.com/nasqret · github.com/nasqret · full notes and artifacts: GitHub Pages","textPreview":"x.com/nasqret · github.com/nasqret · full notes and artifacts: GitHub Pages","textChars":75,"textLines":1,"bbox":[70,622,920,34]}
+{"kind":"image","id":"im/oza1gvy9","slide":37,"name":"","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/nuxc3ylc","slide":37,"text":"Pacing: 55 seconds.\nEnd on responsibility rather than replacement. Invite the audience to challenge the evidence taxonomy, the benchmark methodology, and the forecast."}

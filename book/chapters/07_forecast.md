@@ -1,4 +1,60 @@
 # A one-to-two-year forecast
 
-Content pending synthesis.
+## What already works
 
+The least speculative success is the construction of rich learning and research
+environments. Agentic tools can now generate coherent notes, exercises, code,
+interactive applets, tests, and deployment workflows at a scale that was
+impractical for one instructor.
+
+The speaker's public teaching sites illustrate this:
+
+- [Cryptography](https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/): 45 chapters,
+  with proofs and code;
+- [Neural networks](https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/): 42
+  chapters, 329 slides, and 22 applets;
+- [Codex workshop](https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/): a
+  25-hour course for university staff organized around durable project work.
+
+Participants built substantial discipline-specific software. The largest gains
+came from iteration, explicit tests, and handoff—not from one-shot answers.
+
+## What remains consistently hard
+
+Current LLM-based systems are locally brilliant but do not consistently exert
+global mathematical control. The persistent difficulties are:
+
+- choosing the right representation;
+- sustaining a long strategic invariant;
+- inventing reusable abstractions;
+- knowing what is worth proving; and
+- producing explanation that compresses, rather than merely records, a search.
+
+Search is strong: many variants, cheap falsification, and good local moves.
+Composition is improving: known ideas can be transferred and tools combined.
+Abstraction remains the bottleneck: inventing the invariant, reframing the
+problem, and building a reusable theory.
+
+Latent-space reasoning, world models, better memory, and architectures trained
+on mathematical structure may change this. They are a research agenda, not a
+description of current reliability.
+
+## Bounded forecast
+
+**Now:** agent workbenches and formal proof artifacts become routine in expert
+workflows.
+
+**Six months:** paper-to-Lean pipelines and cross-audit improve for carefully
+scoped domains.
+
+**Twelve months:** shared state and long research loops become standard in
+well-resourced groups, with more explicit provenance tooling.
+
+**Eighteen months:** representation search and compute pressure produce selective
+theory-level gains, still uneven and hard to benchmark.
+
+**Twenty-four months:** more verified mathematical artifacts and striking
+examples, but not general autonomous mathematical research.
+
+The likely trajectory is discontinuous examples plus slow institutional
+adaptation.

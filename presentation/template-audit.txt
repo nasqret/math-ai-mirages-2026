@@ -1,0 +1,48 @@
+Template source
+===============
+
+Native PPTX: ai-w-praktycznej-edukacji.pptx
+Source repository: https://github.com/nasqret/ai-w-praktycznej-edukacji
+Audited source slides: 1-12 (all reviewed at full-slide scale)
+Format: 16:9, 1280 x 720 reference frame
+
+Visual system
+=============
+
+- Primary background: deep navy (#061B35).
+- Light background: warm cream (#F6EBCE).
+- Accent blocks: cyan (#2DB9DA), coral (#FF654F), yellow (#FFC84A).
+- Display face: Avenir Next Condensed, bold, approximately 58 pt.
+- Body face: Avenir Next; labels use bold uppercase.
+- Footer: thin navy/light rule, small source rail at lower left, two-digit page marker at lower right.
+- Spacing: 64 px outer rail; content normally begins at y=48/86; body frames begin near y=260-330.
+- Icons are authentic inherited template assets and remain in place unless the mapped image frame is explicitly replaced.
+
+Reusable slide types
+====================
+
+1. Split-image title / closing bumper (slides 1 and 12).
+2. Two-column comparison (slides 2 and 3).
+3. Five-stop timeline / escalation staircase (slide 4).
+4. Five-stage agent loop (slide 5).
+5. One brief feeding three outputs (slide 6).
+6. Evidence object: metric card plus large image frame (slide 7).
+7. Three-card comparison (slide 8).
+8. Four-card evidence ladder (slide 9).
+9. Five-row protocol (slide 10).
+10. Three-band governance plus decision panel (slide 11).
+
+Inherited placeholders and insertion contract
+=============================================
+
+- The source deck has no unfilled visible prompt placeholders. Text is stored in ordinary inherited shapes.
+- Every mapped output slide rewrites explicit inherited text shape IDs; page markers and footer rails are rewritten intentionally.
+- Background shapes, layout geometry, typography, paragraph metrics, icons, and spacing remain unchanged.
+- Source slide 7's inherited image frame is the only evidence-image slot used for project figures and generated data plots.
+- Source slide 1 and 12 bumper images remain authentic inherited assets.
+- Copy must be shortened or remapped if it does not fit; font sizes and box geometry are not to be reduced.
+
+Source inventory use
+====================
+
+All 12 source slides are used at least once in the 37-slide narrative. No source pattern is omitted.

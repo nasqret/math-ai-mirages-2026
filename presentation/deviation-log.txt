@@ -1,0 +1,11 @@
+Intentional deviations from copied source slides
+=================================================
+
+Implementation note: evidence-image replacements use delete-and-add at the exact
+mapped frame geometry. The artifact library's in-place replace operation shared
+media across cloned slides, causing the final replacement to propagate to every
+clone. The workaround preserves the intended layout and replacement semantics.
+- Slides 12, 19, 22, and 24 replace source slide 7's inherited evidence image with an authentic project asset or a reproducible data plot. The inherited image frame and crop geometry are preserved.
+- All other output slides change inherited text only. No new primitive, overlay, layout, font, or decorative system is introduced.
+- The source footer label is changed from the Polish education-talk title to the English lecture short title. Page markers are rewritten to match the 37-slide output order.
+- Long source sentences are replaced with shorter English copy to preserve inherited font metrics and avoid resizing.

@@ -1,0 +1,49 @@
+name: Publish lecture site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install Jupyter Book
+        run: pip install jupyter-book==1.0.4.post1
+      - name: Build book with warnings as errors
+        run: jupyter-book build book -W --keep-going
+      - name: Assemble site
+        run: |
+          mkdir -p site/book site/downloads
+          cp landing/index.html landing/styles.css landing/favicon.svg site/
+          cp -R book/_build/html/. site/book/
+          cp outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx site/downloads/
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

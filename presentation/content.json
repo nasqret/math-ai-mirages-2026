@@ -1,0 +1,663 @@
+{
+  "title": "The Mirages and Twists of Mathematics with AI",
+  "author": "Bartosz Naskręcki",
+  "date": "22.06.2026",
+  "slides": [
+    {
+      "slide": 1,
+      "text": [
+        "MIM UW · 22.06.2026",
+        "MIRAGES & TWISTS\nOF MATHEMATICS\nWITH AI",
+        "A technical, evidence-first judgement of what changed—and what did not.",
+        "Bartosz Naskręcki · UAM / CCAI PW · x.com/nasqret"
+      ],
+      "seconds": 60,
+      "notes": "Open with the conclusion: the capability jump is real, but the strongest public narrative often confuses a correct answer, a checked proof, a new theorem, and a new theory. This lecture separates those four achievements."
+    },
+    {
+      "slide": 2,
+      "text": [
+        "THE THESIS",
+        "The capability jump is real.\nThe popular theory of it is not.",
+        "REAL",
+        "MIRAGE",
+        "• long tool-using runs now work\n• proof assistants close real gaps\n• agents produce durable artifacts\n• some open problems have fallen",
+        "• one benchmark = a profession\n• fluent prose = mathematical proof\n• isolated success = autonomy\n• scale alone = new abstraction",
+        "CAPABILITY ≠ AUTONOMY",
+        "02"
+      ],
+      "seconds": 65,
+      "notes": "State the two-sided judgement plainly. The talk is neither a dismissal nor a victory lap. The useful unit of analysis is a documented workflow with a verification boundary."
+    },
+    {
+      "slide": 3,
+      "text": [
+        "EVIDENCE LADDER",
+        "Four achievements that press reports routinely collapse.",
+        "1",
+        "ANSWER",
+        "a final value or candidate object",
+        "2",
+        "PROOF",
+        "an argument checked by experts or a kernel",
+        "3",
+        "THEOREM",
+        "a genuinely new mathematical result",
+        "4",
+        "THEORY",
+        "new concepts, structure, and reusable explanation",
+        "The frontier rises sharply from 1 to 4.",
+        "USE THE RIGHT NOUN",
+        "03"
+      ],
+      "seconds": 70,
+      "notes": "Use this vocabulary throughout the talk. A formal proof can establish correctness relative to a statement while saying little about novelty, importance, or whether the statement captured the intended mathematics."
+    },
+    {
+      "slide": 4,
+      "text": [
+        "SIX MONTHS",
+        "2026 compressed several years of expectations.",
+        "JAN",
+        "Erdős #728\nGPT Pro + Aristotle",
+        "FEB",
+        "FirstProof\nAletheia: 6/10",
+        "MAR",
+        "GPT-5.4\n1M-context agents",
+        "MAY",
+        "unit distances\nco-mathematician",
+        "JUN",
+        "FrontierMath audit\nLeiden Declaration",
+        "Capability, evaluation, and governance all moved at once.",
+        "A FAST-MOVING, BADLY CALIBRATED FIELD",
+        "04"
+      ],
+      "seconds": 80,
+      "notes": "This is a chronology, not a ranking. Sources: arXiv:2601.07421; arXiv:2602.21201; OpenAI GPT-5.4 release (5 March); OpenAI unit-distance report (20 May); Epoch FrontierMath v2 (12 June); Leiden Declaration (2 June)."
+    },
+    {
+      "slide": 5,
+      "text": [
+        "ERDŐS PROBLEMS CAMPAIGN",
+        "A remarkable campaign—and a terrible single-number benchmark.",
+        "WIKI SNAPSHOT",
+        "NOT A BENCHMARK",
+        "88 green full-resolution records\n79 unique Erdős problems\n190 unique primary problems listed\ncommit 0f72fdb · 22 June 2026",
+        "selection is adaptive\nliterature is discovered later\nproblem statements can be wrong\nobscurity is not difficulty",
+        "SOURCE: ERDOSPROBLEMS.COM COMMUNITY WIKI",
+        "05"
+      ],
+      "seconds": 85,
+      "notes": "Be exact about the denominator. I parsed the primary categories 1a–1d of the community-maintained wiki at commit 0f72fdb. The wiki itself says this is not a benchmark. Count records and unique problems separately because one problem can have multiple contributions."
+    },
+    {
+      "slide": 6,
+      "text": [
+        "ERDŐS #728",
+        "The blueprint case: proposal, formal search, ratification.",
+        "HAPPENED",
+        "WHY STRONG",
+        "• GPT-5.2 Pro proposed the strategy\n• Aristotle produced a Lean proof\n• experts inspected the mathematics\n• comparable literature surfaced later",
+        "• exact statement\n• kernel-checkable artifact\n• public paper and code\n• provenance is discussable",
+        "A MILESTONE WITH A TRACE",
+        "06"
+      ],
+      "seconds": 80,
+      "notes": "The lesson is the workflow, not the marketing adjective 'autonomous'. The public record is unusually good: arXiv:2601.07421 and the Erdős wiki include the statement, proof route, and later literature context."
+    },
+    {
+      "slide": 7,
+      "text": [
+        "A DIFFERENT KIND OF MILESTONE",
+        "Unit distances: original structure, not merely closure.",
+        "OPENAI REPORTS",
+        "WHAT I WOULD STILL ASK",
+        "• n^(1+δ) construction\n• algebraic number theory enters geometry\n• external mathematicians checked it\n• a general-purpose reasoning model",
+        "• release the full proof record\n• separate vendor and independent claims\n• track reproducibility and compute\n• wait for ordinary publication review",
+        "PROVIDER-REPORTED, EXPERT-REVIEWED",
+        "07"
+      ],
+      "seconds": 85,
+      "notes": "OpenAI's 20 May report calls this the first autonomous solution of a prominent central open problem. That is a provider claim, though the proof was checked by external mathematicians and companion remarks are public. The methodological novelty is the cross-domain construction. Source: openai.com/index/model-disproves-discrete-geometry-conjecture/."
+    },
+    {
+      "slide": 8,
+      "text": [
+        "METHODOLOGICAL WARNING",
+        "A campaign is not a benchmark.\nA benchmark is not mathematics.",
+        "CAMPAIGN",
+        "BENCHMARK",
+        "adaptive problem choice\niterative human attention\nopen literature search\ncredit for partial progress",
+        "fixed sampling rule\nfrozen task versions\npredefined budget\nauditable scoring",
+        "THEORY BUILDING IS COMPLEMENTARY TO BOTH",
+        "08"
+      ],
+      "seconds": 70,
+      "notes": "This distinction is central. Campaigns measure what a motivated team can accomplish. Benchmarks estimate performance under a protocol. Mathematics asks a third question: what structure did we learn?"
+    },
+    {
+      "slide": 9,
+      "text": [
+        "FORMALIZATION",
+        "The strongest trust boundary is still a small kernel.",
+        "1",
+        "PAPER",
+        "2",
+        "CHUNKS",
+        "3",
+        "LEAN",
+        "4",
+        "SEARCH",
+        "5",
+        "KERNEL",
+        "Statement extraction is now the critical specification step.",
+        "PROSE → MACHINE-CHECKED OBJECT",
+        "09"
+      ],
+      "seconds": 75,
+      "notes": "Reuse the formalization slides from Falenty and EML, but sharpen the claim. Lean does not validate the informal intention automatically. It validates the formal term against the formal statement and trusted environment."
+    },
+    {
+      "slide": 10,
+      "text": [
+        "WHAT LEAN CHANGES",
+        "Correctness becomes local, explicit, and replayable.",
+        "KERNEL GUARANTEE",
+        "type-correct proof term\nexplicit dependencies\nreproducible replay",
+        "SPECIFICATION RISK",
+        "wrong theorem formalized\nhidden assumptions\ndefinition mismatch",
+        "MATHEMATICAL RISK",
+        "novelty and importance\nexplanatory value\ncredit and authorship",
+        "Formal verification narrows the error surface. It does not erase judgement.",
+        "TRUST THE KERNEL; AUDIT THE STATEMENT",
+        "10"
+      ],
+      "seconds": 75,
+      "notes": "Give a concrete Falenty example: a tiny De Morgan theorem has a complete proof term; the pedagogical Erdős #728 file contains sorry and is correctly labelled a sketch. That contrast is pedagogically valuable."
+    },
+    {
+      "slide": 11,
+      "text": [
+        "AUTO-FORMALIZATION FRONTIER",
+        "Proof search is accelerating. Statement alignment is harder.",
+        "NOW ROUTINE ENOUGH",
+        "STILL EXPENSIVE",
+        "• theorem-sized Lean proof search\n• tactic repair and library lookup\n• translating local lemmas\n• checking generated terms",
+        "• long informal papers\n• implicit conventions\n• semantic equivalence of statements\n• maintainable library architecture",
+        "THE BOTTLENECK MOVED UPSTREAM",
+        "11"
+      ],
+      "seconds": 70,
+      "notes": "Mention Aristotle, AlphaProof, DeepSeek-Prover, Kimina, and LeanArchitect as different points in the stack. Avoid treating them as interchangeable: some prove formal statements, some translate, some orchestrate search."
+    },
+    {
+      "slide": 12,
+      "text": [
+        "MY EML PROJECT",
+        "A formalization factory, not a single generated proof.",
+        "LEAN 4 + MATHLIB 4.28",
+        "36/36",
+        "calculator primitives\n100 public theorems\n0 sorry / 0 admit\n8,062 dispatched jobs",
+        "The durable result is the compiler architecture and the audit trail.",
+        "REPO: NASQRET/EML-FORMALIZATION",
+        "12"
+      ],
+      "image": "outputs/assets/eml-by-the-numbers.png",
+      "seconds": 90,
+      "notes": "These numbers come from the repository README and should be read as a project snapshot. Aristotle handled proof search; GPT Pro, Claude, Codex, Mathematica, and human review had distinct roles. Source: github.com/nasqret/eml-formalization."
+    },
+    {
+      "slide": 13,
+      "text": [
+        "THE EML AUDIT LOOP",
+        "The first 'complete' report was not a valid formalization.",
+        "1",
+        "CATALOGUE",
+        "2",
+        "ADVERSARIAL AUDIT",
+        "3",
+        "REPAIR",
+        "4",
+        "STRUCTURE",
+        "5",
+        "REPLAY",
+        "Separate-model review found sorry, boundary abuse, and broken bridges.",
+        "THE SECOND PAIR OF EYES CHANGED THE MATHEMATICS",
+        "13"
+      ],
+      "seconds": 80,
+      "notes": "This is one of the most honest results in the talk. A second model family, isolated from the first scratchpad, found real defects and forced a stronger architecture. Independent review may be the most immediately valuable AI substitute in the loop."
+    },
+    {
+      "slide": 14,
+      "text": [
+        "FALENTY: TEACH THE TRUST BOUNDARY",
+        "One brief. Three inspectable learning artifacts.",
+        "THE BRIEF",
+        "Choose a theorem. State assumptions.\nCompile it. Expose every gap.\nExplain the proof term in prose.",
+        "LEAN EXAMPLE",
+        "TACTIC STATE",
+        "SPEAKER NOTES",
+        "Students can distinguish a proof, a sketch with sorry, and a polished explanation.",
+        "REPO: NASQRET/FALENTY-2026",
+        "14"
+      ],
+      "seconds": 70,
+      "notes": "The local release includes a Lean lab, games, teaching notes, and source decks. In this repository I package two compiling Falenty examples and intentionally exclude the sorry-based Erdős sketch from the verified set."
+    },
+    {
+      "slide": 15,
+      "text": [
+        "ARISTOTLE AND ITS PEERS",
+        "Delegate proof search.\nRetain mathematical responsibility.",
+        "TOOLS CAN",
+        "HUMANS MUST",
+        "• search Lean libraries\n• synthesize proof terms\n• close routine gaps\n• replay at scale",
+        "• choose the statement\n• inspect assumptions\n• assess novelty\n• own the published claim",
+        "AI IS A TOOL, NOT AN AUTHOR",
+        "15"
+      ],
+      "seconds": 70,
+      "notes": "Aristotle is prominent because it produces Lean artifacts checked by the kernel. Mention alternatives without turning the slide into a leaderboard. This principle anticipates the Leiden Declaration."
+    },
+    {
+      "slide": 16,
+      "text": [
+        "NATHANSON'S QUESTIONS",
+        "A clean example of discovery plus formal verification.",
+        "MATHEMATICAL RESULT",
+        "EVIDENCE PACKAGE",
+        "Complete classification of product intersection sets in semigroups.\nNew result, not only a formalized old proof.",
+        "Autonomously discovered and verified in Lean by Aristotle.\nPublic preprint; named human authors own review and exposition.",
+        "ARXIV:2604.18869",
+        "16"
+      ],
+      "seconds": 75,
+      "notes": "Correct the common shorthand: the paper answers Nathanson's questions rather than a single named conjecture. Authors: van Doorn, Monticone, Tang. The abstract explicitly records autonomous discovery and Lean verification."
+    },
+    {
+      "slide": 17,
+      "text": [
+        "AUTO-RESEARCH",
+        "Not one brilliant prompt.\nOne controlled state machine.",
+        "1",
+        "PLAN",
+        "2",
+        "EXECUTE",
+        "3",
+        "TEST",
+        "4",
+        "CRITIQUE",
+        "5",
+        "CHECKPOINT",
+        "Every cycle must leave a state, a test, and a reason to continue.",
+        "LOOPS BEAT CHAT TRANSCRIPTS",
+        "17"
+      ],
+      "seconds": 75,
+      "notes": "Define the operational unit: files, scripts, exact tests, status JSON, checkpoints, and explicit failure states. Context windows help, but durable external state is what makes a research run auditable and resumable."
+    },
+    {
+      "slide": 18,
+      "text": [
+        "COMPUTE CHANGES THE METHOD",
+        "Inference-time compute is now a mathematical resource.",
+        "1×",
+        "single attempt\nfragile insight",
+        "10×",
+        "variants\ncritic passes",
+        "100×",
+        "tool loops\nsearch trees",
+        "1,000×",
+        "agents\nexternal memory",
+        "?",
+        "unequal access\nunclear attribution",
+        "Report budgets, retries, tools, and human interventions—not only the winner.",
+        "COMPUTE IS PART OF PROVENANCE",
+        "18"
+      ],
+      "seconds": 75,
+      "notes": "FrontierMath Tier 4 allows up to one million tokens and Python tools. Agent papers increasingly compare systems at different test-time compute. A score without a budget is not a scientific comparison."
+    },
+    {
+      "slide": 19,
+      "text": [
+        "CASE STUDY: ECDSA.FAIL",
+        "An agent improved a real benchmark through verified engineering.",
+        "PROMOTED RECORD · 14 JUNE",
+        "1.678B",
+        "Q×T score\n1,170 peak qubits\n1,434,070 Toffoli\n9,024 trusted shots",
+        "The 84.3% reduction is reproducible challenge evidence—not a proof of all-input correctness.",
+        "SOLVER: NASQRET · ATTRIBUTION: GPT-CODEX",
+        "19"
+      ],
+      "image": "outputs/assets/ecdsafail-score.png",
+      "seconds": 90,
+      "notes": "Be precise about scope. This is reversible secp256k1 point addition under the challenge evaluator, not a break of ECDSA and not a complete quantum attack. The trusted registry records zero classical, phase, and ancilla failures over 9,024 shots."
+    },
+    {
+      "slide": 20,
+      "text": [
+        "CASE STUDY: SAIR.IGP24",
+        "Campaign logic can outperform one-shot problem solving.",
+        "PILOT",
+        "5 accepted pairs\nmanual calibration",
+        "AUTONOMOUS",
+        "18 accepted pairs\nstateful search",
+        "FOLLOW-UP",
+        "28 accepted pairs\nexact Magma checks",
+        "51 accepted distinct pairs in the 17 June repository snapshot.",
+        "PRIVATE REPO · ONGOING COMPETITION",
+        "20"
+      ],
+      "seconds": 80,
+      "notes": "Use only high-level totals because the competition remains open until 15 August and the repository is private. The public lesson is the protocol: generation, exact Magma verification, live-open checks, and deduplication."
+    },
+    {
+      "slide": 21,
+      "text": [
+        "CASE STUDY: ORPHIC SYMMETRY",
+        "Finding the counterexample was easier than finding the right theorem.",
+        "MODEL CONTRIBUTION",
+        "MATHEMATICIAN CONTRIBUTION",
+        "• diagonal-grid counterexample\n• fast computational exploration\n• exposed a false formulation\n• generated local evidence",
+        "• identify the structural defect\n• refine ORD → MEOD → EORD\n• select the durable statement\n• explain why it works",
+        "COUNTEREXAMPLES ARE SEARCH; THEOREMS NEED STRUCTURE",
+        "21"
+      ],
+      "seconds": 75,
+      "notes": "Source: github.com/nasqret/orphic-symmetry-talk-mim. This is a compact example of my main criticism: current models are strong at local search and falsification, but structural repair remains a human-led act of representation and taste."
+    },
+    {
+      "slide": 22,
+      "text": [
+        "CASE STUDY: QUARTIC LINES",
+        "A GPT Pro + Codex campaign broke the conjectural slope bound.",
+        "VENIANI-64 · EXACT CHAR 0",
+        "14/5",
+        "conjectural bound: 8/3\nprofile: (24,0,32,0)\nc̄₁²=112, c̄₂=40\nG=208",
+        "Finite-field discovery; exact QQbar reconstruction; independent SageMath and Magma certificates.",
+        "WITH PIOTR POKORA · MODEL LABEL IS PROJECT-REPORTED",
+        "22"
+      ],
+      "image": "outputs/assets/quartic-slope.png",
+      "seconds": 105,
+      "notes": "This is the strongest personal example. The equation is x0^4 − x0 x1^3 − x2^4 + x2 x3^3 = 0. The project records two 24-line subconfigurations. The user identifies the run as GPT-5.6; there is no public OpenAI release page for that label, so the deck treats it as project-reported rather than public product metadata."
+    },
+    {
+      "slide": 23,
+      "text": [
+        "CASE STUDY: QUADRICS",
+        "Computation can discover the route.\nThe paper can still end computer-free.",
+        "SEARCH PHASE",
+        "EXPOSITION PHASE",
+        "Gröbner bases\nexact reconstruction\n800 conics\nmachine-audited cases",
+        "human lemma extraction\nstructural compression\ncomputer-free proof\nindependent reading",
+        "COMPUTATION AS SCAFFOLDING, NOT A PERMANENT CRUTCH",
+        "23"
+      ],
+      "seconds": 75,
+      "notes": "Source: github.com/nasqret/quadrics. This is a useful answer to the false dichotomy 'computer proof or human proof': tool-heavy discovery can be followed by a conceptually cleaner argument."
+    },
+    {
+      "slide": 24,
+      "text": [
+        "A ROADMAP FROM AUGUST 2025",
+        "The amplified human arrived before the superhuman mathematician.",
+        "NATURE PHYSICS",
+        "2025",
+        "Naskręcki + Ono\nmathematical discovery\nin the age of AI",
+        "The 2026 evidence fills the right-hand workflow; the final arrow still points to the future.",
+        "DOI:10.1038/S41567-025-03042-0",
+        "24"
+      ],
+      "image": "outputs/assets/ono-naskrecki-figure.png",
+      "seconds": 85,
+      "notes": "Reproduce Figure 1 from my Nature Physics paper with Ken Ono. The figure distinguishes machine-augmented discovery from a hypothetical superhuman mathematician. The intervening months validate the workflow more than the endpoint."
+    },
+    {
+      "slide": 25,
+      "text": [
+        "ALETHEIA + FIRSTPROOF",
+        "A strong result because the failures and outputs are inspectable.",
+        "RESULT",
+        "6/10 by majority expert assessment\nProblem 8 not unanimous",
+        "PROTOCOL",
+        "10 unpublished research lemmas\nhuman solutions withheld\nraw prompts and outputs released",
+        "LIMIT",
+        "small sample\nbest-of-two attempts\nhuman grading remains essential",
+        "The important object is the disclosed experiment, not the headline percentage.",
+        "ARXIV:2602.21201",
+        "25"
+      ],
+      "seconds": 75,
+      "notes": "Aletheia iteratively generates, verifies, and revises. The paper reports 6/10 according to majority expert assessments and explicitly notes disagreement on P8. Raw prompts and outputs are in google-deepmind/superhuman."
+    },
+    {
+      "slide": 26,
+      "text": [
+        "AI CO-MATHEMATICIAN",
+        "The product is a workbench, not an oracle.",
+        "WORKSPACE",
+        "stateful, asynchronous\ntracks failed hypotheses",
+        "TOOLS",
+        "literature + computation\nproof + theory exploration",
+        "HUMAN LOOP",
+        "intent refinement\nartifact review\nuncertainty management",
+        "This architecture is closer to research practice than single-turn evaluation.",
+        "ARXIV:2605.06651",
+        "26"
+      ],
+      "seconds": 75,
+      "notes": "The paper also reported 23/48 on FrontierMath Tier 4 v1. That score is now superseded by the v2 benchmark audit, so discuss the architecture separately from the old leaderboard claim."
+    },
+    {
+      "slide": 27,
+      "text": [
+        "FRONTIERMATH TIER 4",
+        "The benchmark correction is itself the most important result.",
+        "1",
+        "V1 CLAIMS",
+        "model scores on 48 private problems",
+        "2",
+        "AUDIT",
+        "AI review flags fatal issues",
+        "3",
+        "V2 · 12 JUNE",
+        "12 Tier-4 problems corrected; 7 removed",
+        "4",
+        "NOW",
+        "43 Tier-4 problems; corrected scores pending",
+        "42% of all FrontierMath problems were addressed in the update.",
+        "VERSION THE BENCHMARK, NOT ONLY THE MODEL",
+        "27"
+      ],
+      "seconds": 95,
+      "notes": "Epoch says v2 corrected 123 Tier 1–3 problems and 12 Tier-4 problems, and removed 5 plus 7 respectively. The full dataset now has 338 problems, with 43 in Tier 4. Do not compare old percentages to v2 as if the task set were unchanged."
+    },
+    {
+      "slide": 28,
+      "text": [
+        "MY PRIVATE TIER-4 CASE",
+        "A useful case study.\nNot a public benchmark datapoint.",
+        "WHAT I OBSERVED",
+        "WHAT I CANNOT SHOW",
+        "sustained technical attempt\nlocal tools + calculations\ncandidate solution produced\nstrategy weakness exposed",
+        "private task\nheld-out reference\nno complete evaluation trace\nconfidential benchmark details",
+        "FIRST-PERSON REPORT · DETAILS WITHHELD",
+        "28"
+      ],
+      "seconds": 80,
+      "notes": "This slide uses my retained project memory and session record, not a public source. The honest message is methodological: long context and tools made the attempt qualitatively different, but privacy prevents turning it into a reproducible public claim."
+    },
+    {
+      "slide": 29,
+      "text": [
+        "BENCHMARK GOVERNANCE",
+        "A score is a claim about a protocol, not intelligence in general.",
+        "GREEN",
+        "versioned tasks\nexpert re-review",
+        "YELLOW",
+        "private data\nunequal compute",
+        "RED",
+        "moving graders\nundisclosed retries",
+        "MINIMUM REPORT",
+        "1",
+        "task + version",
+        "1",
+        "budget + tools",
+        "1",
+        "errors + exclusions",
+        "Then publish raw traces where confidentiality permits.",
+        "EVALUATION IS INFRASTRUCTURE",
+        "29"
+      ],
+      "seconds": 75,
+      "notes": "A benchmark can still be valuable after correction if it records its failure transparently. The governance failure would be hiding the correction or continuing to quote obsolete scores."
+    },
+    {
+      "slide": 30,
+      "text": [
+        "AGENTIC TEACHING",
+        "The least speculative success is building rich learning environments.",
+        "CRYPTO",
+        "45 chapters\nslides + applets\nproofs + code",
+        "NEURAL NETS",
+        "42 chapters\n329 slides\n22 applets",
+        "CODEX WORKSHOP",
+        "memory + plans\nGit workflows\nresearch artifacts",
+        "Agentic tools make coherent course ecosystems feasible for one instructor.",
+        "BNASKRECKI.FACULTY.WMI.AMU.EDU.PL",
+        "30"
+      ],
+      "seconds": 80,
+      "notes": "These numbers come from the live course landing pages. The cryptanalysis course advertises 45 chapters in 15 parts; the neural-network course advertises 42 chapters, 329 slides, and 22 applets. Treat this as a production case, not a controlled learning-outcomes study."
+    },
+    {
+      "slide": 31,
+      "text": [
+        "25 HOURS WITH UNIVERSITY STAFF",
+        "One research brief. A durable project, not a disposable answer.",
+        "PARTICIPANT BRIEF",
+        "Bring a real task, source files, and a success criterion.\nEnd with a repository that another person can inspect.",
+        "ARTIFACT",
+        "TEST",
+        "HANDOFF",
+        "Participants built substantial discipline-specific code; the strongest gains came from iteration and verification.",
+        "WORKSHOP: CODEX FOR RESEARCH WORKFLOWS",
+        "31"
+      ],
+      "seconds": 75,
+      "notes": "This is my teaching experience, not a randomized trial. Emphasize what is observable: participants produced working repositories, documentation, and tests. Avoid converting enthusiasm into an unsupported causal claim about learning."
+    },
+    {
+      "slide": 32,
+      "text": [
+        "WHAT WORKS NOW",
+        "A protocol for serious mathematical use",
+        "SPECIFY — write the exact claim and evidence bar",
+        "SEARCH — let agents explore variants and literature",
+        "CHECK — compile, test, and use independent tools",
+        "CRITIQUE — isolate a second reviewer and attack assumptions",
+        "PUBLISH — artifacts, budgets, failures, provenance",
+        "GOAL",
+        "The mathematician remains able to explain, defend, and extend the result.",
+        "DELEGATE STEPS; RETAIN JUDGEMENT",
+        "32"
+      ],
+      "seconds": 75,
+      "notes": "This is the practical recommendation. The exact tooling can change next month; the protocol survives model churn."
+    },
+    {
+      "slide": 33,
+      "text": [
+        "WHAT STILL FAILS",
+        "Local brilliance is common.\nGlobal mathematical control is not.",
+        "RELIABLY IMPROVING",
+        "CONSISTENTLY HARD",
+        "• code and exact computation\n• library-scale proof search\n• counterexample generation\n• recombining known techniques",
+        "• choosing the right representation\n• sustaining long strategic coherence\n• inventing reusable abstractions\n• knowing what is worth proving",
+        "FAILURE OFTEN LOOKS LIKE CONFIDENCE",
+        "33"
+      ],
+      "seconds": 80,
+      "notes": "This is my critical judgement from the case studies. Current systems can produce real novelty, but the modal pattern is powerful recombination plus search. Structural creativity is rarer and harder to recognize."
+    },
+    {
+      "slide": 34,
+      "text": [
+        "THE CREATIVITY QUESTION",
+        "New representation is the bottleneck.",
+        "SEARCH",
+        "many variants\ncheap falsification\nstrong local moves",
+        "COMPOSITION",
+        "transfer known ideas\ncombine tools\nrepair local gaps",
+        "ABSTRACTION",
+        "invent the invariant\nreframe the problem\nbuild a reusable theory",
+        "World models, latent-space reasoning, and better memory may help—but that is a research agenda, not today's result.",
+        "STRUCTURE REMAINS THE FRONTIER",
+        "34"
+      ],
+      "seconds": 85,
+      "notes": "Avoid claiming an architectural impossibility. Say that present LLM-centred systems remain inconsistent at representation change and theory building. World models or latent reasoning may alter this, but the evidence is not here yet."
+    },
+    {
+      "slide": 35,
+      "text": [
+        "THE LEIDEN DECLARATION",
+        "Keep mathematical governance while capability accelerates.",
+        "OPEN",
+        "transparent arguments\npublic infrastructure",
+        "DISCLOSE",
+        "tools + compute\nmeaningful AI use",
+        "OWN",
+        "humans take credit\nand responsibility",
+        "PRACTICE",
+        "1",
+        "AI is a tool",
+        "1",
+        "proof remains inspectable",
+        "1",
+        "access must not decide voice",
+        "Policies should preserve autonomy without freezing methods.",
+        "LEIDENDECLARATION.AI · IMU ENDORSED",
+        "35"
+      ],
+      "seconds": 80,
+      "notes": "The Declaration was published 2 June 2026, reflects practice as of May, and is endorsed by the IMU. I am one of the authors and a website convenor. Its principles are scientific infrastructure, not anti-technology sentiment."
+    },
+    {
+      "slide": 36,
+      "text": [
+        "A 12–24 MONTH FORECAST",
+        "More verified artifacts; uneven progress on theory.",
+        "NOW",
+        "agent workbenches\nformal proof search",
+        "6 MO",
+        "routine paper-to-Lean\nstronger cross-audit",
+        "12 MO",
+        "research loops\nshared state + tools",
+        "18 MO",
+        "better representation search\ncompute pressure",
+        "24 MO",
+        "selective theory gains\nnot general autonomy",
+        "Expect discontinuous examples and slow institutional adaptation.",
+        "FORECAST, NOT A PRODUCT ROADMAP",
+        "36"
+      ],
+      "seconds": 75,
+      "notes": "The safest forecast is architectural: more stateful agents, proof assistants, and disclosed traces. The riskiest claim is universal autonomous theory building; do not make it."
+    },
+    {
+      "slide": 37,
+      "text": [
+        "DISCUSSION",
+        "DELEGATE SEARCH.\nRETAIN JUDGEMENT.\nPUBLISH THE TRACE.",
+        "The right question is not whether AI can do mathematics.\nIt is which mathematical responsibilities we choose to automate—and how we will know that the result deserves trust.",
+        "x.com/nasqret · github.com/nasqret · full notes and artifacts: GitHub Pages"
+      ],
+      "seconds": 55,
+      "notes": "End on responsibility rather than replacement. Invite the audience to challenge the evidence taxonomy, the benchmark methodology, and the forecast."
+    }
+  ]
+}

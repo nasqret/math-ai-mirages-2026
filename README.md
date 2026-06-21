@@ -9,12 +9,25 @@ results; formal and computational examples are shipped as executable artifacts.
 
 ## Deliverables
 
-- PowerPoint and PDF presentation with speaker notes
+- [37-slide PowerPoint with speaker notes](outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx)
 - source and claim ledger
-- Jupyter Book and Obsidian knowledge vault
+- [Jupyter Book](book/intro.md) and [Obsidian knowledge vault](vault/Home.md)
 - Lean, SageMath, and Magma examples
-- GitHub Pages landing site
+- [GitHub Pages landing site](landing/index.html)
 - reproducibility and QA reports
 
 Current machine-readable state: [`research/data/status.json`](research/data/status.json).
 
+## Verification
+
+```bash
+HOME=/tmp/codex-sage-home SAGE_HOME=/tmp/codex-sage-home \
+  sage artifacts/sage/verify_case_numbers.sage
+
+(cd artifacts/lean && lake build)
+
+jupyter-book build book -W --keep-going
+```
+
+The independent Magma replay command and captured output are in
+[`artifacts/magma`](artifacts/magma/README.md).
