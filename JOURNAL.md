@@ -67,3 +67,6 @@
   exercised the core interaction path, and found no console errors.
 - Removed the PowerPoint file from the Pages assembly path. It remains only as a
   historical repository export.
+- Published main commit `bec25cc` and Pages commit `af36876`. Verified the live
+  root as a 33-slide deck, the Lean fragment as `no goals`, the book and assets
+  as HTTP 200, and the former PowerPoint URL as HTTP 404.

@@ -80,5 +80,5 @@
 
 - Repository: https://github.com/nasqret/math-ai-mirages-2026
 - Pages: https://nasqret.github.io/math-ai-mirages-2026/
-- Main release commit: `8a018a2` (followed by the final status commit)
-- Pages source: `gh-pages`, HTTPS enforced, verified live on 21 June 2026
+- Browser-deck commit: `bec25cc`; Pages commit: `af36876`
+- Pages source: `gh-pages`, HTTPS enforced, verified live on 22 June 2026
