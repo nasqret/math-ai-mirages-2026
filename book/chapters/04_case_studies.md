@@ -37,7 +37,7 @@ The certified arithmetic is
 
 \[
 \bar c_1^2=112,\qquad \bar c_2=40,
-\qquad \frac{\bar c_1^2}{\bar c_2}=\frac{14}{5}>rac{8}{3}.
+\qquad \frac{\bar c_1^2}{\bar c_2}=\frac{14}{5}>\frac{8}{3}.
 \]
 
 The auxiliary quantity used in the search is
@@ -71,10 +71,46 @@ machine assistance, and the still-hypothetical fully autonomous “superhuman
 mathematician.” The 2026 evidence fills the intermediate boxes; it does not erase
 the final distinction.
 
-## A private FrontierMath Tier-4 attempt
+## One private FrontierMath Tier-4 problem, eleven isolated attempts
 
-The speaker also retained a long GPT-5.4 attempt on a private Tier-4 problem.
-The run combined local tools and calculations, produced a candidate solution,
-and revealed weaknesses in strategy selection. Because the statement,
-held-out solution, and full evaluation record are confidential, this is a
-first-person case study—not a public benchmark datapoint.
+The public, Epoch-approved
+[`sources/summary-anonym.tex`](https://github.com/nasqret/math-ai-mirages-2026/blob/main/sources/summary-anonym.tex)
+report compares eleven
+independent attempts at the same exact-integer problem in arithmetic algebraic
+geometry. There was no memory between runs. Each used roughly 100,000 or more
+reasoning tokens; the first ten transcripts contain 26,128 lines. Exact problem
+details remain withheld.
+
+The reference solution was decomposed into seven conceptual steps:
+
+1. structural decomposition;
+2. invariant computation;
+3. deep geometric structure;
+4. associated objects;
+5. counting formula;
+6. constraint classification; and
+7. global cancellation.
+
+The attempt scores, one point per fully discovered step with half credit for a
+partial step, were
+
+\[
+1,\;0.5,\;2.5,\;3,\;3,\;2.5,\;4,\;0.5,\;4.5,\;0.5,\;7.
+\]
+
+Only the final run was complete. The first ten averaged 2.2/7. Every run engaged
+with steps 1 and 2, but nine of eleven missed step 7. The transition from local
+calculation to the global cancellation was the actual phase boundary.
+
+Four further observations are concrete but descriptive, not causal:
+
+- code-submitting runs averaged 3.4/7, versus 0.6/7 without code;
+- runs that deeply used two or three strategies averaged 3.6/7, versus 0.5/7
+  for shallow exploration;
+- all three heuristic numerical guesses overestimated the answer by 6.4–6.8%;
+- even the correct run called its answer a “best guess,” so expressed confidence
+  did not identify correctness.
+
+This is first-person trace analysis, not an additional public benchmark score.
+Its value is diagnostic: large budgets reliably produced plausible local work,
+while selection and control of the global structure remained fragile.

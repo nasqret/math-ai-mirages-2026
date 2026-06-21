@@ -6,6 +6,9 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = fs.readFileSync(path.join(root, "landing/index.html"), "utf8");
+const frontierSnapshot = JSON.parse(
+  fs.readFileSync(path.join(root, "research/data/frontiermath-tier4-v2-2026-06-22.json"), "utf8")
+);
 
 const slidePattern = /<section class="[^"]*\bslide\b[^"]*" id="([^"]+)" data-title="([^"]+)" data-duration="(\d+)"/g;
 const slides = [...html.matchAll(slidePattern)].map((match) => ({
@@ -24,6 +27,17 @@ const required = [
   "autoformalization",
   "eml",
   "eml-audit",
+  "firstproof-protocol",
+  "firstproof-results",
+  "firstproof-review",
+  "co-mathematician",
+  "frontiermath-protocol",
+  "frontiermath-leaderboard",
+  "frontiermath-reading",
+  "frontier-personal-setup",
+  "frontier-personal-scores",
+  "frontier-personal-steps",
+  "frontier-personal-findings",
 ];
 const seconds = slides.reduce((sum, slide) => sum + slide.seconds, 0);
 
@@ -31,11 +45,19 @@ const checks = [
   [slides.length === 33, `expected 33 slides, found ${slides.length}`],
   [ids.size === slides.length, "slide IDs are not unique"],
   [noteCount === slides.length, `expected one note per slide, found ${noteCount}`],
-  [seconds >= 2550 && seconds <= 2850, `planned talk time ${seconds}s is outside 42.5-47.5 minutes`],
-  [required.every((id) => ids.has(id)), "formalization sequence is incomplete"],
+  [seconds >= 2700 && seconds <= 3000, `planned talk time ${seconds}s is outside 45-50 minutes`],
+  [required.every((id) => ids.has(id)), "required technical sequence is incomplete"],
   [html.includes("theorem</span> <span class=\"fn\">and_symm"), "real Lean theorem is missing"],
   [html.includes("Build completed successfully (5 jobs)."), "Lean replay output is missing"],
   [html.includes("Trust the kernel. Audit the statement."), "formalization caveat is missing"],
+  [html.includes("2 ∣ χ<sub>c</sub>(M; ℚ)"), "FirstProof P7 mathematical failure is missing"],
+  [html.includes("Claude Fable 5 (max)"), "current FrontierMath leader is missing"],
+  [html.includes("mean I1–I10 = 2.2 / 7"), "anonymized attempt score chart is missing"],
+  [html.includes("global cancellation</td><td>1</td><td>1</td><td>9"), "S7 discovery result is missing"],
+  [frontierSnapshot.task_version === "2.0.0", "FrontierMath snapshot task version is wrong"],
+  [frontierSnapshot.evaluation_rows === 31, "FrontierMath snapshot row count is wrong"],
+  [frontierSnapshot.top_results[0]?.model === "Claude Fable 5 (max)", "FrontierMath snapshot leader is wrong"],
+  [fs.existsSync(path.join(root, "sources/summary-anonym.tex")), "anonymized Tier-4 source is missing"],
 ];
 
 const imageSources = [...html.matchAll(/<img[^>]+src="assets\/([^"]+)"/g)].map((match) => match[1]);
@@ -53,4 +75,4 @@ if (failures.length) {
 }
 
 console.log(`PASS: ${slides.length} browser slides, ${noteCount} notes, ${seconds}s planned`);
-console.log(`PASS: ${required.length} formalization slides and ${imageSources.length} visual assets`);
+console.log(`PASS: ${required.length} required technical slides and ${imageSources.length} visual assets`);

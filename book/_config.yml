@@ -14,3 +14,9 @@ repository:
 sphinx:
   config:
     html_show_copyright: true
+    html_static_path:
+      - _static
+    html_css_files:
+      - companion.css
+    html_js_files:
+      - companion.js

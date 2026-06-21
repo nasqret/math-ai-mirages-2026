@@ -12,7 +12,11 @@ results; formal and computational examples are shipped as executable artifacts.
 
 ## Deliverables
 
-- [33-slide browser deck with speaker notes](landing/index.html)
+- [33-slide, 48-minute browser deck with speaker notes](landing/index.html)
+- exact FirstProof protocol/result matrix and a dated FrontierMath Tier-4 v2
+  score chart
+- anonymized eleven-run Tier-4 case analysis from
+  [`sources/summary-anonym.tex`](sources/summary-anonym.tex)
 - source and claim ledger
 - [Jupyter Book](book/intro.md) and [Obsidian knowledge vault](vault/Home.md)
 - Lean, SageMath, and Magma examples

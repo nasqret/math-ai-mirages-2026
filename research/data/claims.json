@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-06-21",
+  "as_of": "2026-06-22",
   "policy": "Numerical and current claims carry an evidence class, source, access date, and caveat. Private claims are never presented as public benchmark results.",
   "claims": [
     {
@@ -27,8 +27,17 @@
       "evidence_class": "benchmark_owner_report",
       "source": "https://epoch.ai/benchmarks/frontiermath-tiers-1-3-v2",
       "source_date": "2026-06-12",
-      "accessed": "2026-06-21",
-      "caveat": "Old and v2 model percentages are not directly comparable."
+      "accessed": "2026-06-22",
+      "caveat": "Old and v2 model percentages are not directly comparable; the Tier-4 private evaluation set contains 41 problems because two of the 43 are public."
+    },
+    {
+      "id": "frontiermath-v2-leaderboard",
+      "claim": "The official 22 June 2026 FrontierMath Tier-4 v2 data contains 31 task-version-2.0.0 evaluation rows. The highest reported scores are Claude Fable 5 at 87.8 +/- 5.2 percent, GPT-5.5 Pro at 78.0 +/- 6.5 percent, and AI Co-Mathematician at 75.6 +/- 6.7 percent.",
+      "status": "verified",
+      "evidence_class": "benchmark_owner_data_snapshot",
+      "source": "https://epoch.ai/data/benchmarks.csv",
+      "accessed": "2026-06-22",
+      "caveat": "The evaluated systems differ in accessibility, scaffolding, tools, and inference compute; the 41-problem private set gives wide and overlapping standard errors."
     },
     {
       "id": "aletheia-firstproof",
@@ -36,8 +45,17 @@
       "status": "verified",
       "evidence_class": "paper_and_released_traces",
       "source": "https://arxiv.org/abs/2602.21201",
-      "accessed": "2026-06-21",
-      "caveat": "Small sample, best-of-two attempts, and essential human grading."
+      "accessed": "2026-06-22",
+      "caveat": "The score is best-of-two across two base models. P8 received 5 of 7 Correct ratings; each agent also produced at least one false positive."
+    },
+    {
+      "id": "aletheia-firstproof-protocol",
+      "claim": "Aletheia received the ten FirstProof LaTeX problem statements without modification. A predetermined verifier/extractor produced LaTeX submissions, the researchers did not ask the model for clarification, and each candidate received at least two independent academic assessments.",
+      "status": "verified",
+      "evidence_class": "paper_and_released_traces",
+      "source": "https://arxiv.org/abs/2602.21201",
+      "accessed": "2026-06-22",
+      "caveat": "The authors interpret Correct as publishable after minor revisions; FirstProof itself was not intended as a formal benchmark."
     },
     {
       "id": "co-mathematician-architecture",

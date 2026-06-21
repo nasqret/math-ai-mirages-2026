@@ -50,17 +50,23 @@
 
 - The primary deck is the browser-native `landing/` presentation, using the
   accepted visual language of the `ai-w-praktycznej-edukacji` web deck.
-- Final browser deck: 33 slides, 43:20 planned core speaking time, 33 note blocks.
+- Final browser deck: 33 slides, 48:00 planned core speaking time, 33 note blocks.
 - The formalization core is eight slides and contains actual Lean source, proof
   state, build output, and the semantic versus kernel audit boundary.
+- Generic forecast and capability-summary slides were removed. FirstProof now has
+  three technical slides; FrontierMath v2 and the anonymized private problem have
+  seven slides with exact protocols, scores, uncertainty, and trace evidence.
 - The PowerPoint build is a historical export and is not deployed.
 - Erdős counts use community-wiki commit `0f72fdb`; records and unique problems
   are never conflated.
-- FrontierMath statistics use the 12 June 2026 v2 update.
+- FrontierMath statistics use the 12 June 2026 v2 task and the official score
+  snapshot accessed on 22 June 2026; the frozen chart data records task version
+  2.0.0 and all 31 matching evaluation rows.
 - No official GPT-5.6 release source was found; any such label is described only
   as project-reported provenance.
-- Private IGP24 and Tier-4 material is published only as aggregate or
-  first-person methodology.
+- Private IGP24 material is aggregate. The Tier-4 case uses only the
+  Epoch-approved anonymized public summary; the problem and held-out answer stay
+  confidential.
 - The quartic certificate is independently replayed in SageMath and Magma.
 - Companion Lean examples use core Lean 4.28 to keep replay independent of the
   multi-gigabyte Mathlib cache; Falenty itself pins Mathlib 4.28.
@@ -82,3 +88,5 @@
 - Pages: https://nasqret.github.io/math-ai-mirages-2026/
 - Browser-deck commit: `bec25cc`; Pages commit: `af36876`
 - Pages source: `gh-pages`, HTTPS enforced, verified live on 22 June 2026
+- The generated Pages root must contain `.nojekyll`; otherwise GitHub Pages
+  suppresses JupyterBook's `book/_static/` theme assets and renders raw HTML.

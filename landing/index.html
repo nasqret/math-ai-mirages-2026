@@ -30,43 +30,19 @@
       <aside class="notes">Open with the conclusion: the capability jump is real. The strongest public narrative still confuses a correct answer, a checked proof, a new theorem, and a new theory. This talk separates those achievements.</aside>
     </section>
 
-    <section class="slide slide--statement" id="verdict" data-title="Verdict" data-duration="70">
-      <span class="kicker">Verdict</span>
-      <h2>The capability jump is <em>real.</em><br>The popular theory of it is <strong>not.</strong></h2>
-      <div class="verdict-row">
-        <span>tool-using research loops work</span>
-        <span>proof assistants close real gaps</span>
-        <span class="muted">autonomy remains conditional</span>
-      </div>
-      <aside class="notes">This is neither dismissal nor victory lap. Long tool-using runs, formal proof search, and durable artifacts are real advances. But one benchmark does not describe a profession, fluent prose is not proof, and an isolated success is not general autonomy.</aside>
-    </section>
-
     <section class="slide" id="evidence-ladder" data-title="Evidence ladder" data-duration="75">
       <header class="slide-header">
-        <span class="kicker">Vocabulary</span>
-        <h2>Use the right noun.</h2>
+        <span class="kicker">Four different empirical claims</span>
+        <h2>Do not collapse them.</h2>
       </header>
-      <div class="ladder">
-        <article><b>01</b><h3>Answer</h3><p>candidate object</p></article>
-        <article><b>02</b><h3>Proof</h3><p>checked argument</p></article>
-        <article><b>03</b><h3>Theorem</h3><p>new result</p></article>
-        <article><b>04</b><h3>Theory</h3><p>new structure</p></article>
+      <div class="ladder evidence-examples">
+        <article><b>01</b><h3>Answer</h3><p>FrontierMath: exact Python object</p></article>
+        <article><b>02</b><h3>Proof</h3><p>Lean term or expert-refereed argument</p></article>
+        <article><b>03</b><h3>Theorem</h3><p>Nathanson: new classification</p></article>
+        <article><b>04</b><h3>Theory</h3><p>new invariant or reusable representation</p></article>
       </div>
-      <p class="takeaway">The frontier rises sharply from 1 to 4.</p>
-      <aside class="notes">Use this vocabulary throughout. A formal proof can establish correctness relative to a statement while saying little about novelty, importance, or whether the statement captured the intended mathematics.</aside>
-    </section>
-
-    <section class="slide" id="six-months" data-title="Six months" data-duration="60">
-      <header class="slide-header">
-        <span class="kicker">January → June 2026</span>
-        <h2>Three fronts moved at once.</h2>
-      </header>
-      <div class="three-fronts">
-        <article><span>CAPABILITY</span><b>Erdős #728<br>unit distances</b></article>
-        <article><span>EVALUATION</span><b>FirstProof<br>FrontierMath v2</b></article>
-        <article><span>GOVERNANCE</span><b>Leiden<br>Declaration</b></article>
-      </div>
-      <aside class="notes">The chronology matters less than the collision: capability, evaluation, and governance moved together. That is why press summaries have been hard to calibrate.</aside>
+      <p class="takeaway">The same system can succeed at 1–3 and still fail at 4.</p>
+      <aside class="notes">These are separate evaluation questions. FrontierMath primarily checks a returned answer object. Lean checks a proof term against a formal statement. FirstProof asks experts whether an informal proof is publishable after minor revisions. A new theorem adds novelty; a new theory adds durable explanatory structure.</aside>
     </section>
 
     <section class="slide" id="erdos-counts" data-title="Erdős campaign" data-duration="90">
@@ -102,20 +78,7 @@
       <aside class="notes">The public record is unusually strong: exact statement, formal artifact, expert inspection, and literature context. Do not compress these different responsibilities into the adjective autonomous.</aside>
     </section>
 
-    <section class="slide" id="unit-distances" data-title="Unit distances" data-duration="80">
-      <header class="slide-header compact">
-        <span class="kicker">Unit-distance problem · May 2026</span>
-        <h2>Original structure,<br>not merely closure.</h2>
-      </header>
-      <div class="split-cards">
-        <article class="positive"><span>MATHEMATICS</span><b>n<sup>1+δ</sup></b><p>algebraic number theory enters discrete geometry</p></article>
-        <article><span>EVIDENCE BAR</span><ul><li>public proof record</li><li>independent checks</li><li>compute provenance</li><li>ordinary review</li></ul></article>
-      </div>
-      <p class="source"><a href="https://openai.com/index/model-disproves-discrete-geometry-conjecture/">provider-reported · expert-reviewed</a></p>
-      <aside class="notes">This is qualitatively stronger than closing an isolated exercise: the reported construction imports new structure into the problem. The provider calls it autonomous; the proof and independent mathematical assessment should remain the primary evidence objects.</aside>
-    </section>
-
-    <section class="slide slide--section" id="formalization" data-title="Formalization" data-duration="45">
+    <section class="slide slide--section" id="formalization" data-title="Formalization" data-duration="40">
       <span class="section-number">I</span>
       <div>
         <span class="kicker">Formalization</span>
@@ -257,33 +220,6 @@ Built MiragesLeanExamples
       <aside class="notes">This answers Nathanson's questions rather than a single named conjecture. It is a clean example of a new mathematical result paired with a formal artifact. The authors retain responsibility for checking, exposition, and the published claim.</aside>
     </section>
 
-    <section class="slide slide--section" id="agentic-research" data-title="Agentic research" data-duration="75">
-      <span class="section-number">II</span>
-      <div>
-        <span class="kicker">Agentic research</span>
-        <h2>Not one brilliant prompt.<br>One controlled state machine.</h2>
-      </div>
-      <div class="loop-ring" aria-label="Plan, execute, test, critique, checkpoint loop">
-        <span>plan</span><span>execute</span><span>test</span><span>critique</span><span>checkpoint</span>
-      </div>
-      <aside class="notes">The operational unit is a durable loop: files, scripts, exact tests, status JSON, checkpoints, and explicit failure states. Context windows help, but external state makes the work auditable and resumable.</aside>
-    </section>
-
-    <section class="slide" id="compute" data-title="Compute provenance" data-duration="70">
-      <header class="slide-header compact">
-        <span class="kicker">Inference-time compute</span>
-        <h2>Compute is part of the proof provenance.</h2>
-      </header>
-      <div class="compute-scale">
-        <article><b>1×</b><span>attempt</span></article>
-        <article><b>10×</b><span>critics</span></article>
-        <article><b>100×</b><span>tool loops</span></article>
-        <article><b>1,000×</b><span>agents + memory</span></article>
-      </div>
-      <p class="takeaway">Report budget · retries · tools · human interventions.</p>
-      <aside class="notes">A score without an inference budget is not a scientific comparison. Search width, retries, tools, and human steering can change outcomes as much as the base model.</aside>
-    </section>
-
     <section class="slide slide--image" id="ecdsa" data-title="ECDSA.fail" data-duration="90">
       <div class="image-copy narrow">
         <span class="kicker">ECDSA.fail · 14 June</span>
@@ -311,7 +247,7 @@ Built MiragesLeanExamples
       <aside class="notes">The public lesson is the protocol: generation, exact Magma verification, live-open checks, and deduplication. Because the repository and competition are private, do not present this as a publicly reproducible benchmark result.</aside>
     </section>
 
-    <section class="slide slide--image" id="quartic" data-title="Quartic lines" data-duration="105">
+    <section class="slide slide--image" id="quartic" data-title="Quartic lines" data-duration="110">
       <div class="image-copy narrow">
         <span class="kicker">With Piotr Pokora · exact characteristic 0</span>
         <h2>A new Chern-slope record.</h2>
@@ -326,7 +262,7 @@ Built MiragesLeanExamples
       <aside class="notes">This is the strongest personal case. The finite-field phase located the configuration; exact reconstruction moved it to characteristic zero; independent SageMath and Magma computations verify the profile and Chern numbers. The model label recorded in the project is not needed for the mathematical claim.</aside>
     </section>
 
-    <section class="slide" id="quadrics" data-title="Quadrics" data-duration="75">
+    <section class="slide" id="quadrics" data-title="Quadrics" data-duration="80">
       <header class="slide-header compact">
         <span class="kicker">Quadrics project</span>
         <h2>Computation found the route.<br>The proof became computer-free.</h2>
@@ -340,7 +276,7 @@ Built MiragesLeanExamples
       <aside class="notes">This dissolves the false dichotomy between computer proof and human proof. Tool-heavy discovery can be scaffolding for a conceptually cleaner final argument.</aside>
     </section>
 
-    <section class="slide slide--figure" id="nature-physics" data-title="Nature Physics roadmap" data-duration="90">
+    <section class="slide slide--figure" id="nature-physics" data-title="Nature Physics roadmap" data-duration="85">
       <div class="figure-heading">
         <span class="kicker">Naskręcki + Ono · Nature Physics 2025</span>
         <h2>The amplified human arrived first.</h2>
@@ -351,51 +287,219 @@ Built MiragesLeanExamples
       <aside class="notes">The diagram distinguishes machine-augmented discovery from a hypothetical superhuman mathematician. The intervening evidence validates the workflow on the left far more strongly than the endpoint on the right.</aside>
     </section>
 
-    <section class="slide" id="campaigns" data-title="Research systems" data-duration="90">
+    <section class="slide" id="firstproof-protocol" data-title="FirstProof protocol" data-duration="100">
       <header class="slide-header compact">
-        <span class="kicker">Research systems</span>
-        <h2>Inspectability matters more than branding.</h2>
+        <span class="kicker">FirstProof · Aletheia</span>
+        <h2>What did the experiment actually do?</h2>
       </header>
-      <div class="system-pair">
-        <article><span>ALETHEIA · FIRSTPROOF</span><b>6 / 10</b><p>majority expert acceptance</p><small>raw prompts + outputs · small sample · best-of-two</small></article>
-        <article><span>AI CO-MATHEMATICIAN</span><b>workbench</b><p>state + tools + failed hypotheses</p><small>architecture closer to research than one-turn scoring</small></article>
+      <div class="method-table">
+        <div><b>INPUT</b><span>10 unpublished research questions, copied from the LaTeX source without modification</span></div>
+        <div><b>SYSTEM</b><span>Aletheia A and B, using two different Gemini base-model snapshots</span></div>
+        <div><b>INTERACTION</b><span>no clarification, repair, or intermediate human intervention</span></div>
+        <div><b>OUTPUT</b><span>predetermined verifier/extractor → standalone LaTeX proof or no output</span></div>
+        <div><b>GRADING</b><span>at least 2 academic mathematicians; more opinions when confidence was low</span></div>
+        <div><b>“CORRECT”</b><span>publishable after minor revisions—not publication-ready as generated</span></div>
       </div>
-      <p class="source"><a href="https://arxiv.org/abs/2602.21201">arXiv:2602.21201</a> · <a href="https://arxiv.org/abs/2605.06651">arXiv:2605.06651</a></p>
-      <aside class="notes">Aletheia is strong because outputs and disagreements are inspectable; problem 8 was not unanimous. The co-mathematician is interesting as a stateful architecture. Keep its architecture separate from old leaderboard claims on benchmark versions that later changed.</aside>
+      <p class="source"><a href="https://arxiv.org/abs/2602.21201">Feng et al. · arXiv:2602.21201 · §§2–3</a></p>
+      <aside class="notes">This is not a zero-context model benchmark. It is a fully autonomous agent pipeline with a predetermined verifier and extractor, run twice with different base models. The problem statements were copied unchanged. The researchers did not ask the model for clarification after seeing outputs. Their success standard is explicitly “publishable after minor revisions.” FirstProof itself was not intended as a formal benchmark.</aside>
     </section>
 
-    <section class="slide" id="frontiermath" data-title="FrontierMath v2" data-duration="95">
+    <section class="slide" id="firstproof-results" data-title="FirstProof result matrix" data-duration="110">
       <header class="slide-header compact">
-        <span class="kicker">FrontierMath v2 · 12 June 2026</span>
-        <h2>The correction is the result.</h2>
+        <span class="kicker">Complete result matrix</span>
+        <h2>“6/10” is a best-of-two statistic.</h2>
       </header>
-      <div class="fm-grid">
-        <article><span>FULL SET</span><b>338</b><p>problems</p></article>
-        <article><span>TIER 4</span><b>43</b><p>private problems</p></article>
-        <article><span>ADDRESSED</span><b>42%</b><p>errors or revisions</p></article>
-      </div>
-      <div class="version-line"><span>v1 scores</span><i>audit</i><span>12 corrected</span><span>7 removed</span><strong>v2 scores pending</strong></div>
-      <p class="source"><a href="https://epoch.ai/benchmarks/frontiermath-tiers-1-3-v2">Epoch AI · benchmark-owner report</a></p>
-      <aside class="notes">Epoch reports 338 total problems, including 43 in Tier 4. Twelve Tier-4 problems were corrected and seven removed. The larger update addressed 42 percent of problems. Old and v2 percentages are not directly comparable. My own Tier-4 attempt remains a private case study, not a public datapoint.</aside>
+      <table class="fp-table">
+        <thead><tr><th>Problem</th><th>Aletheia A</th><th>Aletheia B</th><th>Best-of-two expert result</th></tr></thead>
+        <tbody>
+          <tr><th>P1</th><td class="s-none">no output</td><td class="s-none">no output</td><td>—</td></tr>
+          <tr><th>P2</th><td class="s-good">correct</td><td class="s-good">correct</td><td class="s-good">4/4</td></tr>
+          <tr><th>P3</th><td class="s-none">no output</td><td class="s-none">no output</td><td>—</td></tr>
+          <tr><th>P4</th><td class="s-none">no output</td><td class="s-none">no output</td><td>—</td></tr>
+          <tr><th>P5</th><td class="s-good">correct</td><td class="s-bad">misinterpreted</td><td class="s-good">4/4</td></tr>
+          <tr><th>P6</th><td class="s-none">no output</td><td class="s-none">no output</td><td>—</td></tr>
+          <tr><th>P7</th><td class="s-bad">critically flawed</td><td class="s-good">correct</td><td class="s-good">3/3</td></tr>
+          <tr><th>P8</th><td class="s-warn">inadequate</td><td class="s-warn">correct?</td><td class="s-warn">5/7</td></tr>
+          <tr><th>P9</th><td class="s-good">correct</td><td class="s-good">correct</td><td class="s-good">4/4</td></tr>
+          <tr><th>P10</th><td class="s-good">correct</td><td class="s-good">correct</td><td class="s-good">2/2</td></tr>
+        </tbody>
+      </table>
+      <p class="source"><a href="https://arxiv.org/abs/2602.21201">Table 2 · raw prompts and outputs: google-deepmind/superhuman/aletheia</a></p>
+      <aside class="notes">Both agents solved P2, P9, and P10. The other three credited problems depended on selecting between asymmetric outcomes: P5 correct versus misinterpreted, P7 critically flawed versus correct, and P8 inadequate versus a disputed correct result. Each agent had at least one false positive. Four problems self-filtered to no output in both runs.</aside>
     </section>
 
-    <section class="slide" id="benchmark-minimum" data-title="Benchmark minimum" data-duration="75">
+    <section class="slide" id="firstproof-review" data-title="FirstProof referee findings" data-duration="110">
       <header class="slide-header compact">
-        <span class="kicker">Benchmark governance</span>
-        <h2>A score is a protocol claim.</h2>
+        <span class="kicker">Two referee-level examples</span>
+        <h2>Correctness failed at specific mathematical joints.</h2>
       </header>
-      <div class="minimum-report">
-        <article><b>01</b><span>task + version</span></article>
-        <article><b>02</b><span>budget + tools</span></article>
-        <article><b>03</b><span>retries + humans</span></article>
-        <article><b>04</b><span>errors + exclusions</span></article>
-        <article><b>05</b><span>raw traces</span></article>
+      <div class="review-cases">
+        <article>
+          <span>P7 · ALETHEIA A · CRITICALLY FLAWED</span>
+          <p class="math-claim">σ acts freely, σ²=1<br><strong>⇏</strong> 2 ∣ χ<sub>c</sub>(M; ℚ)</p>
+          <p>The argument invoked multiplicativity of compactly supported Euler characteristic without the required finiteness assumptions.</p>
+          <small>Aletheia B was accepted 3/3. P7 used &gt;10× the Erdős-1051 inference-cost baseline.</small>
+        </article>
+        <article>
+          <span>P8 · ALETHEIA B · 5/7</span>
+          <p class="math-claim">local vertex smoothings<br><strong>?</strong> global edge smoothing</p>
+          <p>Reviewers agreed on the mathematical direction but disagreed whether missing interpolation details were “minor revisions.”</p>
+          <small>Aletheia A was rated inadequate; the disagreement was about proof completeness.</small>
+        </article>
       </div>
-      <p class="takeaway">Version the benchmark—not only the model.</p>
-      <aside class="notes">A benchmark can remain valuable after correction if it records its failure transparently. The governance failure would be hiding revisions or continuing to quote obsolete scores.</aside>
+      <p class="source"><a href="https://arxiv.org/abs/2602.21201">Feng et al. · §3.2</a></p>
+      <aside class="notes">These are not vague hallucination labels. P7 contains a recognizable false implication: freeness of an involution does not by itself justify the divisibility claim for compactly supported rational Euler characteristic without finiteness. P8 is subtler: the experts mostly agreed on content but split on whether the local-to-global smoothing gap exceeded the “minor revision” threshold. This is why expert assessment remains part of the result.</aside>
     </section>
 
-    <section class="slide" id="teaching" data-title="Agentic teaching" data-duration="85">
+    <section class="slide" id="co-mathematician" data-title="AI Co-Mathematician" data-duration="90">
+      <header class="slide-header compact">
+        <span class="kicker">AI Co-Mathematician · current evidence</span>
+        <h2>A system score—not a base-model score.</h2>
+      </header>
+      <div class="co-math-grid">
+        <div class="co-score"><b>75.6%</b><span>±6.7 pp · FrontierMath Tier-4 v2</span></div>
+        <dl>
+          <div><dt>STATE</dt><dd>asynchronous workspace; failed hypotheses retained</dd></div>
+          <div><dt>TOOLS</dt><dd>literature, computation, proof, theory exploration</dd></div>
+          <div><dt>HUMAN LOOP</dt><dd>intent refinement, uncertainty management, artifact review</dd></div>
+        </dl>
+      </div>
+      <p class="takeaway">Agent scaffolding is part of the evaluated object.</p>
+      <p class="source"><a href="https://arxiv.org/abs/2605.06651">arXiv:2605.06651</a> · <a href="https://epoch.ai/data/benchmarks.csv">Epoch v2 data, accessed 22.06.2026</a></p>
+      <aside class="notes">The current v2 score is 75.6 percent with a 6.7-point standard error. The evaluated object is a stateful workbench, not merely a call to a base model. Its score belongs in the same leaderboard, but it should not be interpreted as an apples-to-apples comparison of underlying model weights.</aside>
+    </section>
+
+    <section class="slide" id="frontiermath-protocol" data-title="FrontierMath v2 protocol" data-duration="90">
+      <header class="slide-header compact">
+        <span class="kicker">FrontierMath Tier 4 · v2.0.0</span>
+        <h2>What does one score measure?</h2>
+      </header>
+      <div class="benchmark-protocol">
+        <div><b>43</b><span>Tier-4 problems</span><small>2 public · 41 private</small></div>
+        <div><b>1M</b><span>hard token limit</span><small>forced submission at 660k</small></div>
+        <div><b>30 s</b><span>per Python call</span><small>SymPy, NumPy, SciPy, NetworkX</small></div>
+        <div><b><code>answer()</code></b><span>returned Python object</span><small>often integer or SymPy object</small></div>
+      </div>
+      <div class="audit-strip"><b>v1 → v2</b><span>12 Tier-4 problems corrected</span><span>7 removed</span><span>42% of the full benchmark addressed</span></div>
+      <p class="source"><a href="https://epoch.ai/benchmarks/frontiermath-tier-4-v2">Epoch AI · methodology and changelog</a></p>
+      <aside class="notes">A Tier-4 score is short-answer accuracy under a large tool-using protocol. It does not directly score a published proof. The v2 private set has 41 problems because two of the 43 are public. A model may use up to one million tokens and repeated 30-second Python calls. Version 2 corrected 12 Tier-4 problems and removed 7, so v1 and v2 percentages are different objects.</aside>
+    </section>
+
+    <section class="slide" id="frontiermath-leaderboard" data-title="FrontierMath current leaderboard" data-duration="120">
+      <header class="slide-header compact">
+        <span class="kicker">Current Tier-4 v2 score chart · 22.06.2026</span>
+        <h2>Top reported systems on the 41 private problems.</h2>
+      </header>
+      <div class="leaderboard" role="img" aria-label="FrontierMath Tier-4 v2 top reported scores">
+        <div class="leader-row"><span>Claude Fable 5 (max)</span><i><b style="width:87.8%"></b></i><strong>87.8 ±5.2</strong></div>
+        <div class="leader-row"><span>GPT-5.5 Pro (xhigh)</span><i><b style="width:78.0%"></b></i><strong>78.0 ±6.5</strong></div>
+        <div class="leader-row agent"><span>AI Co-Mathematician</span><i><b style="width:75.6%"></b></i><strong>75.6 ±6.7</strong></div>
+        <div class="leader-row"><span>GPT-5.5 (xhigh)</span><i><b style="width:72.5%"></b></i><strong>72.5 ±7.1</strong></div>
+        <div class="leader-row"><span>GPT-5.4 Pro (xhigh)</span><i><b style="width:58.5%"></b></i><strong>58.5 ±7.8</strong></div>
+        <div class="leader-row"><span>Claude Opus 4.8 (max)</span><i><b style="width:56.1%"></b></i><strong>56.1 ±7.8</strong></div>
+        <div class="leader-row"><span>GPT-5.4 (xhigh)</span><i><b style="width:49.0%"></b></i><strong>49.0 ±8.0</strong></div>
+        <div class="leader-row"><span>GPT-5.2 Pro (xhigh)</span><i><b style="width:46.0%"></b></i><strong>46.0 ±7.8</strong></div>
+        <div class="leader-row"><span>Qwen3.7-Max</span><i><b style="width:34.1%"></b></i><strong>34.1 ±7.5</strong></div>
+        <div class="leader-row"><span>Claude 4.7 / GPT-5.2</span><i><b style="width:31.7%"></b></i><strong>31.7 ±≈7.3</strong></div>
+      </div>
+      <p class="source"><a href="https://epoch.ai/data/benchmarks.csv">Epoch benchmarks.csv · top ranks among 31 v2.0.0 evaluation rows · percentage ± standard error</a></p>
+      <aside class="notes">This is a frozen snapshot of the official Epoch data on 22 June. The chart shows the top ten score positions among 31 v2 evaluation rows. It is already radically different from the pre-audit chart: the current leader is Claude Fable 5 at 87.8 percent, followed by GPT-5.5 Pro and AI Co-Mathematician. The error bars are wide because the private set contains 41 problems.</aside>
+    </section>
+
+    <section class="slide" id="frontiermath-reading" data-title="Reading the FrontierMath chart" data-duration="85">
+      <header class="slide-header compact">
+        <span class="kicker">How to read the chart</span>
+        <h2>The ranking is precise. The interpretation is conditional.</h2>
+      </header>
+      <div class="score-context">
+        <div><b>2.44 pp</b><span>one private problem</span><p>1 / 41 × 100</p></div>
+        <div><b>5–8 pp</b><span>typical standard error</span><p>many intervals overlap</p></div>
+        <div><b>heterogeneous</b><span>evaluated systems</span><p>base models, “xhigh,” agents, unreleased systems</p></div>
+        <div><b>not normalized</b><span>inference compute</span><p>score alone does not isolate architecture or model quality</p></div>
+      </div>
+      <p class="takeaway">Use the chart as a protocol result, not a scalar theory of mathematical ability.</p>
+      <aside class="notes">One additional solved problem moves the score by about 2.44 percentage points. Standard errors overlap across several neighboring systems. The configurations differ in test-time compute, accessibility, base model, and agent scaffolding. This chart is valuable, but it does not identify a single causal variable called mathematical intelligence.</aside>
+    </section>
+
+    <section class="slide" id="frontier-personal-setup" data-title="Private Tier-4 experiment setup" data-duration="95">
+      <header class="slide-header compact">
+        <span class="kicker">My anonymized Tier-4 problem · Epoch-approved public summary</span>
+        <h2>Eleven isolated attempts at one exact integer.</h2>
+      </header>
+      <div class="experiment-meta">
+        <div><b>11</b><span>independent runs</span></div>
+        <div><b>≈100k+</b><span>reasoning tokens each</span></div>
+        <div><b>0</b><span>cross-run memory</span></div>
+        <div><b>26,128</b><span>transcript lines, I1–I10</span></div>
+      </div>
+      <ol class="seven-steps">
+        <li>structural decomposition</li><li>invariant</li><li>deep geometry</li><li>auxiliary objects</li><li>counting formula</li><li>constraint classification</li><li>global cancellation</li>
+      </ol>
+      <p class="source"><a href="https://github.com/nasqret/math-ai-mirages-2026/blob/main/sources/summary-anonym.tex">sources/summary-anonym.tex · exact problem details withheld</a></p>
+      <aside class="notes">The problem is in arithmetic algebraic geometry and asks for an exact large integer. The official route has seven conceptual steps. Eleven runs started from scratch under identical conditions, each using roughly one hundred thousand or more reasoning tokens. The report is anonymized, contains no critical solution details, and was approved by Epoch AI for public view.</aside>
+    </section>
+
+    <section class="slide" id="frontier-personal-scores" data-title="Private Tier-4 attempt scores" data-duration="110">
+      <header class="slide-header compact">
+        <span class="kicker">One point per fully discovered conceptual step</span>
+        <h2>Ten plausible failures. One complete run.</h2>
+      </header>
+      <div class="attempt-chart" role="img" aria-label="Scores of eleven independent attempts out of seven">
+        <div class="attempt heuristic"><i style="height:14.3%"></i><b>1</b><span>I1</span></div>
+        <div class="attempt zero"><i style="height:7.1%"></i><b>0.5</b><span>I2</span></div>
+        <div class="attempt zero"><i style="height:35.7%"></i><b>2.5</b><span>I3</span></div>
+        <div class="attempt code"><i style="height:42.9%"></i><b>3</b><span>I4</span></div>
+        <div class="attempt code"><i style="height:42.9%"></i><b>3</b><span>I5</span></div>
+        <div class="attempt code"><i style="height:35.7%"></i><b>2.5</b><span>I6</span></div>
+        <div class="attempt code"><i style="height:57.1%"></i><b>4</b><span>I7</span></div>
+        <div class="attempt heuristic"><i style="height:7.1%"></i><b>0.5</b><span>I8</span></div>
+        <div class="attempt code"><i style="height:64.3%"></i><b>4.5</b><span>I9</span></div>
+        <div class="attempt heuristic"><i style="height:7.1%"></i><b>0.5</b><span>I10</span></div>
+        <div class="attempt final"><i style="height:100%"></i><b>7</b><span>Final</span></div>
+        <div class="mean-line"><span>mean I1–I10 = 2.2 / 7</span></div>
+      </div>
+      <div class="chart-key"><span class="key-code">code</span><span class="key-heuristic">heuristic</span><span class="key-zero">zero answer</span><span class="key-final">correct</span></div>
+      <p class="source">source: summary-anonym.tex · 1/11 correct</p>
+      <aside class="notes">The scoring is based on the seven official conceptual steps: one point for full discovery and half a point for partial discovery. The first ten runs averaged 2.2. The strongest wrong run reached 4.5. Only the final run assembled all seven steps and returned the correct integer, via executable code rather than a complete analytic derivation.</aside>
+    </section>
+
+    <section class="slide" id="frontier-personal-steps" data-title="Private Tier-4 step coverage" data-duration="110">
+      <header class="slide-header compact">
+        <span class="kicker">Where the eleven runs stopped</span>
+        <h2>The phase transition begins at structural recognition.</h2>
+      </header>
+      <table class="step-table">
+        <thead><tr><th>Step</th><th>Role</th><th>full</th><th>partial</th><th>missed</th></tr></thead>
+        <tbody>
+          <tr><th>S1</th><td>structural decomposition</td><td>5</td><td>6</td><td>0</td></tr>
+          <tr><th>S2</th><td>invariant computation</td><td>7</td><td>4</td><td>0</td></tr>
+          <tr><th>S3</th><td>deep geometric structure</td><td>1</td><td>7</td><td>3</td></tr>
+          <tr><th>S4</th><td>associated objects</td><td>2</td><td>5</td><td>4</td></tr>
+          <tr><th>S5</th><td>counting formula</td><td>1</td><td>5</td><td>5</td></tr>
+          <tr><th>S6</th><td>constraint classification</td><td>3</td><td>4</td><td>4</td></tr>
+          <tr class="critical"><th>S7</th><td>global cancellation</td><td>1</td><td>1</td><td>9</td></tr>
+        </tbody>
+      </table>
+      <p class="takeaway">All runs engaged S1–S2. Nine of eleven never found S7.</p>
+      <aside class="notes">The model consistently found the common preamble: decomposition and the key invariant. From S3 onward, coverage drops. S7 is qualitatively different: recognizing a global symmetry that collapses the final calculation. Only the correct run found it fully; one other run saw it partially.</aside>
+    </section>
+
+    <section class="slide" id="frontier-personal-findings" data-title="Private Tier-4 behavioural findings" data-duration="110">
+      <header class="slide-header compact">
+        <span class="kicker">Behavioural findings from the eleven traces</span>
+        <h2>The correct run was not self-identifying.</h2>
+      </header>
+      <div class="finding-table">
+        <div><b>3.4 / 7</b><span>mean for code-submitting runs</span><small>versus 0.6 / 7 without code · 5.7×</small></div>
+        <div><b>+6.4–6.8%</b><span>error of all three heuristic guesses</span><small>every guess overestimated: shared systematic bias</small></div>
+        <div><b>3.6 / 7</b><span>deep use of 2–3 strategies</span><small>versus 0.5 / 7 for shallow exploration</small></div>
+        <div><b>“best guess”</b><span>language used by the correct run</span><small>confidence did not discriminate correct from incorrect</small></div>
+      </div>
+      <p class="source">descriptive correlations from summary-anonym.tex; not causal estimates</p>
+      <aside class="notes">Writing code correlates strongly with higher step coverage, likely because it forces explicit implementation. The three heuristic estimates independently converged to the same six-to-seven percent overestimate. Depth across a few compatible strategies outperformed shallow breadth. Most importantly, the correct run remained uncertain and called its output a best guess; self-reported confidence was not useful for identifying success.</aside>
+    </section>
+
+    <section class="slide" id="teaching" data-title="Agentic teaching" data-duration="80">
       <header class="slide-header compact">
         <span class="kicker">Agentic teaching</span>
         <h2>The least speculative success.</h2>
@@ -410,44 +514,25 @@ Built MiragesLeanExamples
       <aside class="notes">This is production evidence, not a randomized learning-outcomes study. The observable result is that participants and instructor produced working repositories, documentation, tests, mathematical code, slides, and interactive applets.</aside>
     </section>
 
-    <section class="slide" id="works-now" data-title="What works now" data-duration="75">
+    <section class="slide" id="structural-limit" data-title="Observed structural limits" data-duration="100">
       <header class="slide-header compact">
-        <span class="kicker">Current practice</span>
-        <h2>What works now.</h2>
+        <span class="kicker">Cross-case synthesis</span>
+        <h2>The failures occur at identifiable structural interfaces.</h2>
       </header>
-      <div class="works-list">
-        <article><b>SPECIFY</b><span>exact claim + evidence bar</span></article>
-        <article><b>SEARCH</b><span>variants + literature + computation</span></article>
-        <article><b>CHECK</b><span>kernel + CAS + independent tool</span></article>
-        <article><b>CRITIQUE</b><span>isolated second reviewer</span></article>
-        <article><b>PUBLISH</b><span>artifact + budget + failure trace</span></article>
-      </div>
-      <aside class="notes">The exact tooling will change quickly; this protocol should survive model churn. The mathematician must remain able to explain, defend, and extend the result.</aside>
+      <table class="evidence-table">
+        <thead><tr><th>Case</th><th>Observed failure</th><th>Missing control</th></tr></thead>
+        <tbody>
+          <tr><th>Lean</th><td>a valid term can prove the wrong formal statement</td><td>semantic alignment</td></tr>
+          <tr><th>EML</th><td><code>sorry</code>, boundary abuse, broken bridges survived the first pass</td><td>independent adversarial audit</td></tr>
+          <tr><th>FirstProof P7</th><td>plausible multiplicativity argument lacked finiteness hypotheses</td><td>hypothesis control</td></tr>
+          <tr><th>Tier-4 case</th><td>9/11 runs missed the global cancellation</td><td>representation and global symmetry</td></tr>
+        </tbody>
+      </table>
+      <p class="takeaway">The bottleneck is not generating local moves. It is selecting and controlling the global structure.</p>
+      <aside class="notes">This is the critical claim, now tied to four concrete observations. Formal verification moves the boundary to statement alignment. EML required a second, isolated audit. The FirstProof P7 flaw is a missing hypothesis at a familiar theorem interface. The private Tier-4 traces repeatedly missed the global cancellation. Better latent representations or world models may eventually help, but that is a future hypothesis, not current evidence.</aside>
     </section>
 
-    <section class="slide" id="still-hard" data-title="What remains hard" data-duration="80">
-      <header class="slide-header compact">
-        <span class="kicker">Current limits</span>
-        <h2>Local brilliance is common.<br>Global control is not.</h2>
-      </header>
-      <div class="hard-grid">
-        <article><span>STRONGER</span><p>exact computation</p><p>proof search</p><p>counterexamples</p><p>known-technique recombination</p></article>
-        <article><span>STILL HARD</span><p>choose the representation</p><p>sustain strategy</p><p>invent abstractions</p><p>know what matters</p></article>
-      </div>
-      <aside class="notes">This is the central critical judgement from the case studies. Present systems can produce real novelty, but the modal strength is local search and recombination. Failure often arrives in confident prose.</aside>
-    </section>
-
-    <section class="slide slide--statement" id="creativity" data-title="Creativity" data-duration="90">
-      <span class="kicker">Creativity</span>
-      <h2>The bottleneck is<br><em>new representation.</em></h2>
-      <div class="representation-row">
-        <span>search variants</span><i>→</i><span>compose tools</span><i>→</i><strong>invent the invariant</strong>
-      </div>
-      <p class="statement-tail">World models, latent reasoning, and better memory may help. That is a research agenda—not today’s result.</p>
-      <aside class="notes">Do not claim an architectural impossibility. Say only what the evidence supports: current LLM-centred systems remain inconsistent at representation change and theory building. Future architectures may alter this.</aside>
-    </section>
-
-    <section class="slide" id="leiden" data-title="Leiden Declaration" data-duration="80">
+    <section class="slide" id="leiden" data-title="Leiden Declaration" data-duration="75">
       <header class="slide-header compact">
         <span class="kicker">Leiden Declaration · IMU endorsed</span>
         <h2>Keep mathematical governance.</h2>
@@ -462,36 +547,21 @@ Built MiragesLeanExamples
       <aside class="notes">I am one of the authors and a website convenor. These principles are infrastructure for accelerated mathematics, not anti-technology sentiment. AI remains a tool; proof must remain inspectable; people must retain credit and responsibility.</aside>
     </section>
 
-    <section class="slide" id="forecast" data-title="Forecast" data-duration="80">
-      <header class="slide-header compact">
-        <span class="kicker">12–24 month forecast</span>
-        <h2>More verified artifacts.<br>Uneven progress on theory.</h2>
-      </header>
-      <div class="forecast">
-        <article><b>NOW</b><span>agent workbenches</span></article>
-        <article><b>6 MO</b><span>paper-to-Lean pipelines</span></article>
-        <article><b>12 MO</b><span>shared research state</span></article>
-        <article><b>24 MO</b><span>selective theory gains</span></article>
-      </div>
-      <p class="caveat-strip">Not general autonomous theory building.</p>
-      <aside class="notes">The safer forecast is architectural: more stateful agents, proof assistants, cross-audits, and disclosed traces. Expect discontinuous examples and slower institutional adaptation. Do not predict universal autonomous theory building.</aside>
-    </section>
-
     <section class="slide slide--closing" id="discussion" data-title="Discussion" data-duration="50">
       <span class="kicker">Discussion</span>
       <h2>Delegate search.<br>Retain judgement.<br><em>Publish the trace.</em></h2>
       <p>The question is which mathematical responsibilities we automate—and how we know the result deserves trust.</p>
       <div class="closing-links">
         <a href="https://x.com/nasqret">x.com/nasqret</a>
-        <a href="book/">full companion</a>
+        <a href="book/" target="_blank" rel="noopener">full companion ↗</a>
         <a href="https://github.com/nasqret/math-ai-mirages-2026">source + artifacts</a>
       </div>
-      <aside class="notes">End on responsibility rather than replacement. Invite challenges to the evidence taxonomy, benchmark methodology, formalization boundary, and forecast.</aside>
+      <aside class="notes">End on responsibility rather than replacement. Invite challenges to the FirstProof grading threshold, FrontierMath protocol, formalization boundary, and eleven-run trace analysis.</aside>
     </section>
   </main>
 
   <nav class="deck-controls" aria-label="Presentation controls">
-    <a class="control-link" href="book/" aria-label="Open full companion book">BOOK</a>
+    <a class="control-link" href="book/" target="_blank" rel="noopener" aria-label="Open full companion book in a new tab">BOOK ↗</a>
     <button type="button" data-overview-toggle aria-label="Toggle slide overview">O</button>
     <button type="button" data-fullscreen-toggle aria-label="Toggle fullscreen">F</button>
     <button type="button" data-notes-toggle aria-label="Open speaker notes">N</button>

@@ -70,3 +70,28 @@
 - Published main commit `bec25cc` and Pages commit `af36876`. Verified the live
   root as a 33-slide deck, the Lean fragment as `no goals`, the book and assets
   as HTTP 200, and the former PowerPoint URL as HTTP 404.
+
+## 2026-06-22 — concrete evidence revision
+
+- Removed ten generic summary, forecast, and capability slides while keeping the
+  deck at 33 slides by replacing them with source-grounded technical sequences.
+- Reconstructed the FirstProof protocol from arXiv:2602.21201 and the released
+  artifacts: two frozen snapshots, unchanged LaTeX, fixed extraction prompt, no
+  intermediate intervention, complete P1–P10 matrix, and the exact P7/P8 review
+  disputes.
+- Downloaded the official Epoch benchmark CSV and froze the 31 Tier-4 v2.0.0
+  evaluation rows used for the 22 June score chart. The deck reports scores with
+  standard errors and separates the 41-problem private set from the 43-problem
+  total.
+- Audited `sources/summary-anonym.tex` and converted the eleven isolated attempts
+  into four slides: experiment design, 0.5-point step scores, seven-step coverage,
+  and behavioural findings. The problem statement and answer remain withheld.
+- Expanded the companion book and Obsidian benchmark notes with the same exact
+  protocols, matrices, scores, caveats, and private-case evidence.
+- Compared the former forecast slide with the new current-score slide side by
+  side. Desktop 1440×810 and mobile 390×844 checks passed; all 33 desktop slide
+  boundaries are clean and the browser console is empty.
+- Diagnosed the unstyled public JupyterBook: GitHub Pages returned 404 for
+  `book/_static/` because the generated branch lacked `.nojekyll`. Added the
+  sentinel to the repository and site builder so the theme assets survive every
+  deployment.

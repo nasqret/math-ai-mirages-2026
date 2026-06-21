@@ -8,9 +8,11 @@ coral/cyan/yellow evidence accents, keyboard navigation, fragments, overview,
 speaker notes, and a running clock. No generated imagery is needed because an
 established project-specific design system already exists.
 
-The lecture is for professional mathematicians. Each slide therefore carries
-one claim, one evidential object, or one explicit distinction. Paragraphs belong
-in speaker notes and the companion book, not on the projected surface.
+The lecture is for professional mathematicians. Each substantive slide must now
+carry a concrete mathematical statement, an exact experimental datum, or an
+inspectable artifact. Generic capability claims, trend timelines, forecasts,
+and process slogans are excluded. Paragraphs belong in speaker notes and the
+companion book, not on the projected surface.
 
 ## Visual system
 
@@ -30,16 +32,25 @@ in speaker notes and the companion book, not on the projected surface.
 4. Code: real Lean source with a proof-state or kernel-output panel.
 5. Case study: exact artifact on the left, scope/caveat on the right.
 6. Image: one research figure with a restrained explanatory caption.
+7. Research table: exact per-problem or per-attempt outcomes with status keys.
+8. Benchmark chart: frozen source snapshot, task version, denominator, error
+   bars, access date, and a separate interpretation slide.
 
 ## Content constraints
 
 - Maximum one headline claim per slide.
-- Prefer 3 facts to 6 bullets; remove repeated labels and rhetorical setup.
+- Every headline claim must be followed by evidence visible on the slide.
+- Prefer exact statements, formulas, denominators, tables, and counterexamples
+  to category cards or rhetorical setup.
 - Attribute provider reports and private evidence explicitly.
 - Formalization sequence must distinguish formal statement, proof term, kernel
   verification, statement alignment, novelty, and mathematical responsibility.
 - Every slide has speaker notes and a duration; total target is 43-48 minutes,
   leaving room for transitions inside a 50-minute lecture.
+- FirstProof occupies three slides: protocol, complete A/B result matrix, and
+  concrete P7/P8 referee findings.
+- FrontierMath occupies seven slides: v2 protocol, current leaderboard,
+  interpretation, and four anonymized slides based on `sources/summary-anonym.tex`.
 
 ## Interaction
 

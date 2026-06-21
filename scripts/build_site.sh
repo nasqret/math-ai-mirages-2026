@@ -10,9 +10,11 @@ if test -e "$OUT"; then
 fi
 
 cd "$ROOT"
+jupyter-book clean book
 jupyter-book build book -W --keep-going
 
 mkdir -p "$OUT/book" "$OUT/assets"
+cp .nojekyll "$OUT/"
 cp landing/index.html landing/styles.css landing/app.js landing/favicon.svg "$OUT/"
 cp -R book/_build/html/. "$OUT/book/"
 cp outputs/assets/eml-by-the-numbers.png "$OUT/assets/"
