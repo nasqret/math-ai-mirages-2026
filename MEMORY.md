@@ -69,3 +69,10 @@
 - `vault/`
 - `artifacts/{sage,magma,lean}/`
 - `landing/`, `scripts/build_site.sh`, and the `gh-pages` deployment branch
+
+## Public release
+
+- Repository: https://github.com/nasqret/math-ai-mirages-2026
+- Pages: https://nasqret.github.io/math-ai-mirages-2026/
+- Main release commit: `8a018a2` (followed by the final status commit)
+- Pages source: `gh-pages`, HTTPS enforced, verified live on 21 June 2026

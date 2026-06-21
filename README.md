@@ -3,6 +3,9 @@
 Materials for Bartosz Naskręcki's 50-minute lecture for professional
 mathematicians at MIM UW, Warsaw, 22 June 2026.
 
+- **Live companion:** <https://nasqret.github.io/math-ai-mirages-2026/>
+- **Public repository:** <https://github.com/nasqret/math-ai-mirages-2026>
+
 This repository is evidence-first. Claims that can change are tied to dated
 primary sources; personal case studies are labelled separately from benchmark
 results; formal and computational examples are shipped as executable artifacts.

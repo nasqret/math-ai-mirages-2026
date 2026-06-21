@@ -12,7 +12,7 @@
 - [x] SageMath, Magma, and Lean examples compile or carry an explicit audited
       environment limitation
 - [x] local validation passes
-- [ ] public GitHub repository and live GitHub Pages site verified
+- [x] public GitHub repository and live GitHub Pages site verified
 
 ## Work packages
 
@@ -22,4 +22,4 @@
 4. [x] Build the presentation and speaker notes with the artifact-tool workflow.
 5. [x] Build the book, vault, executable examples, and landing page.
 6. [x] Render, compile, inspect, and repair all deliverables.
-7. [ ] Publish, enable Pages, and verify the public URL.
+7. [x] Publish, enable Pages, and verify the public URL.

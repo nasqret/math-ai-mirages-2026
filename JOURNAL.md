@@ -45,3 +45,9 @@
   because the OAuth token lacked `workflow` scope. Switched the live deployment
   to a generated `gh-pages` branch and retained the Actions workflow as a
   non-active template under `deployment/`.
+- Published `main` to <https://github.com/nasqret/math-ai-mirages-2026>.
+- Published and enabled the `gh-pages` branch. GitHub reports the site as built,
+  public, and HTTPS-enforced at
+  <https://nasqret.github.io/math-ai-mirages-2026/>.
+- Verified the live landing page and its Jupyter Book link in Chrome; both
+  returned the expected title and URL.
