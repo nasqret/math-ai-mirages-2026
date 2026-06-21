@@ -1,0 +1,11 @@
+.DS_Store
+.runtime/
+.venv/
+__pycache__/
+*.pyc
+book/_build/
+outputs/rendered/
+outputs/qa/
+artifacts/**/build/
+artifacts/**/.lake/
+

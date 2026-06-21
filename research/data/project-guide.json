@@ -1,0 +1,16 @@
+{
+  "title": "The Mirages and Twists of Mathematics with AI",
+  "presentation": "outputs/mirages-and-twists-ai-mathematics-2026.pptx",
+  "presentation_pdf": "outputs/mirages-and-twists-ai-mathematics-2026.pdf",
+  "book_source": "book",
+  "vault": "vault",
+  "landing": "landing",
+  "artifacts": {
+    "sage": "artifacts/sage",
+    "magma": "artifacts/magma",
+    "lean": "artifacts/lean"
+  },
+  "status": "research/data/status.json",
+  "claims": "research/data/claims.json"
+}
+

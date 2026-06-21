@@ -1,0 +1,13 @@
+format: jb-book
+root: intro
+chapters:
+  - file: chapters/01_claims_and_evidence
+  - file: chapters/02_formalization
+  - file: chapters/03_agents_and_loops
+  - file: chapters/04_case_studies
+  - file: chapters/05_benchmarks_compute
+  - file: chapters/06_governance
+  - file: chapters/07_forecast
+  - file: chapters/08_reproducibility
+  - file: references
+
