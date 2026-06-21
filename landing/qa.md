@@ -73,3 +73,7 @@ appears before the argument begins.
 - Lean fragment changes from an explicit goal to `no goals`.
 
 No material visual mismatch remains.
+
+Live verification on 22 June 2026 passed for Pages commit `b28b597`: the deck,
+styled book, theme CSS, companion CSS/JavaScript, desktop route, mobile route,
+and book navigation all rendered without relevant console errors.

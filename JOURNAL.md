@@ -95,3 +95,7 @@
   `book/_static/` because the generated branch lacked `.nojekyll`. Added the
   sentinel to the repository and site builder so the theme assets survive every
   deployment.
+- Published main content commit `2bd4969` and Pages commit `b28b597`. Live checks
+  confirm the current Tier-4 chart, both JupyterBook theme and companion CSS as
+  HTTP 200, new-tab deck-to-book navigation, the “Slides” return link, desktop
+  and 390×844 rendering, and an error-free browser console.
