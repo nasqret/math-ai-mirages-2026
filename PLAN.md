@@ -3,12 +3,13 @@
 ## Acceptance criteria
 
 - [x] 33-slide browser-native deck suitable for a 50-minute technical lecture
-- [x] complete speaker notes and 48:00 core timing map
+- [x] complete speaker notes and 48:10 core timing map
 - [x] source footer or notes citation for every unstable/public claim
 - [x] no unintended overlap, clipping, empty placeholders, or unreadable text
 - [x] all 33 slide boundaries checked; key slides reviewed at 1440×810
-- [x] formalization sequence includes actual Lean source, proof state, kernel
-      output, autoformalization, EML metrics, and statement-alignment limits
+- [x] formalization sequence includes exact Zsigmondy and FinEqs statements,
+      EML compiler semantics, the original EML loop, concrete repairs, fixed
+      source snapshots, and statement-alignment limits
 - [x] FirstProof sequence includes the fixed protocol, complete ten-problem
       matrix, and concrete P7/P8 referee findings
 - [x] FrontierMath sequence includes the dated Tier-4 v2 chart, protocol and

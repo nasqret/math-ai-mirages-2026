@@ -99,3 +99,31 @@
   confirm the current Tier-4 chart, both JupyterBook theme and companion CSS as
   HTTP 200, new-tab deck-to-book navigation, the “Slides” return link, desktop
   and 390×844 rendering, and an error-free browser console.
+
+## 2026-06-22 — paper-formalization revision
+
+- Re-read `notes/sketch_slides.md` without modifying the user's draft and
+  replaced all eight generic formalization slides.
+- Audited `nasqret/ZsigmondyChebyshev` at `9633e5a`: `Satz_2`, the primitive
+  divisor definition, eight exception families, 4,596 source lines, 187
+  theorem/lemma declarations, and no `sorry`/`admit` token.
+- Audited `nasqret/fineqs` at `c177541`: the exact zero-set compression theorem,
+  its affine/projective consequences, 647 source lines, 10 declarations, and
+  the blueprint's explicit warning that Aristotle formalized a slightly
+  different version of Lemma 5.
+- Audited `nasqret/eml-formalization` at `d7d041d` and reproduced the original
+  specification-tightening SVG. The slide now projects the 25+ submissions,
+  five waves, 36-hour window, 9/15 first-pass result, and the concrete
+  `∀x → ∀x>0` domain repair.
+- Added separate EML slides for the F36→EL→EML compiler, partial `Option`
+  semantics, boundary repairs, and the cross-project kernel-versus-paper audit.
+- Replaced remaining abstract teaching, Nature Physics, and governance language
+  with deployed output counts, the diagonal-grid counterexample workflow, and a
+  four-artifact release checklist.
+- Expanded the Jupyter Book, Obsidian vault, source inventory, and claim ledger
+  with the same source-level facts and caveats.
+- The fully assembled Pages tree builds without warnings. All 33 slides have
+  zero overflow at 1440×810; the eight formalization slides have zero horizontal
+  overflow at 390×844; the browser console and error log are empty. Desktop
+  screenshots confirm the exact Lean code, tables, compiler slide, and rendered
+  original EML loop.

@@ -106,6 +106,33 @@
       "caveat": "Use the proof record, not the announcement alone, for mathematical assessment."
     },
     {
+      "id": "zsigmondy-chebyshev-formalization",
+      "claim": "At commit 9633e5a, ZsigmondyChebyshev/Main.lean has 4596 lines, 187 theorem or lemma declarations, no sorry or admit token, and culminates in Satz_2: existence of a primitive prime divisor is equivalent to exclusion of eight encoded exceptional families.",
+      "status": "verified",
+      "evidence_class": "primary_repository_source_snapshot",
+      "source": "https://github.com/nasqret/ZsigmondyChebyshev/tree/9633e5a32761e7d5eb1db56107c93a173ba738cb",
+      "accessed": "2026-06-22",
+      "caveat": "This lecture audited the source snapshot but did not perform an independent cold Mathlib build; paper-to-Lean fidelity of the exception predicate remains a human semantic audit."
+    },
+    {
+      "id": "fineqs-formalization",
+      "claim": "At commit c177541, fineqs/Main.lean has 647 lines, 10 theorem or lemma declarations, no sorry or admit token, and proves a zero-set-preserving compression theorem plus sharpness and affine/projective corollaries.",
+      "status": "verified",
+      "evidence_class": "primary_repository_source_snapshot",
+      "source": "https://github.com/nasqret/fineqs/tree/c177541d98f66b1c624acfa6947b7775228ae96e",
+      "accessed": "2026-06-22",
+      "caveat": "The project blueprint explicitly says Aristotle formalized a slightly different version of auxiliary Lemma 5; this lecture did not perform an independent cold Mathlib build."
+    },
+    {
+      "id": "eml-spec-tightening-loop",
+      "claim": "The EML project archive reports more than 25 Aristotle submissions in five waves over 36 hours; in one 15-submission wave, nine returned a clean proof on the first pass. Failed runs triggered diagnosis and theorem-domain changes before resubmission.",
+      "status": "verified",
+      "evidence_class": "primary_repository_process_archive",
+      "source": "https://github.com/nasqret/eml-formalization/tree/d7d041df73e14da6ff5db889015d6e6b89615982/slides/ghostday_post_submission",
+      "accessed": "2026-06-22",
+      "caveat": "These are project-specific process measurements, not a general benchmark of Aristotle or autoformalization systems."
+    },
+    {
       "id": "eml-release-metrics",
       "claim": "The audited EML release records 36 of 36 target primitives, 100 public theorems, zero sorry/admit in the verified surface, and 8062 dispatched jobs.",
       "status": "verified",

@@ -8,7 +8,10 @@ vendored wholesale.
 |---|---|---|
 | `nasqret/ai-w-praktycznej-edukacji` | `efb8a4253f9a5a8f5485899dbaa59d99dee2a9e9` | accepted browser-deck visual language and interaction reference |
 | `nasqret/czy-ai-zastapi-nasza-glowe` | `c38080bd32eff8354015a12682b5dcb649b5d796` | corroborating house palette and pacing conventions |
-| local Falenty/EML archives | audited; key metrics and teaching examples extracted | Lean/formalization slides, speaker notes, and artifacts |
+| `nasqret/ZsigmondyChebyshev` | `9633e5a32761e7d5eb1db56107c93a173ba738cb`; source audited 2026-06-22 | `Satz_2`, primitive-divisor definition, eight exception families, and source metrics |
+| `nasqret/fineqs` | `c177541d98f66b1c624acfa6947b7775228ae96e`; source audited 2026-06-22 | zero-set compression theorem, source metrics, and the blueprint's Lemma 5 semantic warning |
+| `nasqret/eml-formalization` | `d7d041df73e14da6ff5db889015d6e6b89615982`; source and process archive audited 2026-06-22 | compiler architecture, partial semantics, exact submission counts, and original specification-tightening SVG |
+| local Falenty archives | audited; teaching examples extracted | small Lean teaching artifacts and statement-versus-proof distinction |
 | `sources/summary-anonym.tex` | Epoch-approved public summary; 11 traces audited | anonymized personal Tier-4 setup, seven-step rubric, scores, and failure analysis |
 | `teorth/erdosproblems` | `0f72fdb5f5e57aa9d3cd8e06cc60f9a2aa09993a` | exact campaign counts and denominator warning |
 | Epoch FrontierMath Tier-4 v2 page and `benchmarks.csv` | accessed 2026-06-22; local 31-row v2 snapshot | audit, protocol, current score chart, and standard errors |

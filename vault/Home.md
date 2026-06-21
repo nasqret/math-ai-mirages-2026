@@ -9,6 +9,8 @@
 - [[Cases/Quartic lines]]
 - [[Cases/Case studies]]
 - [[Formalization/Lean and proof assistants]]
+- [[Formalization/Zsigmondy Chebyshev]]
+- [[Formalization/FinEqs]]
 - [[Formalization/EML factory]]
 - [[Formalization/Aristotle and autoformalization]]
 - [[Methods/Agentic loops]]

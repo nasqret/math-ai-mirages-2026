@@ -4,8 +4,9 @@ GitHub Pages entry point and primary lecture deck. It is a dependency-free
 HTML/CSS/JavaScript presentation with 33 slides, speaker notes, fragments,
 direct hashes, overview mode, fullscreen mode, a timer, and print styles.
 
-The 48-minute technical route includes three FirstProof slides, one
-AI Co-Mathematician slide, three dated FrontierMath Tier-4 v2 slides, and four
+The 48:10 technical route includes eight source-level formalization slides on
+Zsigmondy–Chebyshev, FinEqs, and EML; three FirstProof slides; one AI
+Co-Mathematician slide; three dated FrontierMath Tier-4 v2 slides; and four
 slides derived from the Epoch-approved anonymized private-problem summary.
 
 Controls: arrows/space for navigation, `N` for notes, `O` for overview, and `F`

@@ -53,3 +53,17 @@ Before publication:
 - disclose meaningful model and compute use;
 - publish failures, exclusions, and provenance where possible; and
 - make a named human responsible for the final mathematical statement.
+
+## Four release artifacts
+
+For a concrete AI-assisted theorem, the principles can be implemented as four
+objects:
+
+1. a **versioned statement** with assumptions and declared scope;
+2. a **provenance record** naming models, tools, compute, and software versions;
+3. an **evidence object** appropriate to the claim: proof term, certificate,
+   trace, or public argument; and
+4. a **human sign-off** naming who owns correctness, credit, and release.
+
+This checklist does not make every result open or correct. It makes the missing
+responsibility visible and gives reviewers an exact place to ask for evidence.

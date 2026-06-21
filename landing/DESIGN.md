@@ -20,7 +20,8 @@ companion book, not on the projected surface.
 - Accents: coral `#ff654d`, cyan `#2db9da`, yellow `#ffc64b`, green `#58d18b`.
 - Display type: Avenir Next/Futura/system fallback; code: SFMono/Consolas.
 - Native canvas: responsive 16:9, verified at 1440x810 and 1920x1080.
-- Minimum projected body text: 24 px at a 1440x810 viewport.
+- Narrative body text is at least 24 px at 1440×810; source footers and dense
+  theorem/audit tables use 17–20 px because their exact rows are the evidence.
 - Persistent UI is confined to the outer 48 px: progress, counter, clock, notes,
   overview, fullscreen, and companion-book link.
 
@@ -43,8 +44,10 @@ companion book, not on the projected surface.
 - Prefer exact statements, formulas, denominators, tables, and counterexamples
   to category cards or rhetorical setup.
 - Attribute provider reports and private evidence explicitly.
-- Formalization sequence must distinguish formal statement, proof term, kernel
-  verification, statement alignment, novelty, and mathematical responsibility.
+- Formalization occupies eight source-level slides: a three-project comparison,
+  the paper-to-interface operation, exact Zsigmondy and FinEqs theorems, the EML
+  compiler, the original EML specification loop, concrete defects/repairs, and
+  a cross-project kernel-versus-paper boundary.
 - Every slide has speaker notes and a duration; total target is 43-48 minutes,
   leaving room for transitions inside a 50-minute lecture.
 - FirstProof occupies three slides: protocol, complete A/B result matrix, and

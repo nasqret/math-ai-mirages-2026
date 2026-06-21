@@ -11,6 +11,9 @@
   `view_image`. Temporary screenshots live only in `/private/tmp`.
 - For the concrete-content revision, the live former forecast slide and the new
   dated FrontierMath leaderboard were inspected side by side with `view_image`.
+- For the formalization revision, the original EML project PDF/SVG and the
+  rendered browser slides were inspected with `view_image`; Chrome screenshots
+  were taken from the assembled Pages site so the SVG asset path was exercised.
 - No new generated concept image was needed: the project already had an accepted
   browser-presentation system. The new deck reuses that system directly.
 
@@ -23,7 +26,7 @@
 | canvas | full-screen 16:9 scenes | full-screen scenes; no page scroll at 1440×810 | pass |
 | chrome | compact controls, progress, counter, timer | book, overview, fullscreen, notes, arrows, progress, counter, timer | pass |
 | slide rhythm | statements, workflows, evidence cards, artifact images | same families, reduced to one claim per slide | pass |
-| formal content | code and verification presented as inspectable artifacts | real Lean code, proof state, kernel output, trust boundary | pass |
+| formal content | code and verification presented as inspectable artifacts | exact `Satz_2`, `theorem_1`, EML compiler semantics, project loop, and semantic audit boundary | pass |
 | responsive behavior | prior deck collapses complex grids | code stack collapses and scrolls intentionally at 390×844 | pass |
 
 ## Concrete-content revision
@@ -40,6 +43,23 @@ The revision preserves the accepted canvas, palette, display type, compact
 chrome, and color semantics. It intentionally increases table density where the
 mathematical distinctions require exact rows. Generic capability slogans are no
 longer used as evidence.
+
+## Formalization revision
+
+| Removed pattern | Concrete replacement | Evidence visible on slide |
+|---|---|---|
+| section divider and four-object diagram | three-project portfolio + paper-to-interface table | exact theorem target, Lean object, commit, lines, declarations |
+| toy `and_symm` proof and local five-job transcript | Zsigmondy–Chebyshev `Satz_2` | primitive-divisor definition, eight exception families, real Lean signature |
+| generic kernel-boundary cards | FinEqs `theorem_1` | exact finite-field bound, zero-set equality, blueprint's Lemma 5 warning |
+| generic autoformalization pipeline | EML compiler architecture | grammar, F36→EL→EML pipeline, `Option` semantics, release counts |
+| generic five-stage EML loop | original EML specification-tightening SVG | 25+ submissions, five waves, 36 hours, 9/15 first-pass proofs |
+| abstract statement-alignment warning | project-by-project boundary table | the exact human audit question for Zsigmondy, FinEqs, and EML |
+
+The assembled deck was checked at 1440×810: all 33 active slides have zero
+horizontal or vertical overflow. At 390×844 the eight formalization slides have
+zero horizontal overflow; the code-heavy Zsigmondy, FinEqs, EML compiler, and
+loop slides scroll vertically by design. The built EML loop slide renders the
+original project SVG, not a redraw.
 
 ## Above-the-fold copy diff
 
@@ -69,11 +89,12 @@ appears before the argument begins.
 - The deck opens the book in a new tab, preserving the current slide; the book
   sidebar provides a visible “Return to slides” link.
 - No browser console errors; all 33 slides pass a programmatic 1440×810 overflow
-  audit. FirstProof and the leaderboard were also checked at 390×844.
-- Lean fragment changes from an explicit goal to `no goals`.
+  audit. The formalization sequence, FirstProof, and the leaderboard were also
+  checked at 390×844.
 
 No material visual mismatch remains.
 
-Live verification on 22 June 2026 passed for Pages commit `b28b597`: the deck,
-styled book, theme CSS, companion CSS/JavaScript, desktop route, mobile route,
-and book navigation all rendered without relevant console errors.
+The previous live verification on 22 June 2026 passed for Pages commit
+`b28b597`. The current formalization revision passed the same checks locally on
+the fully assembled Pages tree; its deployment commit is recorded after
+publication.

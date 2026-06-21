@@ -50,9 +50,14 @@
 
 - The primary deck is the browser-native `landing/` presentation, using the
   accepted visual language of the `ai-w-praktycznej-edukacji` web deck.
-- Final browser deck: 33 slides, 48:00 planned core speaking time, 33 note blocks.
-- The formalization core is eight slides and contains actual Lean source, proof
-  state, build output, and the semantic versus kernel audit boundary.
+- Final browser deck: 33 slides, 48:10 planned core speaking time, 33 note blocks.
+- The formalization core is eight source-level slides: a three-project
+  comparison; the paper-to-interface operation; exact Zsigmondy and FinEqs
+  theorems; the EML compiler; the original EML specification loop; concrete
+  defects/repairs; and the semantic versus kernel audit boundary.
+- Formalization claims are frozen at `ZsigmondyChebyshev@9633e5a`,
+  `fineqs@c177541`, and `eml-formalization@d7d041d`. The first two are source
+  audits, not independent cold Mathlib rebuilds.
 - Generic forecast and capability-summary slides were removed. FirstProof now has
   three technical slides; FrontierMath v2 and the anonymized private problem have
   seven slides with exact protocols, scores, uncertainty, and trace evidence.

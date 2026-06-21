@@ -13,6 +13,8 @@ results; formal and computational examples are shipped as executable artifacts.
 ## Deliverables
 
 - [33-slide, 48-minute browser deck with speaker notes](landing/index.html)
+- exact paper-to-Lean case studies for Zsigmondy–Chebyshev and FinEqs, plus the
+  original EML specification-tightening loop
 - exact FirstProof protocol/result matrix and a dated FrontierMath Tier-4 v2
   score chart
 - anonymized eleven-run Tier-4 case analysis from

@@ -9,9 +9,14 @@ The governance section will distinguish four questions:
 
 ## Operational summary
 
-- **Open:** arguments and infrastructure should remain inspectable.
-- **Disclose:** report tools, compute, and meaningful AI intervention.
-- **Own:** humans take credit and responsibility for the claim.
+- **Statement:** versioned claim, assumptions, and scope.
+- **Provenance:** models, tools, compute, and software versions.
+- **Evidence:** proof term, certificate, trace, or public argument.
+- **Sign-off:** named humans own correctness, credit, and release.
+
+These four release artifacts operationalize the broader requirements to keep
+mathematics open, disclose meaningful AI use, preserve access, and retain human
+responsibility.
 
 Released 2 June 2026, DOI `10.5281/zenodo.20302944`; endorsed by the
 International Mathematical Union.
