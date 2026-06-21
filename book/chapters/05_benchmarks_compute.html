@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/companion.css?v=3fbe011e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -58,6 +59,7 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/05_benchmarks_compute';</script>
+    <script src="../_static/companion.js?v=8dd9cbcc"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Governance and the Leiden Declaration" href="06_governance.html" />
@@ -378,7 +380,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frontiermath-v2-changed-the-object-being-measured">FrontierMath v2 changed the object being measured</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frontiermath-tier-4-v2-the-task-and-the-current-chart">FrontierMath Tier 4 v2: the task and the current chart</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aletheia-and-firstproof">Aletheia and FirstProof</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-co-mathematician">AI Co-Mathematician</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-benchmark-report">Minimum benchmark report</a></li>
@@ -396,8 +398,8 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="benchmarks-compute-and-access">
 <h1>Benchmarks, compute, and access<a class="headerlink" href="#benchmarks-compute-and-access" title="Link to this heading">#</a></h1>
-<section id="frontiermath-v2-changed-the-object-being-measured">
-<h2>FrontierMath v2 changed the object being measured<a class="headerlink" href="#frontiermath-v2-changed-the-object-being-measured" title="Link to this heading">#</a></h2>
+<section id="frontiermath-tier-4-v2-the-task-and-the-current-chart">
+<h2>FrontierMath Tier 4 v2: the task and the current chart<a class="headerlink" href="#frontiermath-tier-4-v2-the-task-and-the-current-chart" title="Link to this heading">#</a></h2>
 <p>Epoch AI’s 12 June 2026 FrontierMath v2 update is important because the audit is
 itself a result. The revised set contains 338 problems:</p>
 <ul class="simple">
@@ -407,17 +409,131 @@ itself a result. The revised set contains 338 problems:</p>
 <p>Epoch reports corrections to 123 Tier 1–3 problems and 12 Tier-4 problems, with
 5 and 7 problems removed respectively. In total, issues were addressed in 42% of
 the benchmark. Evaluations may use up to one million tokens and Python tools.</p>
-<p>Consequently, old percentages should not be compared with v2 percentages as if
-the task set and protocol were unchanged. A benchmark version is part of every
-score.</p>
+<p>The Tier-4 v2 private evaluation has 41 problems; two further Tier-4 problems are
+public. Each private problem therefore contributes about (100/41=2.44)
+percentage points. The protocol allows one million hard tokens, forces a
+submission at 660,000 tokens, and gives each Python call 30 seconds. The final
+artifact is often an exact integer or a SymPy object returned by <code class="docutils literal notranslate"><span class="pre">answer()</span></code>.</p>
+<p>The dated official CSV snapshot used in the lecture (22 June 2026, task version
+2.0.0) reports:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>System</p></th>
+<th class="head text-right"><p>Score</p></th>
+<th class="head text-right"><p>Standard error</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Claude Fable 5 (max)</p></td>
+<td class="text-right"><p>87.8%</p></td>
+<td class="text-right"><p>5.2 pp</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPT-5.5 Pro (xhigh)</p></td>
+<td class="text-right"><p>78.0%</p></td>
+<td class="text-right"><p>6.5 pp</p></td>
+</tr>
+<tr class="row-even"><td><p>AI Co-Mathematician</p></td>
+<td class="text-right"><p>75.6%</p></td>
+<td class="text-right"><p>6.7 pp</p></td>
+</tr>
+<tr class="row-odd"><td><p>GPT-5.5 (xhigh)</p></td>
+<td class="text-right"><p>72.5%</p></td>
+<td class="text-right"><p>7.1 pp</p></td>
+</tr>
+<tr class="row-even"><td><p>GPT-5.4 Pro (xhigh)</p></td>
+<td class="text-right"><p>58.5%</p></td>
+<td class="text-right"><p>7.8 pp</p></td>
+</tr>
+<tr class="row-odd"><td><p>Claude Opus 4.8 (max)</p></td>
+<td class="text-right"><p>56.1%</p></td>
+<td class="text-right"><p>7.8 pp</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>This ranking is exact for the published rows. Its interpretation is conditional:
+the systems mix base models, reasoning settings, agents, and unreleased systems;
+their confidence intervals substantially overlap; and inference compute is not
+normalized. Old percentages must not be compared with v2 percentages as if the
+task set and protocol were unchanged.</p>
 </section>
 <section id="aletheia-and-firstproof">
 <h2>Aletheia and FirstProof<a class="headerlink" href="#aletheia-and-firstproof" title="Link to this heading">#</a></h2>
-<p>The public Aletheia/FirstProof experiment is unusually inspectable. The paper
-reports that 6 of 10 solutions were accepted by a majority of expert assessors;
-problem 8 was not unanimous. Raw prompts and outputs were released, and the
-protocol includes ten unpublished research lemmas with human solutions withheld
-during generation.</p>
+<p>The public Aletheia/FirstProof experiment is unusually inspectable. Ten
+unpublished research lemmas were sent to two frozen model snapshots. The problem
+LaTeX was copied without modification, a predetermined extraction prompt was
+used, no human altered an intermediate answer, and the systems returned LaTeX.
+Every problem was then read by at least two academic mathematicians. “Correct”
+meant publishable after minor revisions, not publication-ready prose.</p>
+<p>The complete matrix is more informative than “6/10”:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Problem</p></th>
+<th class="head"><p>Aletheia A</p></th>
+<th class="head"><p>Aletheia B</p></th>
+<th class="head text-right"><p>Best-of-two expert result</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>P1</p></td>
+<td><p>no output</p></td>
+<td><p>no output</p></td>
+<td class="text-right"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>P2</p></td>
+<td><p>correct</p></td>
+<td><p>correct</p></td>
+<td class="text-right"><p>4/4</p></td>
+</tr>
+<tr class="row-even"><td><p>P3</p></td>
+<td><p>no output</p></td>
+<td><p>no output</p></td>
+<td class="text-right"><p>—</p></td>
+</tr>
+<tr class="row-odd"><td><p>P4</p></td>
+<td><p>no output</p></td>
+<td><p>no output</p></td>
+<td class="text-right"><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>P5</p></td>
+<td><p>correct</p></td>
+<td><p>misinterpreted</p></td>
+<td class="text-right"><p>4/4</p></td>
+</tr>
+<tr class="row-odd"><td><p>P6</p></td>
+<td><p>no output</p></td>
+<td><p>no output</p></td>
+<td class="text-right"><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>P7</p></td>
+<td><p>critically flawed</p></td>
+<td><p>correct</p></td>
+<td class="text-right"><p>3/3</p></td>
+</tr>
+<tr class="row-odd"><td><p>P8</p></td>
+<td><p>inadequate</p></td>
+<td><p>correct?</p></td>
+<td class="text-right"><p>5/7</p></td>
+</tr>
+<tr class="row-even"><td><p>P9</p></td>
+<td><p>correct</p></td>
+<td><p>correct</p></td>
+<td class="text-right"><p>4/4</p></td>
+</tr>
+<tr class="row-odd"><td><p>P10</p></td>
+<td><p>correct</p></td>
+<td><p>correct</p></td>
+<td class="text-right"><p>2/2</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>P7 exposes the value of expert review. One apparently plausible proof asserted
+that a free order-two automorphism forces the compactly supported rational Euler
+characteristic to be divisible by two, without the finiteness assumptions needed
+for the claimed multiplicativity. P8 exposes a different boundary: the local
+vertex smoothings were plausible, but the global edge interpolation was omitted,
+and assessors disagreed on whether that gap was a minor revision.</p>
 <p>The result is strong precisely because its limitations are visible: a small
 sample, best-of-two attempts, and essential human grading. The disclosed
 experiment is more informative than a decontextualized success percentage.</p>
@@ -425,11 +541,11 @@ experiment is more informative than a decontextualized success percentage.</p>
 <section id="ai-co-mathematician">
 <h2>AI Co-Mathematician<a class="headerlink" href="#ai-co-mathematician" title="Link to this heading">#</a></h2>
 <p>The 2026 AI Co-Mathematician is best understood as a workbench, not an oracle. It
-maintains asynchronous state, failed hypotheses, literature and computation
-tools, and a human loop for uncertainty management. This architecture resembles
-research practice more closely than single-turn evaluation. Earlier v1 numbers,
-including 23 of 48, should not be treated as current capability figures after the
-system and protocol changed.</p>
+maintains asynchronous state, retains failed hypotheses, combines literature,
+computation, proof, and theory tools, and keeps a human loop for intent and
+uncertainty management. The current Tier-4 v2 row is 75.6% ± 6.7 pp. That is a
+system score: the agent scaffold and human-facing workflow are part of the
+evaluated object. It is not a clean estimate of a base model’s ability.</p>
 </section>
 <section id="minimum-benchmark-report">
 <h2>Minimum benchmark report<a class="headerlink" href="#minimum-benchmark-report" title="Link to this heading">#</a></h2>
@@ -519,7 +635,7 @@ credit as part of evaluation design.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frontiermath-v2-changed-the-object-being-measured">FrontierMath v2 changed the object being measured</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#frontiermath-tier-4-v2-the-task-and-the-current-chart">FrontierMath Tier 4 v2: the task and the current chart</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aletheia-and-firstproof">Aletheia and FirstProof</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ai-co-mathematician">AI Co-Mathematician</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-benchmark-report">Minimum benchmark report</a></li>

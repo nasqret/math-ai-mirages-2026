@@ -17,7 +17,8 @@
 - [Nathanson's questions, arXiv:2604.18869](https://arxiv.org/abs/2604.18869)
 - [Aletheia / FirstProof, arXiv:2602.21201](https://arxiv.org/abs/2602.21201)
 - [AI Co-Mathematician, arXiv:2605.06651](https://arxiv.org/abs/2605.06651)
-- [FrontierMath](https://epoch.ai/frontiermath)
+- [FrontierMath Tier-4 v2](https://epoch.ai/benchmarks/frontiermath-tier-4-v2)
+- [Epoch benchmark data CSV](https://epoch.ai/data/benchmarks.csv)
 - [Leiden Declaration on AI for Mathematics](https://leidendeclaration.ai/)
 - [OpenAI GPT-5.4 release](https://openai.com/index/introducing-gpt-5-4/)
 

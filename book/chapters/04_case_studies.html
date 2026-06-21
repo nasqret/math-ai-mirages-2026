@@ -32,9 +32,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/companion.css?v=3fbe011e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -58,6 +59,7 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/04_case_studies';</script>
+    <script src="../_static/companion.js?v=8dd9cbcc"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Benchmarks, compute, and access" href="05_benchmarks_compute.html" />
@@ -382,7 +384,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quartic-lines-breaking-a-chern-slope-bound">Quartic lines: breaking a Chern-slope bound</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computation-as-scaffolding-not-a-permanent-crutch">Computation as scaffolding, not a permanent crutch</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orphic-symmetry-and-the-amplified-mathematician">Orphic symmetry and the amplified mathematician</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-private-frontiermath-tier-4-attempt">A private FrontierMath Tier-4 attempt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-private-frontiermath-tier-4-problem-eleven-isolated-attempts">One private FrontierMath Tier-4 problem, eleven isolated attempts</a></li>
 </ul>
             </nav>
         </div>
@@ -428,7 +430,7 @@ x_0^4-x_0x_1^3-x_2^4+x_2x_3^3=0.
 <p>The certified arithmetic is</p>
 <p>[
 \bar c_1^2=112,\qquad \bar c_2=40,
-\qquad \frac{\bar c_1^2}{\bar c_2}=\frac{14}{5}&gt;rac{8}{3}.
+\qquad \frac{\bar c_1^2}{\bar c_2}=\frac{14}{5}&gt;\frac{8}{3}.
 ]</p>
 <p>The auxiliary quantity used in the search is</p>
 <p>[
@@ -459,13 +461,45 @@ machine assistance, and the still-hypothetical fully autonomous “superhuman
 mathematician.” The 2026 evidence fills the intermediate boxes; it does not erase
 the final distinction.</p>
 </section>
-<section id="a-private-frontiermath-tier-4-attempt">
-<h2>A private FrontierMath Tier-4 attempt<a class="headerlink" href="#a-private-frontiermath-tier-4-attempt" title="Link to this heading">#</a></h2>
-<p>The speaker also retained a long GPT-5.4 attempt on a private Tier-4 problem.
-The run combined local tools and calculations, produced a candidate solution,
-and revealed weaknesses in strategy selection. Because the statement,
-held-out solution, and full evaluation record are confidential, this is a
-first-person case study—not a public benchmark datapoint.</p>
+<section id="one-private-frontiermath-tier-4-problem-eleven-isolated-attempts">
+<h2>One private FrontierMath Tier-4 problem, eleven isolated attempts<a class="headerlink" href="#one-private-frontiermath-tier-4-problem-eleven-isolated-attempts" title="Link to this heading">#</a></h2>
+<p>The public, Epoch-approved
+<a class="reference external" href="https://github.com/nasqret/math-ai-mirages-2026/blob/main/sources/summary-anonym.tex"><code class="docutils literal notranslate"><span class="pre">sources/summary-anonym.tex</span></code></a>
+report compares eleven
+independent attempts at the same exact-integer problem in arithmetic algebraic
+geometry. There was no memory between runs. Each used roughly 100,000 or more
+reasoning tokens; the first ten transcripts contain 26,128 lines. Exact problem
+details remain withheld.</p>
+<p>The reference solution was decomposed into seven conceptual steps:</p>
+<ol class="arabic simple">
+<li><p>structural decomposition;</p></li>
+<li><p>invariant computation;</p></li>
+<li><p>deep geometric structure;</p></li>
+<li><p>associated objects;</p></li>
+<li><p>counting formula;</p></li>
+<li><p>constraint classification; and</p></li>
+<li><p>global cancellation.</p></li>
+</ol>
+<p>The attempt scores, one point per fully discovered step with half credit for a
+partial step, were</p>
+<p>[
+1,;0.5,;2.5,;3,;3,;2.5,;4,;0.5,;4.5,;0.5,;7.
+]</p>
+<p>Only the final run was complete. The first ten averaged 2.2/7. Every run engaged
+with steps 1 and 2, but nine of eleven missed step 7. The transition from local
+calculation to the global cancellation was the actual phase boundary.</p>
+<p>Four further observations are concrete but descriptive, not causal:</p>
+<ul class="simple">
+<li><p>code-submitting runs averaged 3.4/7, versus 0.6/7 without code;</p></li>
+<li><p>runs that deeply used two or three strategies averaged 3.6/7, versus 0.5/7
+for shallow exploration;</p></li>
+<li><p>all three heuristic numerical guesses overestimated the answer by 6.4–6.8%;</p></li>
+<li><p>even the correct run called its answer a “best guess,” so expressed confidence
+did not identify correctness.</p></li>
+</ul>
+<p>This is first-person trace analysis, not an additional public benchmark score.
+Its value is diagnostic: large budgets reliably produced plausible local work,
+while selection and control of the global structure remained fragile.</p>
 </section>
 </section>
 
@@ -537,7 +571,7 @@ first-person case study—not a public benchmark datapoint.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quartic-lines-breaking-a-chern-slope-bound">Quartic lines: breaking a Chern-slope bound</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computation-as-scaffolding-not-a-permanent-crutch">Computation as scaffolding, not a permanent crutch</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#orphic-symmetry-and-the-amplified-mathematician">Orphic symmetry and the amplified mathematician</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-private-frontiermath-tier-4-attempt">A private FrontierMath Tier-4 attempt</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-private-frontiermath-tier-4-problem-eleven-isolated-attempts">One private FrontierMath Tier-4 problem, eleven isolated attempts</a></li>
 </ul>
   </nav></div>
 
