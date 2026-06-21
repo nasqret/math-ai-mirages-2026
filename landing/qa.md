@@ -94,7 +94,7 @@ appears before the argument begins.
 
 No material visual mismatch remains.
 
-The previous live verification on 22 June 2026 passed for Pages commit
-`b28b597`. The current formalization revision passed the same checks locally on
-the fully assembled Pages tree; its deployment commit is recorded after
-publication.
+Live verification on 22 June 2026 passed for Pages commit `79a6d44`: 33 slides
+and 33 note blocks, the EML SVG, the expanded formalization chapter, JupyterBook
+theme and companion CSS, and desktop rendering all loaded without browser
+errors. Source commit: `c321b09`.

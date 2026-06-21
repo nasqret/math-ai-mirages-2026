@@ -127,3 +127,6 @@
   overflow at 390×844; the browser console and error log are empty. Desktop
   screenshots confirm the exact Lean code, tables, compiler slide, and rendered
   original EML loop.
+- Published source commit `c321b09` and Pages commit `79a6d44`. Live checks
+  confirm 33 slides/notes, the loaded EML SVG, the styled expanded formalization
+  chapter, and no browser errors.
