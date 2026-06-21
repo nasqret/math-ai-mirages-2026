@@ -12,24 +12,31 @@ results; formal and computational examples are shipped as executable artifacts.
 
 ## Deliverables
 
-- [37-slide PowerPoint with speaker notes](outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx)
+- [33-slide browser deck with speaker notes](landing/index.html)
 - source and claim ledger
 - [Jupyter Book](book/intro.md) and [Obsidian knowledge vault](vault/Home.md)
 - Lean, SageMath, and Magma examples
-- [GitHub Pages landing site](landing/index.html)
+- GitHub Pages deployment with the deck at `/` and the companion at `/book/`
 - reproducibility and QA reports
+
+The former PowerPoint build is retained as a historical export under `outputs/`,
+but is no longer deployed or used as the primary presentation.
 
 Current machine-readable state: [`research/data/status.json`](research/data/status.json).
 
 ## Verification
 
 ```bash
+node scripts/check_slides.mjs
+
 HOME=/tmp/codex-sage-home SAGE_HOME=/tmp/codex-sage-home \
   sage artifacts/sage/verify_case_numbers.sage
 
 (cd artifacts/lean && lake build)
 
 jupyter-book build book -W --keep-going
+
+./scripts/validate.sh
 ```
 
 The independent Magma replay command and captured output are in

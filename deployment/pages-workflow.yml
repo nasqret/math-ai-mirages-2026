@@ -29,10 +29,13 @@ jobs:
         run: jupyter-book build book -W --keep-going
       - name: Assemble site
         run: |
-          mkdir -p site/book site/downloads
-          cp landing/index.html landing/styles.css landing/favicon.svg site/
+          mkdir -p site/book site/assets
+          cp landing/index.html landing/styles.css landing/app.js landing/favicon.svg site/
           cp -R book/_build/html/. site/book/
-          cp outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx site/downloads/
+          cp outputs/assets/eml-by-the-numbers.png site/assets/
+          cp outputs/assets/ecdsafail-score.png site/assets/
+          cp outputs/assets/quartic-slope.png site/assets/
+          cp outputs/assets/ono-naskrecki-figure.png site/assets/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

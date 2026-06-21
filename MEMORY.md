@@ -48,8 +48,12 @@
 
 ## Frozen release decisions
 
-- The sole native deck template is the `ai-w-praktycznej-edukacji` PowerPoint.
-- Final deck: 37 slides, 47.75 planned speaking minutes, 37 note pages.
+- The primary deck is the browser-native `landing/` presentation, using the
+  accepted visual language of the `ai-w-praktycznej-edukacji` web deck.
+- Final browser deck: 33 slides, 43:20 planned core speaking time, 33 note blocks.
+- The formalization core is eight slides and contains actual Lean source, proof
+  state, build output, and the semantic versus kernel audit boundary.
+- The PowerPoint build is a historical export and is not deployed.
 - Erdős counts use community-wiki commit `0f72fdb`; records and unique problems
   are never conflated.
 - FrontierMath statistics use the 12 June 2026 v2 update.
@@ -63,7 +67,9 @@
 
 ## Release artifacts
 
-- `outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx`
+- `landing/{index.html,styles.css,app.js}`
+- `landing/{DESIGN.md,qa.md}`
+- historical export: `outputs/the-mirages-and-twists-of-mathematics-with-ai.pptx`
 - `research/data/claims.json`
 - `book/`
 - `vault/`

@@ -1,21 +1,25 @@
 {
   "project": "mirages-and-twists-ai-mathematics-2026",
-  "updated": "2026-06-21T23:10:00+02:00",
+  "updated": "2026-06-21T23:57:22+02:00",
   "overall": "complete",
   "milestones": {
     "source_inventory": "complete",
     "claim_verification": "complete",
-    "presentation": "complete",
+    "browser_deck": "complete",
+    "presentation_export": "archived",
     "jupyter_book": "complete",
     "obsidian_vault": "complete",
     "formal_artifacts": "complete",
-    "landing_page": "complete",
+    "landing_page": "replaced_by_browser_deck",
     "public_release": "complete"
   },
   "counts": {
     "verified_claims": 14,
     "review_needed_claims": 1,
-    "slides": 37,
+    "slides": 33,
+    "speaker_notes": 33,
+    "formalization_slides": 8,
+    "planned_seconds": 2600,
     "compiled_artifacts": 3
   }
 }

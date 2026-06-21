@@ -51,3 +51,19 @@
   <https://nasqret.github.io/math-ai-mirages-2026/>.
 - Verified the live landing page and its Jupyter Book link in Chrome; both
   returned the expected title and URL.
+
+## 2026-06-21 — browser deck
+
+- Replaced the marketing landing page with a dependency-free 33-slide browser
+  presentation based on the established `ai-w-praktycznej-edukacji` web deck.
+- Reduced the projected copy to one claim or evidence object per slide; retained
+  detailed qualifications in 33 speaker-note blocks.
+- Built an eight-slide formalization sequence with real Lean 4 source, an
+  explicit tactic state, the exact five-job build transcript, the kernel versus
+  semantic-audit boundary, autoformalization, and EML audit evidence.
+- Added direct hashes, fragment navigation, speaker notes, overview, fullscreen,
+  timer, touch navigation, and print styles.
+- Browser-checked key slides at 1440×810, repaired the mobile Lean code layout,
+  exercised the core interaction path, and found no console errors.
+- Removed the PowerPoint file from the Pages assembly path. It remains only as a
+  historical repository export.
