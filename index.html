@@ -36,10 +36,10 @@
         <h2>Do not collapse them.</h2>
       </header>
       <div class="ladder evidence-examples">
-        <article><b>01</b><h3>Answer</h3><p>FrontierMath: exact Python object</p></article>
-        <article><b>02</b><h3>Proof</h3><p>Lean term or expert-refereed argument</p></article>
-        <article><b>03</b><h3>Theorem</h3><p>Nathanson: new classification</p></article>
-        <article><b>04</b><h3>Theory</h3><p>new invariant or reusable representation</p></article>
+        <article><b>01</b><h3>Answer</h3><p><code>answer()</code>: exact scalar or SymPy object</p></article>
+        <article><b>02</b><h3>Proof</h3><p><code>.lean</code> term + kernel exit 0</p></article>
+        <article><b>03</b><h3>Theorem</h3><p>arXiv:2604.18869: new classification</p></article>
+        <article><b>04</b><h3>Theory</h3><p>a reusable invariant used beyond one target</p></article>
       </div>
       <p class="takeaway">The same system can succeed at 1–3 and still fail at 4.</p>
       <aside class="notes">These are separate evaluation questions. FrontierMath primarily checks a returned answer object. Lean checks a proof term against a formal statement. FirstProof asks experts whether an informal proof is publishable after minor revisions. A new theorem adds novelty; a new theory adds durable explanatory structure.</aside>
@@ -78,132 +78,168 @@
       <aside class="notes">The public record is unusually strong: exact statement, formal artifact, expert inspection, and literature context. Do not compress these different responsibilities into the adjective autonomous.</aside>
     </section>
 
-    <section class="slide slide--section" id="formalization" data-title="Formalization" data-duration="40">
-      <span class="section-number">I</span>
-      <div>
-        <span class="kicker">Formalization</span>
-        <h2>A small kernel is still the strongest trust boundary.</h2>
-      </div>
-      <aside class="notes">This is the technical core of the talk. Formalization is not decoration added after a model answer. It changes the object being evaluated from persuasive prose to a checkable term.</aside>
+    <section class="slide" id="formalization-portfolio" data-title="Three paper formalizations" data-duration="70">
+      <header class="slide-header compact">
+        <span class="kicker">Existing papers → Lean 4 · audited source snapshots</span>
+        <h2>Three papers. Three different formal objects.</h2>
+      </header>
+      <table class="project-table">
+        <thead><tr><th>Project</th><th>Paper-level target</th><th>Lean object</th><th>Current source</th></tr></thead>
+        <tbody>
+          <tr><th>Zsigmondy–Chebyshev</th><td>primitive prime divisors of <i>T<sub>n</sub>(a)−1</i></td><td><code>Satz_2</code> ↔ eight exception families</td><td>4,596 lines · 187 declarations</td></tr>
+          <tr><th>FinEqs</th><td>compress equations without changing the zero set</td><td><code>theorem_1</code> + affine/projective corollaries</td><td>647 lines · 10 declarations</td></tr>
+          <tr><th>EML</th><td>compile 36 elementary primitives into one grammar</td><td>partial semantics + structural compiler</td><td>100 theorems · 8,062 jobs</td></tr>
+        </tbody>
+      </table>
+      <p class="takeaway">All three are paper formalizations. They require different definitions, interfaces, and semantic audits.</p>
+      <p class="source">snapshots: <a href="https://github.com/nasqret/ZsigmondyChebyshev/tree/9633e5a32761e7d5eb1db56107c93a173ba738cb">9633e5a</a> · <a href="https://github.com/nasqret/fineqs/tree/c177541d98f66b1c624acfa6947b7775228ae96e">c177541</a> · <a href="https://github.com/nasqret/eml-formalization/tree/d7d041df73e14da6ff5db889015d6e6b89615982">d7d041d</a></p>
+      <aside class="notes">This is the missing comparison from the original sketch. The first project formalizes a theorem with a long explicit exception set. The second formalizes an existence theorem in finite linear algebra. The third formalizes a language translation theorem. The common output is kernel-checkable Lean; the mathematical work before the kernel is project-specific. The line and declaration counts are source-audit facts at the displayed commits, not clean rebuild claims made by this lecture repository.</aside>
     </section>
 
-    <section class="slide" id="proof-anatomy" data-title="Anatomy of a formal proof" data-duration="80">
+    <section class="slide" id="paper-to-lean" data-title="What paper formalization does" data-duration="75">
       <header class="slide-header compact">
-        <span class="kicker">Anatomy of a formal proof</span>
-        <h2>Four objects. Two audits.</h2>
+        <span class="kicker">What are we really doing?</span>
+        <h2>Replace prose by quantified interfaces.</h2>
       </header>
-      <div class="formal-stack">
-        <article><span>1</span><b>informal claim</b></article>
-        <i>→</i>
-        <article><span>2</span><b>formal statement</b></article>
-        <i>→</i>
-        <article><span>3</span><b>proof term</b></article>
-        <i>→</i>
-        <article class="kernel"><span>4</span><b>kernel</b></article>
-      </div>
-      <div class="audit-lines">
-        <p><b>semantic audit</b><span>Does 2 mean 1?</span></p>
-        <p><b>kernel audit</b><span>Does 3 inhabit 2?</span></p>
-      </div>
-      <aside class="notes">The kernel checks whether the proof term has the claimed type. The harder upstream question is whether the formal type faithfully encodes the informal mathematics. Current autoformalization progress does not remove this semantic audit.</aside>
+      <table class="translation-table">
+        <thead><tr><th>Paper phrase</th><th>Chosen Lean object</th><th>New obligation</th></tr></thead>
+        <tbody>
+          <tr><td>“primitive prime divisor”</td><td><code>p.Prime ∧ p ∣ Tₙ(a)−1 ∧ ∀ 0&lt;d&lt;n, p ∤ T_d(a)−1</code></td><td>encode every exception exactly</td></tr>
+          <tr><td>“same zero set”</td><td><code>ZeroSet T = ZeroSet S</code></td><td>track finiteness, span, and cardinality</td></tr>
+          <tr><td>“expressible using EML”</td><td><code>eval? e = some v → ∃ t, t.eval? = some v</code></td><td>make the natural domain explicit</td></tr>
+        </tbody>
+      </table>
+      <div class="explanation-strip"><b>Formalization is not sentence translation.</b><span>It is the design of definitions, domains, dependencies, and a theorem interface that a kernel can check.</span></div>
+      <aside class="notes">Read the middle column as the real intervention. The informal noun phrase becomes a definition with quantifiers. The informal equivalence becomes literal set equality. The informal existence claim becomes a compiler-correctness interface with partial evaluation. Only after these choices does automated proof search begin. A successful proof can still certify the wrong interface, so statement alignment is a separate audit.</aside>
     </section>
 
-    <section class="slide slide--code" id="lean-code" data-title="Lean code" data-duration="100">
+    <section class="slide" id="zsigmondy" data-title="Zsigmondy–Chebyshev in Lean" data-duration="90">
       <header class="slide-header compact">
-        <span class="kicker">Lean 4 · real source</span>
-        <h2>A proof is a term with a type.</h2>
+        <span class="kicker">Barańczuk 2019 · Zsigmondy theorem for Chebyshev polynomials</span>
+        <h2>The theorem is an equivalence with eight exception families.</h2>
       </header>
-      <div class="code-stage">
-        <pre class="code-card" aria-label="Lean source code"><code><span class="ln">1</span><span class="kw">theorem</span> <span class="fn">and_symm</span> (a b : Prop) :
-<span class="ln">2</span>    a ∧ b → b ∧ a := <span class="kw">by</span>
-<span class="ln">3</span>  <span class="kw">intro</span> h
-<span class="ln">4</span>  <span class="kw">exact</span> ⟨h.right, h.left⟩</code></pre>
-        <div class="proof-state">
-          <span>AFTER LINE 3</span>
-          <pre>a b : Prop
-h : a ∧ b
-⊢ b ∧ a</pre>
-          <div class="state-result fragment"><b>after line 4</b><strong>no goals</strong></div>
+      <div class="project-split">
+        <div>
+          <p class="math-definition"><b>Primitive means:</b> <i>p</i> is prime, <i>p ∣ T<sub>n</sub>(a)−1</i>, and <i>p ∤ T<sub>d</sub>(a)−1</i> for every <i>0&lt;d&lt;n</i>.</p>
+          <pre class="lean-source"><code><span class="kw">theorem</span> <span class="fn">Satz_2</span> (n : ℕ) (a : ℤ) (hn : n &gt; 0) :
+  (∃ p : ℕ,
+    is_primitive_prime_divisor_Chebyshev a n p) ↔
+  ¬ is_exception_Satz2 n a := <span class="kw">by</span> …</code></pre>
+        </div>
+        <div class="project-facts">
+          <div><b>8</b><span>exception families</span><small><i>a</i>∈{−1,0,1}; <i>n</i>∈{1,2,3,4,6}; powers of 2 or 3</small></div>
+          <div><b>4,596</b><span>source lines</span><small>187 theorem/lemma declarations</small></div>
+          <div><b>0</b><span><code>sorry</code> / <code>admit</code></span><small>source audit at <code>9633e5a</code></small></div>
         </div>
       </div>
-      <p class="source"><a href="https://github.com/nasqret/math-ai-mirages-2026/blob/main/artifacts/lean/MiragesLeanExamples/AndSymm.lean">artifacts/lean/MiragesLeanExamples/AndSymm.lean</a></p>
-      <aside class="notes">Read the code literally. After introducing h, Lean exposes the local context and target. The final line constructs the pair in reverse order. This is tiny by design: everyone in the room can see the complete trust path without relying on model fluency.</aside>
+      <p class="takeaway compact-takeaway">What the agent proved: the encoded existence statement is equivalent to the encoded exception predicate.</p>
+      <p class="source"><a href="https://github.com/nasqret/ZsigmondyChebyshev/blob/9633e5a32761e7d5eb1db56107c93a173ba738cb/ZsigmondyChebyshev/Main.lean#L4176-L4590">Main.lean · is_exception_Satz2 → Satz_2</a></p>
+      <aside class="notes">This is not “ask Lean whether Zsigmondy is true.” First define primitive divisibility. Then spell out eight disjunctive exceptional families. The proof separates |a|≤1, the small indices 1,2,3,4,6, and the large-n argument. The concrete audit question for a mathematician is whether this predicate matches Satz 2 in the paper, including signs, strict inequalities, and exponent ranges. The repository has no sorry or admit tokens at this commit; I am not claiming an independent cold Mathlib rebuild here.</aside>
     </section>
 
-    <section class="slide" id="lean-kernel" data-title="Lean kernel check" data-duration="75">
+    <section class="slide" id="fineqs" data-title="FinEqs in Lean" data-duration="90">
       <header class="slide-header compact">
-        <span class="kicker">Replay, not rhetoric</span>
-        <h2>The artifact compiles now.</h2>
+        <span class="kicker">Barańczuk 2019 · reducing equations over a finite field</span>
+        <h2>Preserve the zero set with at most <em>n</em> equations.</h2>
       </header>
-      <div class="terminal-card">
-        <div class="terminal-bar"><i></i><i></i><i></i><span>artifacts/lean</span></div>
-        <pre><span class="prompt">$</span> lake build
-
-Built MiragesLeanExamples.AndSymm
-Built MiragesLeanExamples.DeMorgan
-Built MiragesLeanExamples
-<strong>Build completed successfully (5 jobs).</strong></pre>
-      </div>
-      <div class="kernel-footer"><span>Lean 4.28.0</span><span>0 <code>sorry</code></span><span>0 <code>admit</code></span></div>
-      <aside class="notes">This repository contains two deliberately small, compiling Falenty examples. The pedagogical Erdős sketch that contains sorry is intentionally excluded from the verified set. That distinction—compiled theorem versus labelled sketch—is the lesson.</aside>
-    </section>
-
-    <section class="slide" id="lean-boundary" data-title="Lean trust boundary" data-duration="75">
-      <header class="slide-header compact">
-        <span class="kicker">Trust boundary</span>
-        <h2>Lean certifies less—and more—than people think.</h2>
-      </header>
-      <div class="trust-grid">
-        <article class="yes"><span>CERTIFIES</span><ul><li>the formal statement</li><li>the proof term</li><li>declared dependencies</li></ul></article>
-        <article class="no"><span>DOES NOT CERTIFY</span><ul><li>the intended theorem</li><li>natural assumptions</li><li>novelty or importance</li></ul></article>
-      </div>
-      <p class="takeaway">Trust the kernel. Audit the statement.</p>
-      <aside class="notes">Formal verification narrows the error surface; it does not erase mathematical judgement. A machine can correctly prove the wrong formalization. Humans still own statement alignment, explanatory value, novelty, and credit.</aside>
-    </section>
-
-    <section class="slide" id="autoformalization" data-title="Autoformalization frontier" data-duration="80">
-      <header class="slide-header compact">
-        <span class="kicker">Agentic autoformalization</span>
-        <h2>The bottleneck moved upstream.</h2>
-      </header>
-      <div class="pipeline">
-        <span>extract<br>statement</span><i>→</i><span>elaborate<br>definitions</span><i>→</i><span>search<br>library</span><i>→</i><span>build<br>proof</span><i>→</i><span class="checked">kernel<br>check</span>
-      </div>
-      <div class="frontier-line"><b>Fast progress</b><span>proof search · tactic repair · replay</span></div>
-      <div class="frontier-line hard"><b>Still hard</b><span>semantic equivalence · implicit conventions · library design</span></div>
-      <aside class="notes">Aristotle, AlphaProof, DeepSeek-Prover, Kimina, and LeanArchitect occupy different parts of this stack. The field is advancing rapidly, but theorem-sized proof search and paper-to-library formalization are different problems.</aside>
-    </section>
-
-    <section class="slide slide--image" id="eml" data-title="EML formalization" data-duration="90">
-      <div class="image-copy">
-        <span class="kicker">My EML project</span>
-        <h2>A formalization factory,<br>not one generated proof.</h2>
-        <div class="metric-row">
-          <div><b>36/36</b><span>primitives</span></div>
-          <div><b>100</b><span>theorems</span></div>
-          <div><b>0</b><span>sorry/admit</span></div>
-          <div><b>8,062</b><span>jobs</span></div>
+      <div class="project-split fineqs-layout">
+        <div>
+          <p class="math-definition"><b>If</b> |X| ≤ (q<sup>n+1</sup>−q)/(q−1) and S is finite, <b>then</b> there is T⊆span(S), |T|≤n, with Z(T)=Z(S).</p>
+          <pre class="lean-source lean-source--small"><code><span class="kw">theorem</span> <span class="fn">theorem_1</span> [Finite X] (n : ℕ)
+  (S : Set (X → F)) (hS : S.Finite) (hn : S.ncard &gt; n)
+  (hX : Nat.card X ≤ (q^(n+1) - q) / (q - 1)) :
+  ∃ T, T ⊆ Submodule.span F S ∧ T.Finite ∧
+       T.ncard ≤ n ∧ ZeroSet T = ZeroSet S := <span class="kw">by</span> …</code></pre>
+        </div>
+        <div class="project-facts">
+          <div><b>4</b><span>paper results</span><small>Theorem 1, sharpness, affine and projective corollaries</small></div>
+          <div><b>647</b><span>source lines</span><small>10 theorem/lemma declarations</small></div>
+          <div class="audit-warning"><b>≠</b><span>semantic warning</span><small>Blueprint: “Aristotle formalized a slightly different version” of Lemma 5.</small></div>
         </div>
       </div>
-      <img class="side-image" src="assets/eml-by-the-numbers.png" alt="EML formalization project metrics">
-      <p class="source"><a href="https://github.com/nasqret/eml-formalization">github.com/nasqret/eml-formalization</a></p>
-      <aside class="notes">The durable result is the compiler architecture and audit trail. Aristotle handled proof search; GPT Pro, Claude, Codex, Mathematica, and human review had distinct roles. These numbers describe the audited release surface.</aside>
+      <p class="takeaway compact-takeaway">A sorry-free file can still require a paper-to-Lean equivalence audit.</p>
+      <p class="source"><a href="https://github.com/nasqret/fineqs/blob/c177541d98f66b1c624acfa6947b7775228ae96e/fineqs/Main.lean#L224-L257">Main.lean · theorem_1</a> · <a href="https://github.com/nasqret/fineqs/blob/c177541d98f66b1c624acfa6947b7775228ae96e/blueprint/src/content.tex#L105-L113">blueprint · Lemma 5 warning</a></p>
+      <aside class="notes">The mathematical object is finite-dimensional linear compression: replace a large family of functions by at most n elements of its span without changing the common zero set. Aristotle generated the Lean development, including sharpness and affine/projective corollaries. The crucial honest detail is in the project blueprint: one auxiliary lemma is explicitly marked as a slightly different formalization. Kernel success does not settle that correspondence. This source snapshot contains no sorry or admit tokens; again, this lecture audit did not perform a clean cold build.</aside>
     </section>
 
-    <section class="slide" id="eml-audit" data-title="EML audit loop" data-duration="80">
+    <section class="slide" id="eml-compiler" data-title="EML as a verified compiler" data-duration="85">
       <header class="slide-header compact">
-        <span class="kicker">EML audit loop</span>
-        <h2>The first “complete” report was wrong.</h2>
+        <span class="kicker">Odrzywołek 2026 · elementary mathematical language</span>
+        <h2>The paper claim became a verified compiler.</h2>
       </header>
-      <div class="process process--five">
-        <article><b>1</b><span>catalogue</span></article><i>→</i>
-        <article><b>2</b><span>adversarial audit</span></article><i>→</i>
-        <article><b>3</b><span>repair</span></article><i>→</i>
-        <article><b>4</b><span>structure</span></article><i>→</i>
-        <article><b>5</b><span>replay</span></article>
+      <div class="compiler-layout">
+        <div>
+          <pre class="grammar-card"><code>T ::= 1  |  xₙ  |  eml(T,T)
+eml(a,b) := exp(a) − log(b)</code></pre>
+          <div class="compiler-pipeline"><span>F36<small>36 primitives</small></span><i>translate?</i><span>EL</span><i>compile</i><span>EML</span><i>ι</i><span>EMLℂ</span></div>
+          <p class="compiler-claim"><b>Correctness interface:</b> if the source expression evaluates to <code>some v</code>, compilation produces an EML term evaluating to <code>some v</code>.</p>
+        </div>
+        <div>
+          <pre class="lean-source lean-source--small"><code><span class="kw">def</span> <span class="fn">EMLTerm.eval?</span> : EMLTerm → Option ℝ
+  | .one   =&gt; some 1
+  | .var n =&gt; some (env n)
+  | .eml a b =&gt;
+      if 0 &lt; eval b then
+        some (exp (eval a) - log (eval b))
+      else none</code></pre>
+          <div class="micro-metrics"><span><b>36/36</b> primitives</span><span><b>100</b> public theorems</span><span><b>0</b> sorry/admit</span></div>
+        </div>
       </div>
-      <div class="finding"><b>Independent review found:</b><span><code>sorry</code> · boundary abuse · broken bridges</span></div>
-      <aside class="notes">A separate model family, isolated from the first scratchpad, found real defects and forced a stronger architecture. This is an honest result: independent AI review may be more valuable than another pass from the same model context.</aside>
+      <p class="takeaway compact-takeaway"><code>Option</code> semantics removes the false boundary equation created by Mathlib’s total <code>Real.log 0 = 0</code>.</p>
+      <p class="source"><a href="https://github.com/nasqret/eml-formalization/tree/d7d041df73e14da6ff5db889015d6e6b89615982">eml-formalization · audited source d7d041d</a></p>
+      <aside class="notes">The central move was to stop treating the paper as a catalogue of isolated identities. We defined source, intermediate, and target syntaxes; partial denotational semantics; a structural compiler; and an evaluation-preservation theorem. The Option-valued evaluator is not an implementation detail. It prevents Lean's total Real.log from manufacturing a value at zero where the mathematical term is undefined. This is what the project is really formalizing: a compiler and its domain contract.</aside>
+    </section>
+
+    <section class="slide" id="eml-loop" data-title="EML specification-tightening loop" data-duration="90">
+      <header class="slide-header compact">
+        <span class="kicker">Original EML project loop · 36-hour campaign</span>
+        <h2>A failed run changed the theorem statement.</h2>
+      </header>
+      <div class="loop-layout">
+        <figure><img src="assets/eml-spec-cycle.svg" alt="EML specification-tightening cycle: write spec, submit, fail, diagnose, tighten, resubmit"><figcaption>Reproduced from the EML project presentation.</figcaption></figure>
+        <div class="loop-explanation">
+          <div><b>25+</b><span>Aristotle submissions</span><small>5 waves · 36 hours · about 10 concurrent slots</small></div>
+          <div><b>9 / 15</b><span>clean first pass in one wave</span><small>long existential goals often returned <code>COMPLETE_WITH_ERRORS</code></small></div>
+          <p><strong>Not a blind retry:</strong> inspect the failure, recover the paper’s domain, replace <code>∀ x</code> by <code>∀ x &gt; 0</code>, then resubmit.</p>
+        </div>
+      </div>
+      <p class="source"><a href="https://github.com/nasqret/eml-formalization/blob/d7d041df73e14da6ff5db889015d6e6b89615982/slides/ghostday_post_submission/assets/spec_cycle.svg">original SVG</a> · <a href="https://github.com/nasqret/eml-formalization/blob/d7d041df73e14da6ff5db889015d6e6b89615982/slides/ghostday_post_submission/ghostday_post_submission.md">campaign report</a></p>
+      <aside class="notes">This is the exact loop from the EML presentation. The important operation is between failure and resubmission. COMPLETE_WITH_ERRORS is evidence about the current formal goal, not a reason to send the same goal again. In the shown case, diagnosis exposed a junk-value use of Real.log 0 = 0 and a theorem stated on a domain broader than the paper. The specification was tightened from all real x to positive x. The archived report records more than 25 submissions over five waves, with an approximately six-hour rate-limit pause.</aside>
+    </section>
+
+    <section class="slide" id="eml-audit" data-title="EML defects and repairs" data-duration="70">
+      <header class="slide-header compact">
+        <span class="kicker">EML · concrete defects found after the first pass</span>
+        <h2>The specifications—not the local tactics—were the hard part.</h2>
+      </header>
+      <table class="repair-table">
+        <thead><tr><th>Observed defect</th><th>Mathematical cause</th><th>Repair in the formal object</th></tr></thead>
+        <tbody>
+          <tr><td><code>Real.log 0 = 0</code> made a false boundary “work”</td><td>total library function outside the natural domain</td><td><code>Option</code>-valued evaluator; explicit positivity</td></tr>
+          <tr><td>single witnesses failed at √0, arcosh 1, hypot(0,0)</td><td>boundary expression becomes undefined</td><td>point-dependent witness family <code>∀ env, ∃ t</code></td></tr>
+          <tr><td>real-part identities were presented as complex witnesses</td><td>bridge theorem was weaker than the paper claim</td><td>separate real grammar from literal complex witness</td></tr>
+          <tr><td>flat catalogue looked complete but did not scale</td><td>no compositional theorem connected primitives</td><td>F36 → EL → EML compiler + one correctness proof</td></tr>
+        </tbody>
+      </table>
+      <p class="takeaway compact-takeaway">The second model’s useful output was a stronger theorem architecture, not another proof attempt.</p>
+      <aside class="notes">These are the concrete reasons the initial “complete” report was retracted. The repair is visible in the type of the formal object: partial evaluation, domain hypotheses, witness families at boundary points, and a compiler theorem instead of a list. Separate-model review mattered because it challenged the scope and interfaces rather than continuing the same local proof trajectory.</aside>
+    </section>
+
+    <section class="slide" id="formalization-boundary" data-title="Formalization boundary across projects" data-duration="60">
+      <header class="slide-header compact">
+        <span class="kicker">What the kernel checks—and what the mathematician still owns</span>
+        <h2>Kernel success is not paper-level success.</h2>
+      </header>
+      <table class="boundary-table">
+        <thead><tr><th>Project</th><th>Kernel-checked object</th><th>Human decision that remains</th></tr></thead>
+        <tbody>
+          <tr><th>Zsigmondy</th><td><code>Satz_2</code> from the eight encoded exceptions</td><td>Do the signs, ranges, and exception list match the paper?</td></tr>
+          <tr><th>FinEqs</th><td>existence of T with <code>ZeroSet T = ZeroSet S</code></td><td>Is the auxiliary lemma equivalent to Lemma 5?</td></tr>
+          <tr><th>EML</th><td>evaluation-preserving compilation on a declared domain</td><td>Is that domain and grammar the paper’s actual claim?</td></tr>
+        </tbody>
+      </table>
+      <p class="takeaway">Trust the kernel for proof terms. Audit the interface against the paper.</p>
+      <aside class="notes">This is the operational boundary. The kernel gives a strong guarantee about a formal statement and its dependencies. It does not compare that statement with the source PDF. For these three projects the remaining audit questions are explicit: exception predicates, equivalence of auxiliary lemmas, and grammar/domain fidelity. That is where professional mathematical review enters.</aside>
     </section>
 
     <section class="slide" id="aristotle-nathanson" data-title="Aristotle and Nathanson" data-duration="90">
@@ -282,9 +318,9 @@ Built MiragesLeanExamples
         <h2>The amplified human arrived first.</h2>
       </div>
       <img src="assets/ono-naskrecki-figure.png" alt="Diagram from the Nature Physics paper on mathematical discovery in the age of AI">
-      <p class="figure-caption">The 2026 evidence fills the workflow. The final arrow still points to the future.</p>
+      <p class="figure-caption">Computation found a diagonal-grid counterexample to the first formulation. The mathematics was diagnosing the defect and selecting the durable statement.</p>
       <p class="source"><a href="https://doi.org/10.1038/s41567-025-03042-0">doi:10.1038/s41567-025-03042-0</a></p>
-      <aside class="notes">The diagram distinguishes machine-augmented discovery from a hypothetical superhuman mathematician. The intervening evidence validates the workflow on the left far more strongly than the endpoint on the right.</aside>
+      <aside class="notes">This diagram comes from the Nature Physics work with Ken Ono. In that project rapid computation produced a diagonal-grid counterexample and exposed a false formulation. The human mathematical contribution was to diagnose the structural defect, refine the chain of objects, and choose a durable statement. That is a concrete instance of the machine-amplified workflow on the left; it is not evidence for the hypothetical superhuman endpoint on the right.</aside>
     </section>
 
     <section class="slide" id="firstproof-protocol" data-title="FirstProof protocol" data-duration="100">
@@ -501,8 +537,8 @@ Built MiragesLeanExamples
 
     <section class="slide" id="teaching" data-title="Agentic teaching" data-duration="80">
       <header class="slide-header compact">
-        <span class="kicker">Agentic teaching</span>
-        <h2>The least speculative success.</h2>
+        <span class="kicker">Agentic teaching · deployed public artifacts</span>
+        <h2>87 chapters, 329 slides, 22 applets.</h2>
       </header>
       <div class="teaching-grid">
         <article><b>45</b><span>cryptography chapters</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/">crypto/</a></article>
@@ -510,7 +546,7 @@ Built MiragesLeanExamples
         <article><b>329</b><span>slides</span><small>+ 22 applets</small></article>
         <article><b>25 h</b><span>staff course</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/">Codex workshop</a></article>
       </div>
-      <p class="takeaway">One instructor can now maintain a coherent course ecosystem.</p>
+      <p class="takeaway">Observed output: repositories, tests, mathematical code, documentation, slides, and interactive applets.</p>
       <aside class="notes">This is production evidence, not a randomized learning-outcomes study. The observable result is that participants and instructor produced working repositories, documentation, tests, mathematical code, slides, and interactive applets.</aside>
     </section>
 
@@ -523,7 +559,7 @@ Built MiragesLeanExamples
         <thead><tr><th>Case</th><th>Observed failure</th><th>Missing control</th></tr></thead>
         <tbody>
           <tr><th>Lean</th><td>a valid term can prove the wrong formal statement</td><td>semantic alignment</td></tr>
-          <tr><th>EML</th><td><code>sorry</code>, boundary abuse, broken bridges survived the first pass</td><td>independent adversarial audit</td></tr>
+          <tr><th>EML</th><td><code>Real.log 0 = 0</code> and boundary witnesses survived the first pass</td><td>partial semantics + independent audit</td></tr>
           <tr><th>FirstProof P7</th><td>plausible multiplicativity argument lacked finiteness hypotheses</td><td>hypothesis control</td></tr>
           <tr><th>Tier-4 case</th><td>9/11 runs missed the global cancellation</td><td>representation and global symmetry</td></tr>
         </tbody>
@@ -535,22 +571,22 @@ Built MiragesLeanExamples
     <section class="slide" id="leiden" data-title="Leiden Declaration" data-duration="75">
       <header class="slide-header compact">
         <span class="kicker">Leiden Declaration · IMU endorsed</span>
-        <h2>Keep mathematical governance.</h2>
+        <h2>An AI-assisted theorem needs four release artifacts.</h2>
       </header>
       <div class="principles">
-        <article><b>OPEN</b><span>arguments + infrastructure</span></article>
-        <article><b>DISCLOSE</b><span>tools + compute</span></article>
-        <article><b>OWN</b><span>human credit + responsibility</span></article>
-        <article><b>ACCESS</b><span>capability must not decide voice</span></article>
+        <article><b>STATEMENT</b><span>versioned claim, assumptions, and scope</span></article>
+        <article><b>PROVENANCE</b><span>models, tools, compute, and software versions</span></article>
+        <article><b>EVIDENCE</b><span>proof term, certificate, trace, or public argument</span></article>
+        <article><b>SIGN-OFF</b><span>named humans own correctness, credit, and release</span></article>
       </div>
       <p class="source"><a href="https://leidendeclaration.ai/">leidendeclaration.ai · 02.06.2026</a></p>
-      <aside class="notes">I am one of the authors and a website convenor. These principles are infrastructure for accelerated mathematics, not anti-technology sentiment. AI remains a tool; proof must remain inspectable; people must retain credit and responsibility.</aside>
+      <aside class="notes">This slide operationalizes the declaration rather than repeating slogans. A release should name the exact statement and its scope; disclose the computational provenance; expose the appropriate evidence object; and identify the people who take responsibility. Openness and access remain governance requirements around this checklist. I am one of the declaration's authors and a website convenor.</aside>
     </section>
 
     <section class="slide slide--closing" id="discussion" data-title="Discussion" data-duration="50">
       <span class="kicker">Discussion</span>
       <h2>Delegate search.<br>Retain judgement.<br><em>Publish the trace.</em></h2>
-      <p>The question is which mathematical responsibilities we automate—and how we know the result deserves trust.</p>
+      <p>Which statement? Which kernel or checker? Which trace or certificate? Which human signs the claim?</p>
       <div class="closing-links">
         <a href="https://x.com/nasqret">x.com/nasqret</a>
         <a href="book/" target="_blank" rel="noopener">full companion ↗</a>

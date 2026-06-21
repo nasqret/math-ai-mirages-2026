@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Formalization: what the checker certifies &#8212; The Mirages and Twists of Mathematics with AI</title>
+    <title>Formalizing existing papers: three concrete projects &#8212; The Mirages and Twists of Mathematics with AI</title>
   
   
   
@@ -177,7 +177,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_claims_and_evidence.html">Claims, evidence, and the problem of headlines</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Formalization: what the checker certifies</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Formalizing existing papers: three concrete projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_agents_and_loops.html">Agents, loops, and auto-research</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_case_studies.html">Case studies from the speaker’s work</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_benchmarks_compute.html">Benchmarks, compute, and access</a></li>
@@ -370,7 +370,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Formalization: what the checker certifies</h1>
+    <h1>Formalizing existing papers: three concrete projects</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,11 +380,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-trust-boundary">The trust boundary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eml-as-a-formalization-factory">EML as a formalization factory</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#falenty-teaching-the-distinction">Falenty: teaching the distinction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aristotle-and-discovery-plus-verification">Aristotle and discovery plus verification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-auto-formalization-frontier">The auto-formalization frontier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-formalization-actually-changes">What formalization actually changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zsigmondychebyshev-the-exception-predicate-is-part-of-the-theorem">Zsigmondy–Chebyshev: the exception predicate is part of the theorem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fineqs-a-kernel-checked-theorem-and-an-explicit-semantic-warning">FinEqs: a kernel-checked theorem and an explicit semantic warning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eml-the-paper-claim-became-a-compiler">EML: the paper claim became a compiler</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-eml-specification-tightening-loop">The EML specification-tightening loop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-operational-boundary">The operational boundary</a></li>
 </ul>
             </nav>
         </div>
@@ -396,82 +397,253 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="formalization-what-the-checker-certifies">
-<h1>Formalization: what the checker certifies<a class="headerlink" href="#formalization-what-the-checker-certifies" title="Link to this heading">#</a></h1>
-<section id="the-trust-boundary">
-<h2>The trust boundary<a class="headerlink" href="#the-trust-boundary" title="Link to this heading">#</a></h2>
-<p>Lean does not certify English. It certifies that a term has the stated type in a
-particular environment. Once a theorem has been translated correctly, a small
-kernel gives a strong local guarantee: dependencies are explicit and the proof
-can be replayed. The guarantee does not establish that the formal statement is
-the theorem the author intended, that the assumptions are natural, or that the
-result is new and important.</p>
-<p>This shifts the bottleneck upstream. Proof search is accelerating, while
-statement extraction, semantic alignment, and library architecture remain
-expensive.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="formalizing-existing-papers-three-concrete-projects">
+<h1>Formalizing existing papers: three concrete projects<a class="headerlink" href="#formalizing-existing-papers-three-concrete-projects" title="Link to this heading">#</a></h1>
+<section id="what-formalization-actually-changes">
+<h2>What formalization actually changes<a class="headerlink" href="#what-formalization-actually-changes" title="Link to this heading">#</a></h2>
+<p>Lean does not certify an English sentence. It certifies that a proof term has a
+formal type in a particular environment. Formalizing a paper therefore starts
+before proof search:</p>
+<ol class="arabic simple">
+<li><p>replace mathematical prose by definitions with explicit quantifiers;</p></li>
+<li><p>state domains, finiteness conditions, and exceptional cases;</p></li>
+<li><p>choose an interface between the paper’s objects and the library;</p></li>
+<li><p>construct a proof term; and</p></li>
+<li><p>audit whether the formal type still means what the paper says.</p></li>
+</ol>
+<p>The last step is a semantic audit. The kernel answers “does this term inhabit
+this type?” It does not answer “is this type the theorem intended by the
+author?”</p>
+<p>The three projects below make that distinction visible. The source facts are
+audited at fixed repository commits. The Zsigmondy–Chebyshev and FinEqs
+snapshots were not independently cold-built inside this lecture repository,
+because their Mathlib environments are separate; line counts and absence of
+<code class="docutils literal notranslate"><span class="pre">sorry</span></code>/<code class="docutils literal notranslate"><span class="pre">admit</span></code> are source-audit facts.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Project</p></th>
+<th class="head"><p>Paper-level target</p></th>
+<th class="head"><p>Formal object</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Zsigmondy–Chebyshev</p></td>
+<td><p>primitive prime divisors of (T_n(a)-1)</p></td>
+<td><p>an equivalence with eight explicit exception families</p></td>
+</tr>
+<tr class="row-odd"><td><p>FinEqs</p></td>
+<td><p>replace many equations without changing their common zero set</p></td>
+<td><p>a finite-linear-algebra existence theorem</p></td>
+</tr>
+<tr class="row-even"><td><p>EML</p></td>
+<td><p>express 36 elementary primitives using one binary grammar</p></td>
+<td><p>partial semantics and an evaluation-preserving compiler</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
-<section id="eml-as-a-formalization-factory">
-<h2>EML as a formalization factory<a class="headerlink" href="#eml-as-a-formalization-factory" title="Link to this heading">#</a></h2>
-<p>The <a class="reference external" href="https://github.com/nasqret/eml-formalization">EML formalization project</a>
-treated a paper-to-Lean effort as a compiler and audit system rather than a
-single generated proof. Its release-level accounting records:</p>
-<ul class="simple">
-<li><p>36 of 36 target calculator primitives;</p></li>
-<li><p>100 public theorem statements;</p></li>
-<li><p>no <code class="docutils literal notranslate"><span class="pre">sorry</span></code> and no <code class="docutils literal notranslate"><span class="pre">admit</span></code> in the verified surface;</p></li>
-<li><p>8,062 dispatched search/build jobs; and</p></li>
-<li><p>a replayable, versioned trail of review and repair.</p></li>
-</ul>
-<p>The durable contribution is the architecture:</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>paper -&gt; theorem catalogue -&gt; adversarial review -&gt; Lean repair
-      -&gt; dependency structure -&gt; clean replay
+<section id="zsigmondychebyshev-the-exception-predicate-is-part-of-the-theorem">
+<h2>Zsigmondy–Chebyshev: the exception predicate is part of the theorem<a class="headerlink" href="#zsigmondychebyshev-the-exception-predicate-is-part-of-the-theorem" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://github.com/nasqret/ZsigmondyChebyshev/tree/9633e5a32761e7d5eb1db56107c93a173ba738cb">ZsigmondyChebyshev
+repository</a>
+formalizes Stefan Barańczuk’s <em>Zsigmondy’s Theorem for Chebyshev polynomials</em>.
+The first nontrivial choice is the definition:</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">def</span><span class="w"> </span><span class="n">is_primitive_prime_divisor_Chebyshev</span>
+<span class="w">    </span><span class="o">(</span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℤ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">n</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="kt">Prop</span><span class="w"> </span><span class="o">:=</span>
+<span class="w">  </span><span class="n">p.Prime</span><span class="w"> </span><span class="bp">∧</span>
+<span class="w">  </span><span class="o">(</span><span class="n">p</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℤ</span><span class="o">)</span><span class="w"> </span><span class="bp">∣</span><span class="w"> </span><span class="o">(</span><span class="n">Chebyshev.T</span><span class="w"> </span><span class="n">ℤ</span><span class="w"> </span><span class="n">n</span><span class="o">)</span><span class="bp">.</span><span class="n">eval</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="bp">∧</span>
+<span class="w">  </span><span class="bp">∀</span><span class="w"> </span><span class="n">d</span><span class="o">,</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="bp">&lt;</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="bp">&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="bp">→</span>
+<span class="w">    </span><span class="bp">¬</span><span class="w"> </span><span class="o">(</span><span class="n">p</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℤ</span><span class="o">)</span><span class="w"> </span><span class="bp">∣</span><span class="w"> </span><span class="o">(</span><span class="n">Chebyshev.T</span><span class="w"> </span><span class="n">ℤ</span><span class="w"> </span><span class="n">d</span><span class="o">)</span><span class="bp">.</span><span class="n">eval</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="mi">1</span>
 </pre></div>
 </div>
-<p>Separate-model criticism mattered. It exposed boundary abuse, unresolved
-placeholders, and broken bridges between otherwise correct local results. That
-lesson generalizes: a second independent critic is often more valuable than one
-more continuation from the same transcript.</p>
+<p>The main theorem is then:</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span><span class="w"> </span><span class="n">Satz_2</span><span class="w"> </span><span class="o">(</span><span class="n">n</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">a</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℤ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">hn</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="bp">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="o">)</span><span class="w"> </span><span class="o">:</span>
+<span class="w">  </span><span class="o">(</span><span class="bp">∃</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="o">,</span><span class="w"> </span><span class="n">is_primitive_prime_divisor_Chebyshev</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">p</span><span class="o">)</span><span class="w"> </span><span class="bp">↔</span>
+<span class="w">    </span><span class="bp">¬</span><span class="w"> </span><span class="n">is_exception_Satz2</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kd">by</span>
+<span class="w">  </span><span class="bp">...</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">is_exception_Satz2</span></code> is not a placeholder. It is a disjunction of eight
+families, covering (a\in{-1,0,1}), the indices
+(n\in{1,2,3,4,6}), and signed families involving powers of (2) and
+(3). The proof separates (|a|\leq 1), those five small indices, and the
+large-(n) argument.</p>
+<p>At commit <code class="docutils literal notranslate"><span class="pre">9633e5a</span></code>, the main source contains 4,596 lines, 187 theorem or lemma
+declarations, and no <code class="docutils literal notranslate"><span class="pre">sorry</span></code> or <code class="docutils literal notranslate"><span class="pre">admit</span></code> token. The remaining mathematical audit
+is exact and local: do the signs, inequalities, exponent ranges, and eight
+encoded families coincide with Satz 2 in the paper?</p>
 </section>
-<section id="falenty-teaching-the-distinction">
-<h2>Falenty: teaching the distinction<a class="headerlink" href="#falenty-teaching-the-distinction" title="Link to this heading">#</a></h2>
-<p>The <a class="reference external" href="https://github.com/nasqret/falenty-2026">Falenty 2026 repository</a> uses a
-simple teaching brief: choose a theorem, state the assumptions, compile it,
-expose every gap, and explain the resulting proof term in prose. Students should
-be able to distinguish:</p>
-<ul class="simple">
-<li><p>a kernel-checked proof;</p></li>
-<li><p>an incomplete sketch containing <code class="docutils literal notranslate"><span class="pre">sorry</span></code>; and</p></li>
-<li><p>a polished informal explanation.</p></li>
-</ul>
-<p>The companion repository includes two small Lean 4.28 examples adapted from
-that material. They deliberately use only Lean core so the trust boundary can be
-replayed without a multi-gigabyte dependency download.</p>
-</section>
-<section id="aristotle-and-discovery-plus-verification">
-<h2>Aristotle and discovery plus verification<a class="headerlink" href="#aristotle-and-discovery-plus-verification" title="Link to this heading">#</a></h2>
-<p>Formal tools are also entering discovery workflows. Monticone’s 2026 result on
-Nathanson’s questions gives a clean example: a complete classification of
-product-intersection sets in semigroups was autonomously discovered and verified
-in Lean by Aristotle, with a public preprint and named human authors who provide
-review and exposition. This is stronger evidence than an isolated generated
-proof because both the mathematical result and its formal artifact are
-inspectable.</p>
-<p>The operational rule is concise:</p>
+<section id="fineqs-a-kernel-checked-theorem-and-an-explicit-semantic-warning">
+<h2>FinEqs: a kernel-checked theorem and an explicit semantic warning<a class="headerlink" href="#fineqs-a-kernel-checked-theorem-and-an-explicit-semantic-warning" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://github.com/nasqret/fineqs/tree/c177541d98f66b1c624acfa6947b7775228ae96e">FinEqs
+repository</a>
+formalizes Barańczuk’s <em>Reducing the number of equations defining a subset of
+the (n)-space over a finite field</em>. For a family (S) of functions, it
+defines</p>
+<p>[
+Z(S)={x : \forall f\in S,\ f(x)=0}.
+]</p>
+<p>The main formal statement says that, if</p>
+<p>[
+|X|\leq\frac{q^{n+1}-q}{q-1},
+]</p>
+<p>then every finite (S) with (|S|&gt;n) admits a finite
+(T\subseteq\operatorname{span}(S)) such that (|T|\leq n) and
+(Z(T)=Z(S)):</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">theorem</span><span class="w"> </span><span class="n">theorem_1</span><span class="w"> </span><span class="o">[</span><span class="n">Finite</span><span class="w"> </span><span class="n">X</span><span class="o">]</span><span class="w"> </span><span class="o">(</span><span class="n">n</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">ℕ</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">S</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="o">(</span><span class="n">X</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">F</span><span class="o">))</span>
+<span class="w">    </span><span class="o">(</span><span class="n">hS</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">S.Finite</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="n">hn</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">S.ncard</span><span class="w"> </span><span class="bp">&gt;</span><span class="w"> </span><span class="n">n</span><span class="o">)</span>
+<span class="w">    </span><span class="o">(</span><span class="n">hX</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Nat.card</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="bp">≤</span>
+<span class="w">      </span><span class="o">(</span><span class="n">Fintype.card</span><span class="w"> </span><span class="n">F</span><span class="w"> </span><span class="bp">^</span><span class="w"> </span><span class="o">(</span><span class="n">n</span><span class="w"> </span><span class="bp">+</span><span class="w"> </span><span class="mi">1</span><span class="o">)</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="n">Fintype.card</span><span class="w"> </span><span class="n">F</span><span class="o">)</span><span class="w"> </span><span class="bp">/</span>
+<span class="w">      </span><span class="o">(</span><span class="n">Fintype.card</span><span class="w"> </span><span class="n">F</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="mi">1</span><span class="o">))</span><span class="w"> </span><span class="o">:</span>
+<span class="w">  </span><span class="bp">∃</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Set</span><span class="w"> </span><span class="o">(</span><span class="n">X</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">F</span><span class="o">),</span>
+<span class="w">    </span><span class="n">T</span><span class="w"> </span><span class="bp">⊆</span><span class="w"> </span><span class="n">Submodule.span</span><span class="w"> </span><span class="n">F</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="bp">∧</span><span class="w"> </span><span class="n">T.Finite</span><span class="w"> </span><span class="bp">∧</span>
+<span class="w">    </span><span class="n">T.ncard</span><span class="w"> </span><span class="bp">≤</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="bp">∧</span><span class="w"> </span><span class="n">ZeroSet</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="bp">=</span><span class="w"> </span><span class="n">ZeroSet</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="kd">by</span>
+<span class="w">  </span><span class="bp">...</span>
+</pre></div>
+</div>
+<p>The development also contains the sharpness proposition and affine and
+projective corollaries. At commit <code class="docutils literal notranslate"><span class="pre">c177541</span></code>, the main source has 647 lines, 10
+theorem or lemma declarations, and no <code class="docutils literal notranslate"><span class="pre">sorry</span></code> or <code class="docutils literal notranslate"><span class="pre">admit</span></code>.</p>
+<p>The project’s own blueprint nevertheless records the sentence:</p>
 <blockquote>
-<div><p>Delegate proof search; retain mathematical responsibility.</p>
+<div><p>Aristotle formalized a slightly different version of this lemma.</p>
 </div></blockquote>
-<p>Tools can search libraries, synthesize terms, repair routine gaps, and replay at
-scale. Humans must select the statement, inspect assumptions, assess novelty,
-and own the published claim.</p>
+<p>That note concerns the auxiliary <code class="docutils literal notranslate"><span class="pre">theorem_1_aux</span></code> corresponding to Lemma 5. It
+is the important methodological fact: a sorry-free Lean file can coexist with
+an unresolved paper-to-Lean equivalence question. The kernel checks the chosen
+auxiliary statement; a mathematician must decide whether it is the right
+statement.</p>
 </section>
-<section id="the-auto-formalization-frontier">
-<h2>The auto-formalization frontier<a class="headerlink" href="#the-auto-formalization-frontier" title="Link to this heading">#</a></h2>
-<p>The near-term frontier is not “press a button, formalize any paper.” It is an
-agentic pipeline that alternates translation, elaboration, library search,
-counterexample generation, local proof search, and human semantic review. This
-pipeline is already useful at theorem scale. Long informal papers, implicit
-conventions, equivalence between differently stated theorems, and maintainable
-library design remain costly.</p>
+<section id="eml-the-paper-claim-became-a-compiler">
+<h2>EML: the paper claim became a compiler<a class="headerlink" href="#eml-the-paper-claim-became-a-compiler" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://github.com/nasqret/eml-formalization/tree/d7d041df73e14da6ff5db889015d6e6b89615982">EML formalization
+project</a>
+formalizes Odrzywołek’s elementary mathematical language. The target grammar is</p>
+<p>[
+T ::= 1 \mid x_n \mid \operatorname{eml}(T,T),\qquad
+\operatorname{eml}(a,b)=\exp(a)-\log(b).
+]</p>
+<p>The durable object is a compiler architecture:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>F36 --translate?--&gt; EL --compile--&gt; EML --ι--&gt; EMLℂ
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">F36</span></code> represents the paper’s 36 primitives. The intermediate language <code class="docutils literal notranslate"><span class="pre">EL</span></code>
+supports structural translation. <code class="docutils literal notranslate"><span class="pre">EML</span></code> is the one-operator target grammar. The
+correctness theorem connects evaluation of a source expression to evaluation of
+the compiled term.</p>
+<p>The key design decision is partial semantics:</p>
+<div class="highlight-lean notranslate"><div class="highlight"><pre><span></span><span class="kd">noncomputable</span><span class="w"> </span><span class="kd">def</span><span class="w"> </span><span class="n">EMLTerm.eval</span><span class="bp">?</span>
+<span class="w">    </span><span class="o">(</span><span class="n">env</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">Nat</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">ℝ</span><span class="o">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">EMLTerm</span><span class="w"> </span><span class="bp">→</span><span class="w"> </span><span class="n">Option</span><span class="w"> </span><span class="n">ℝ</span>
+<span class="w">  </span><span class="bp">|</span><span class="w"> </span><span class="bp">.</span><span class="n">one</span><span class="w">     </span><span class="bp">=&gt;</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">  </span><span class="bp">|</span><span class="w"> </span><span class="bp">.</span><span class="n">var</span><span class="w"> </span><span class="n">n</span><span class="w">   </span><span class="bp">=&gt;</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="o">(</span><span class="n">env</span><span class="w"> </span><span class="n">n</span><span class="o">)</span>
+<span class="w">  </span><span class="bp">|</span><span class="w"> </span><span class="bp">.</span><span class="n">eml</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="bp">=&gt;</span>
+<span class="w">      </span><span class="k">match</span><span class="w"> </span><span class="n">EMLTerm.eval</span><span class="bp">?</span><span class="w"> </span><span class="n">env</span><span class="w"> </span><span class="n">a</span><span class="o">,</span><span class="w"> </span><span class="n">EMLTerm.eval</span><span class="bp">?</span><span class="w"> </span><span class="n">env</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="k">with</span>
+<span class="w">      </span><span class="bp">|</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">va</span><span class="o">,</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="n">vb</span><span class="w"> </span><span class="bp">=&gt;</span>
+<span class="w">          </span><span class="k">if</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="bp">&lt;</span><span class="w"> </span><span class="n">vb</span>
+<span class="w">          </span><span class="k">then</span><span class="w"> </span><span class="n">some</span><span class="w"> </span><span class="o">(</span><span class="n">Real.exp</span><span class="w"> </span><span class="n">va</span><span class="w"> </span><span class="bp">-</span><span class="w"> </span><span class="n">Real.log</span><span class="w"> </span><span class="n">vb</span><span class="o">)</span>
+<span class="w">          </span><span class="k">else</span><span class="w"> </span><span class="n">none</span>
+<span class="w">      </span><span class="bp">|</span><span class="w"> </span><span class="n">_</span><span class="o">,</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="bp">=&gt;</span><span class="w"> </span><span class="n">none</span>
+</pre></div>
+</div>
+<p>Mathlib’s total function has <code class="docutils literal notranslate"><span class="pre">Real.log</span> <span class="pre">0</span> <span class="pre">=</span> <span class="pre">0</span></code>. Using it without a domain layer
+can make a false boundary statement look provable. The <code class="docutils literal notranslate"><span class="pre">Option</span></code> result records
+undefinedness instead. Compiler bridges have the shape</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>source.eval? env e = some v
+  → ∃ t : EMLTerm, t.eval? env = some v.
+</pre></div>
+</div>
+<p>For interior points, one structural witness can suffice. At boundary points
+such as (\sqrt 0), (\operatorname{arcosh}(1)), and
+(\operatorname{hypot}(0,0)), the correct full-domain statement may instead
+require a point-dependent witness family:</p>
+<p>[
+\forall,\mathrm{env},\ \text{hypotheses}(\mathrm{env})
+\longrightarrow \exists t,\ t.\operatorname{eval?}(\mathrm{env})
+=\operatorname{some}(v).
+]</p>
+<p>The audited release records 36 of 36 primitives, 100 public theorems, 8,062
+build jobs, and no <code class="docutils literal notranslate"><span class="pre">sorry</span></code> or <code class="docutils literal notranslate"><span class="pre">admit</span></code> in the verified surface.</p>
+</section>
+<section id="the-eml-specification-tightening-loop">
+<h2>The EML specification-tightening loop<a class="headerlink" href="#the-eml-specification-tightening-loop" title="Link to this heading">#</a></h2>
+<p>The project archive records more than 25 Aristotle submissions in five waves
+over 36 hours, with roughly ten concurrent slots and an approximately six-hour
+rate-limit pause. In one 15-submission wave, nine returned a clean proof on the
+first pass. Long existential constructions often returned
+<code class="docutils literal notranslate"><span class="pre">COMPLETE_WITH_ERRORS</span></code>.</p>
+<p>The response was not to repeat the same request:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>write ∀ x, ... → submit → COMPLETE_WITH_ERRORS
+  → diagnose Real.log 0 = 0
+  → recover the paper&#39;s x &gt; 0 domain
+  → submit ∀ x &gt; 0, ... → exit 0
+</pre></div>
+</div>
+<p>This loop combines proof search with mathematical specification work. The
+failed formal run exposes a mismatch; the human or reviewing model reads the
+paper and the library semantics; the theorem changes; only then is proof search
+restarted.</p>
+<p>The later adversarial audit found four concrete classes of defects:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Defect</p></th>
+<th class="head"><p>Cause</p></th>
+<th class="head"><p>Repair</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>a boundary “proof” used <code class="docutils literal notranslate"><span class="pre">Real.log</span> <span class="pre">0</span> <span class="pre">=</span> <span class="pre">0</span></code></p></td>
+<td><p>total library function outside the natural domain</p></td>
+<td><p>partial <code class="docutils literal notranslate"><span class="pre">Option</span></code> evaluator and explicit positivity</p></td>
+</tr>
+<tr class="row-odd"><td><p>one witness failed at special boundary points</p></td>
+<td><p>the expression became undefined</p></td>
+<td><p>point-dependent witness families</p></td>
+</tr>
+<tr class="row-even"><td><p>real-part identities were presented as complex witnesses</p></td>
+<td><p>the bridge theorem was weaker than the paper claim</p></td>
+<td><p>separate real and complex grammar claims</p></td>
+</tr>
+<tr class="row-odd"><td><p>a flat witness catalogue looked complete</p></td>
+<td><p>no theorem composed the primitives</p></td>
+<td><p>structural compiler plus one correctness theorem</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The strongest product of the loop was therefore not one more generated proof.
+It was a stronger formal architecture.</p>
+</section>
+<section id="the-operational-boundary">
+<h2>The operational boundary<a class="headerlink" href="#the-operational-boundary" title="Link to this heading">#</a></h2>
+<p>Across all three projects, the division of responsibility is concrete:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Project</p></th>
+<th class="head"><p>Kernel checks</p></th>
+<th class="head"><p>Mathematician still checks</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Zsigmondy–Chebyshev</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Satz_2</span></code> from the encoded exception predicate</p></td>
+<td><p>fidelity of all eight exception families</p></td>
+</tr>
+<tr class="row-odd"><td><p>FinEqs</p></td>
+<td><p>existence of (T) with (Z(T)=Z(S))</p></td>
+<td><p>equivalence of the auxiliary formal lemma to Lemma 5</p></td>
+</tr>
+<tr class="row-even"><td><p>EML</p></td>
+<td><p>evaluation-preserving compilation on a declared domain</p></td>
+<td><p>fidelity of the grammar, domain, and paper claim</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Agentic tools can search libraries, generate terms, repair local tactics, split
+goals, and replay large batches. The kernel can verify the resulting term.
+Neither replaces the semantic comparison between the formal interface and the
+paper.</p>
 </section>
 </section>
 
@@ -539,11 +711,12 @@ library design remain costly.</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-trust-boundary">The trust boundary</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eml-as-a-formalization-factory">EML as a formalization factory</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#falenty-teaching-the-distinction">Falenty: teaching the distinction</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aristotle-and-discovery-plus-verification">Aristotle and discovery plus verification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-auto-formalization-frontier">The auto-formalization frontier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-formalization-actually-changes">What formalization actually changes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zsigmondychebyshev-the-exception-predicate-is-part-of-the-theorem">Zsigmondy–Chebyshev: the exception predicate is part of the theorem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fineqs-a-kernel-checked-theorem-and-an-explicit-semantic-warning">FinEqs: a kernel-checked theorem and an explicit semantic warning</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eml-the-paper-claim-became-a-compiler">EML: the paper claim became a compiler</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-eml-specification-tightening-loop">The EML specification-tightening loop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-operational-boundary">The operational boundary</a></li>
 </ul>
   </nav></div>
 
