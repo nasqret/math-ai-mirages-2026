@@ -256,46 +256,60 @@ eml(a,b) := exp(a) − log(b)</code></pre>
       <aside class="notes">This answers Nathanson's questions rather than a single named conjecture. It is a clean example of a new mathematical result paired with a formal artifact. The authors retain responsibility for checking, exposition, and the published claim.</aside>
     </section>
 
-    <section class="slide slide--image" id="ecdsa" data-title="ECDSA.fail" data-duration="90">
+    <section class="slide slide--image" id="ecdsa" data-title="ECDSA.fail" data-duration="100">
       <div class="image-copy narrow">
-        <span class="kicker">ECDSA.fail · 14 June</span>
-        <h2>Verified engineering,<br>not a cryptographic break.</h2>
-        <div class="hero-number"><b>1.678B</b><span>Q × T score</span></div>
-        <ul class="compact-list"><li>1,170 peak qubits</li><li>1,434,070 Toffoli gates</li><li>9,024 trusted shots · 0 failures</li></ul>
+        <span class="kicker">ECDSA.fail · 14 June · reversible secp256k1 point addition</span>
+        <h2>The Q × T objective fell <em>84.3%.</em></h2>
+        <div class="score-equation">
+          <span>promoted objective</span>
+          <b>1,170 × 1,434,070</b>
+          <strong>= 1,677,861,900</strong>
+        </div>
+        <div class="score-ledger">
+          <div><span>BASELINE</span><code>2,715 × 3,942,753 = 10,704,574,395</code></div>
+          <div><span>HARNESS</span><code>9,024 trusted shots · failures 0 / 0 / 0</code></div>
+        </div>
       </div>
       <img class="side-image contained" src="assets/ecdsafail-score.png" alt="ECDSA.fail score comparison">
-      <p class="source">nasqret · GPT-Codex · 84.3% below initial circuit</p>
-      <aside class="notes">This is reversible secp256k1 point addition under the challenge evaluator. It is not a break of ECDSA and not a proof for every possible input. The result is strong because the optimization target and test harness are explicit.</aside>
+      <p class="source"><a href="https://ecdsa.fail/">ecdsa.fail</a> · nasqret · GPT-Codex · lower is better</p>
+      <aside class="notes">The challenge object is a reversible implementation of secp256k1 point addition. The score is exactly peak qubits times Toffoli gates: 1,170 times 1,434,070 equals 1,677,861,900. The baseline product is 10,704,574,395, so the promoted circuit is 84.3 percent lower. The evaluator recorded 9,024 trusted shots and a failure vector of zero classical, zero phase, and zero ancilla failures. This is strong executable optimization evidence under the challenge harness. It is not a break of ECDSA and the finite test set is not a proof for every possible input.</aside>
     </section>
 
-    <section class="slide" id="igp24" data-title="SAIR IGP24" data-duration="80">
+    <section class="slide" id="igp24" data-title="SAIR IGP24" data-duration="90">
       <header class="slide-header compact">
-        <span class="kicker">SAIR.IGP24 · private snapshot</span>
-        <h2>Campaign logic beats one-shot solving.</h2>
+        <span class="kicker">SAIR.IGP24 · private repository snapshot · 17 June</span>
+        <h2>51 accepted pairs came from three campaign phases.</h2>
       </header>
-      <div class="campaign-counts">
+      <div class="campaign-counts campaign-counts--detail">
         <article><b>5</b><span>pilot</span><p>manual calibration</p></article>
         <article><b>18</b><span>autonomous</span><p>stateful search</p></article>
         <article><b>28</b><span>follow-up</span><p>exact Magma checks</p></article>
-        <strong>= 51 accepted pairs</strong>
       </div>
-      <p class="caveat-strip">Ongoing competition. Aggregate counts only.</p>
-      <aside class="notes">The public lesson is the protocol: generation, exact Magma verification, live-open checks, and deduplication. Because the repository and competition are private, do not present this as a publicly reproducible benchmark result.</aside>
+      <div class="campaign-pipeline">
+        <span>generate candidate</span><i>→</i><span>exact Magma verification</span><i>→</i><span>live-open check</span><i>→</i><span>canonicalize + deduplicate</span><i>→</i><strong>accept</strong>
+      </div>
+      <p class="igp-summary"><b>5 + 18 + 28 = 51 distinct accepted pairs.</b><span>Private instances withheld; this is a campaign audit, not a public leaderboard result.</span></p>
+      <aside class="notes">The 17 June repository snapshot contains 51 distinct accepted pairs. Five came from the pilot phase used to calibrate the workflow, 18 from autonomous stateful search, and 28 from targeted follow-up with exact Magma computations. Acceptance required a candidate, exact verification, a live-open check, canonicalization, and deduplication. The method is the result I can discuss publicly. Because the instances and ongoing competition are private, these counts must not be presented as a reproducible public benchmark score.</aside>
     </section>
 
-    <section class="slide slide--image" id="quartic" data-title="Quartic lines" data-duration="110">
+    <section class="slide slide--image" id="quartic" data-title="Quartic lines" data-duration="120">
       <div class="image-copy narrow">
-        <span class="kicker">With Piotr Pokora · exact characteristic 0</span>
-        <h2>A new Chern-slope record.</h2>
-        <div class="formula-block">
-          <span>x₀⁴ − x₀x₁³ − x₂⁴ + x₂x₃³ = 0</span>
-          <b>14/5 &gt; 8/3</b>
+        <span class="kicker">With Piotr Pokora · VENIANI-64 · exact characteristic 0</span>
+        <h2>24 lines. 32 triple points.<br><em>14/5 &gt; 8/3.</em></h2>
+        <div class="formula-block formula-block--quartic">
+          <span>X : x₀⁴ − x₀x₁³ − x₂⁴ + x₂x₃³ = 0</span>
+          <div class="chern-ledger">
+            <p><b>profile</b><code>(n,t₂,t₃,t₄) = (24,0,32,0)</code></p>
+            <p><b>c̄₁²</b><code>−2·24 + 5·32 = 112</code></p>
+            <p><b>c̄₂</b><code>24 − 2·24 + 2·32 = 40</code></p>
+          </div>
         </div>
-        <div class="mini-metrics"><span>(24,0,32,0)</span><span>c̄₁²=112</span><span>c̄₂=40</span><span>G=208</span></div>
+        <div class="certificate-flow"><span>F<sub>p</sub> search</span><i>→</i><span>Q̄ reconstruction</span><i>→</i><span>Magma: nonsingular</span><i>→</i><span>Sage + Magma replay</span></div>
+        <p class="search-objective">Search objective: <code>G = 10n − 2t₂ − t₃ = 208</code>.</p>
       </div>
       <img class="side-image contained" src="assets/quartic-slope.png" alt="Exact quartic-line Chern slope compared with the conjectural bound">
-      <p class="source"><a href="https://github.com/nasqret/pokora-optim">finite-field search → QQ̄ reconstruction → Sage + Magma certificates</a></p>
-      <aside class="notes">This is the strongest personal case. The finite-field phase located the configuration; exact reconstruction moved it to characteristic zero; independent SageMath and Magma computations verify the profile and Chern numbers. The model label recorded in the project is not needed for the mathematical claim.</aside>
+      <p class="source"><a href="https://github.com/nasqret/pokora-optim">github.com/nasqret/pokora-optim</a> · exact certificates, not a model score</p>
+      <aside class="notes">The exact quartic X is defined over the rationals and the relevant 24-line configuration is reconstructed in characteristic zero. Its incidence profile has no double points, 32 triple points, and no quadruple points. Substitution into the logarithmic Chern formulas gives c-bar-one-squared equal to minus two times 24 plus five times 32, hence 112; c-bar-two equals 24 minus two times 24 plus two times 32, hence 40. The slope is therefore 112 over 40, or 14/5, strictly above 8/3. The search used G = 10n - 2t2 - t3 = 208. The project package carries the exact line-incidence evidence; the lecture's Magma replay checks nonsingularity over Q and the Chern arithmetic, while Sage independently replays the numerical certificate. The model label is provenance; the evidence is the exact certificate chain.</aside>
     </section>
 
     <section class="slide" id="quadrics" data-title="Quadrics" data-duration="80">

@@ -50,7 +50,7 @@
 
 - The primary deck is the browser-native `landing/` presentation, using the
   accepted visual language of the `ai-w-praktycznej-edukacji` web deck.
-- Final browser deck: 33 slides, 48:10 planned core speaking time, 33 note blocks.
+- Final browser deck: 33 slides, 48:40 planned core speaking time, 33 note blocks.
 - The formalization core is eight source-level slides: a three-project
   comparison; the paper-to-interface operation; exact Zsigmondy and FinEqs
   theorems; the EML compiler; the original EML specification loop; concrete

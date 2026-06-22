@@ -16,7 +16,9 @@
 
 ## Private or bounded first-person evidence
 
-- SAIR.IGP24: 51 aggregate accepted pairs; instances withheld;
+- SAIR.IGP24: 51 aggregate accepted pairs; candidates passed exact Magma
+  verification, live-open checking, canonicalization, and deduplication;
+  instances withheld;
 - private FrontierMath Tier-4 attempt: useful methodological evidence, not a
   public benchmark datapoint.
 

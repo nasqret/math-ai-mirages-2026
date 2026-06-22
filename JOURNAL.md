@@ -130,3 +130,14 @@
 - Published source commit `c321b09` and Pages commit `79a6d44`. Live checks
   confirm 33 slides/notes, the loaded EML SVG, the styled expanded formalization
   chapter, and no browser errors.
+
+## 2026-06-22 — case-study detail pass
+
+- Expanded slide 14 with the exact ECDSA.fail objective equation, baseline
+  product, trusted-shot count, and three-component failure vector.
+- Expanded slide 15 with the dated IGP24 phase counts and the full public
+  acceptance protocol: generation, exact Magma verification, live-open check,
+  canonicalization, and deduplication.
+- Expanded slide 16 with the exact quartic incidence profile, both logarithmic
+  Chern-number substitutions, the search objective `G=208`, and the certificate
+  chain from finite-field search to exact replay.

@@ -3,7 +3,7 @@
 ## Acceptance criteria
 
 - [x] 33-slide browser-native deck suitable for a 50-minute technical lecture
-- [x] complete speaker notes and 48:10 core timing map
+- [x] complete speaker notes and 48:40 core timing map
 - [x] source footer or notes citation for every unstable/public claim
 - [x] no unintended overlap, clipping, empty placeholders, or unreadable text
 - [x] all 33 slide boundaries checked; key slides reviewed at 1440×810

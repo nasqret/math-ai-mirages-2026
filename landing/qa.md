@@ -61,6 +61,28 @@ zero horizontal overflow; the code-heavy Zsigmondy, FinEqs, EML compiler, and
 loop slides scroll vertically by design. The built EML loop slide renders the
 original project SVG, not a redraw.
 
+## Case-study detail revision
+
+Slides 14–16 now expose the auditable calculation rather than only the headline:
+
+- ECDSA.fail shows both factors of the promoted objective, the baseline product,
+  the 9,024-shot harness, and the three zero-valued failure counters.
+- SAIR·IGP24 separates the 5 pilot, 18 autonomous, and 28 follow-up pairs and
+  shows the complete acceptance path through Magma, the live-open check,
+  canonicalization, and deduplication.
+- VENIANI-64 gives the quartic equation, incidence profile, both logarithmic
+  Chern-number substitutions, the finite-field-to-certificate path, and
+  `G = 10n − 2t₂ − t₃ = 208`.
+
+The accepted live ECDSA slide and the revised local rendering were inspected
+side by side. The revised slides preserve the navy/cream palette, two-column
+case-study layout, display hierarchy, evidence images, and responsive collapse.
+Keyboard navigation was exercised from `#ecdsa` through `#igp24` to `#quartic`.
+All 33 slides still have zero horizontal and vertical overflow at 1440×810. At
+390×844, slides 14–16 have zero horizontal overflow and scroll vertically where
+their exact evidence requires it; the source line remains clear of the fixed
+controls. No browser console or page errors were reported.
+
 ## Above-the-fold copy diff
 
 The title scene replaces the education-deck title, Polish subtitle, date, and
