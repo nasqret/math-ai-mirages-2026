@@ -137,7 +137,7 @@ appears before the argument begins.
 
 No material visual mismatch remains.
 
-Live verification on 22 June 2026 passed for Pages commit `b323d5d`: 33 slides
-and 33 note blocks, the IGP24 task-definition strip, the expanded case-study
-slides and their evidence images, the JupyterBook theme, and desktop rendering
-all loaded without browser errors. Source commit: `348bad1`.
+Live verification on 22 June 2026 passed for Pages commit `2efd23f`: 33 slides
+and 33 note blocks, the concrete teaching cards and ten public artifact links,
+the expanded case-study slides, the JupyterBook theme, and desktop rendering all
+loaded without browser errors. Source commit: `557e5ce`.

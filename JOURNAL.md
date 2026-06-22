@@ -162,3 +162,6 @@
 - Added direct links to the Rejewski and lattice applets, UAT proof machine,
   tokenizer playground, workshop examples/project, and 24-paper reproduction
   catalogue.
+- Published source commit `557e5ce` and Pages commit `2efd23f`; the live
+  `#teaching` route renders all three technical cards and ten artifact links
+  with zero desktop overflow and no browser errors.
