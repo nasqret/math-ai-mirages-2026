@@ -144,3 +144,9 @@
 - Verified all 33 slides at 1440×810 and slides 14–16 at 390×844, then published
   source commit `947ce09` and Pages commit `0d45d4c`. The live deck loads the
   revised equations, protocol, image assets, and note blocks without errors.
+
+## 2026-06-22 — IGP24 competition definition
+
+- Added the scoreable mathematical object directly to slide 15: a monic
+  degree-24 integer polynomial with verified Galois group `24Tt` and exactly
+  `r` real roots fills a previously open pair `(24Tt,r)`.

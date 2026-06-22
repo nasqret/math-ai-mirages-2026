@@ -67,9 +67,11 @@ Slides 14–16 now expose the auditable calculation rather than only the headlin
 
 - ECDSA.fail shows both factors of the promoted objective, the baseline product,
   the 9,024-shot harness, and the three zero-valued failure counters.
-- SAIR·IGP24 separates the 5 pilot, 18 autonomous, and 28 follow-up pairs and
-  shows the complete acceptance path through Magma, the live-open check,
-  canonicalization, and deduplication.
+- SAIR·IGP24 defines the scoreable object—a monic degree-24 integer polynomial
+  realizing a verified open $(24Tt,r)$ Galois-group/real-root pair—then separates
+  the 5 pilot, 18 autonomous, and 28 follow-up pairs and shows the complete
+  acceptance path through Magma, the live-open check, canonicalization, and
+  deduplication.
 - VENIANI-64 gives the quartic equation, incidence profile, both logarithmic
   Chern-number substitutions, the finite-field-to-certificate path, and
   `G = 10n − 2t₂ − t₃ = 208`.
@@ -82,6 +84,10 @@ All 33 slides still have zero horizontal and vertical overflow at 1440×810. At
 390×844, slides 14–16 have zero horizontal overflow and scroll vertically where
 their exact evidence requires it; the source line remains clear of the fixed
 controls. No browser console or page errors were reported.
+
+The later IGP24 definition strip was rechecked at 1440×810 and 390×844. Its
+object, verification condition, and score rule are all visible at desktop size;
+the mobile layout collapses to one column with zero horizontal overflow.
 
 ## Above-the-fold copy diff
 

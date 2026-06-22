@@ -33,6 +33,11 @@ both a technical variable and a governance variable.
 
 ## SAIR.IGP24: campaign logic
 
+IGP24 is an inverse Galois competition: construct a monic degree-24 polynomial
+in $\mathbb{Z}[x]$, verify that its Galois group is the transitive group labelled
+$24Tt$, and certify that it has exactly $r$ real roots. A previously open pair
+$(24Tt,r)$ is the scoreable object.
+
 The speaker's ongoing SAIR.IGP24 work is private, so only aggregate repository
 counts are reported. In the 17 June snapshot, 51 accepted distinct pairs were
 partitioned into:

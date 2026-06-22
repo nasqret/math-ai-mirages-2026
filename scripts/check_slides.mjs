@@ -54,6 +54,7 @@ const checks = [
   [html.includes("25+</b><span>Aristotle submissions"), "EML submission evidence is missing"],
   [html.includes("Trust the kernel for proof terms. Audit the interface against the paper."), "formalization boundary is missing"],
   [html.includes("2,715 × 3,942,753 = 10,704,574,395"), "ECDSA baseline equation is missing"],
+  [html.includes("Gal(f/ℚ) = 24Tt and f has r real roots"), "IGP24 competition definition is missing"],
   [html.includes("canonicalize + deduplicate"), "IGP24 acceptance pipeline is missing"],
   [html.includes("−2·24 + 5·32 = 112"), "quartic Chern-number derivation is missing"],
   [html.includes("2 ∣ χ<sub>c</sub>(M; ℚ)"), "FirstProof P7 mathematical failure is missing"],

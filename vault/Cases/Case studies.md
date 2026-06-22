@@ -16,7 +16,9 @@
 
 ## Private or bounded first-person evidence
 
-- SAIR.IGP24: 51 aggregate accepted pairs; candidates passed exact Magma
+- SAIR.IGP24: inverse Galois competition for verified monic degree-24 integer
+  polynomials realizing previously open $(24Tt,r)$ Galois-group/real-root pairs;
+  51 aggregate accepted pairs; candidates passed exact Magma
   verification, live-open checking, canonicalization, and deduplication;
   instances withheld;
 - private FrontierMath Tier-4 attempt: useful methodological evidence, not a
