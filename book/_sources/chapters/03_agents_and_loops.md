@@ -41,6 +41,10 @@ partitioned into:
 - 18 autonomous pairs from stateful search; and
 - 28 follow-up pairs checked with exact Magma computations.
 
+The public acceptance loop was: generate a candidate, verify it exactly in
+Magma, check that it was still open, canonicalize the representation, and
+deduplicate before recording acceptance.
+
 The conclusion is methodological, not a public leaderboard claim: persistent
 state, exact checking, and follow-up campaigns outperformed one-shot attempts in
 this setting. Private instances and ongoing competition details are withheld.
