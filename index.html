@@ -556,17 +556,31 @@ eml(a,b) := exp(a) − log(b)</code></pre>
 
     <section class="slide" id="teaching" data-title="Agentic teaching" data-duration="80">
       <header class="slide-header compact">
-        <span class="kicker">Agentic teaching · deployed public artifacts</span>
-        <h2>87 chapters, 329 slides, 22 applets.</h2>
+        <span class="kicker">Agentic teaching · inspectable public builds</span>
+        <h2>Rejewski, Tiny GPT, and research workflows are already deployed.</h2>
       </header>
-      <div class="teaching-grid">
-        <article><b>45</b><span>cryptography chapters</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/">crypto/</a></article>
-        <article><b>42</b><span>neural-net chapters</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/">nnets/</a></article>
-        <article><b>329</b><span>slides</span><small>+ 22 applets</small></article>
-        <article><b>25 h</b><span>staff course</span><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/">Codex workshop</a></article>
+      <div class="teaching-grid teaching-grid--specific">
+        <article>
+          <span class="teaching-label">Elements of Cryptanalysis</span>
+          <b>45 chapters · 15 parts · 9 applets</b>
+          <p>Enigma, Rejewski, Zygalski and Bombe; linear/differential attacks; RSA, ECC, lattices and code-based crypto.</p>
+          <div class="teaching-links"><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/">course ↗</a><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/applets/rejewski-attack.html">Rejewski ↗</a><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/applets/lattice-explorer.html">lattices ↗</a></div>
+        </article>
+        <article>
+          <span class="teaching-label">Classical Neural Networks</span>
+          <b>42 chapters · 329 slides · 22 core applets</b>
+          <p>Full proofs and code: McCulloch–Pitts, UAT, backprop, attention, Tiny GPT/BERT and tokenizer pathologies.</p>
+          <div class="teaching-links"><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/">course ↗</a><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/applets/uat-contradiction.html">UAT proof ↗</a><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/applets/tokenizer-playground.html">tokenizers ↗</a></div>
+        </article>
+        <article>
+          <span class="teaching-label">Codex for Researchers</span>
+          <b>25 h · university staff</b>
+          <p>Local repository → plan/memory/journal → tests → Git → deployment, with discipline-specific examples and reusable skills.</p>
+          <div class="teaching-links"><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/">workshop ↗</a><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/docs/practical-examples/">examples ↗</a><a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/project/">project ↗</a></div>
+        </article>
       </div>
-      <p class="takeaway">Observed output: repositories, tests, mathematical code, documentation, slides, and interactive applets.</p>
-      <aside class="notes">This is production evidence, not a randomized learning-outcomes study. The observable result is that participants and instructor produced working repositories, documentation, tests, mathematical code, slides, and interactive applets.</aside>
+      <p class="teaching-output"><b>Student-facing specifications</b><span>reverse-mode autodiff from scratch with PyTorch checks · <a href="https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/_build/html/group_research_project.html">24-paper reproduction catalogue ↗</a> · Tiny GPT and Polish char-RNN projects</span></p>
+      <aside class="notes">The cryptanalysis course is not just prose: its 45 chapters and 15 parts are paired with nine applets, including Rejewski's attack, Zygalski sheets, the Bombe, S-box analysis, RSA, and lattices. The neural-net course publishes 42 chapters, 329 slides, and 22 core applets, including a stepwise UAT contradiction machine, browser GPT/BERT models, and a tokenizer comparison. Its assignments require implementations such as reverse-mode automatic differentiation checked against PyTorch, small-scale reproductions chosen from 24 classic papers, and Tiny GPT or Polish char-RNN projects. The 25-hour staff course teaches a durable workflow: local repository, plan, memory, journal, tests, Git, and deployment. My first-person observation is that participants implemented substantial discipline-specific code. Their repositories are private, so the slide links the public course design and artifact specifications rather than claiming a controlled learning-outcome estimate.</aside>
     </section>
 
     <section class="slide" id="structural-limit" data-title="Observed structural limits" data-duration="100">
