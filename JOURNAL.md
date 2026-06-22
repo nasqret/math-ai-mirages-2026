@@ -150,3 +150,6 @@
 - Added the scoreable mathematical object directly to slide 15: a monic
   degree-24 integer polynomial with verified Galois group `24Tt` and exactly
   `r` real roots fills a previously open pair `(24Tt,r)`.
+- Published source commit `348bad1` and Pages commit `b323d5d`; the live
+  `#igp24` route renders the definition strip with zero desktop overflow and no
+  browser errors.

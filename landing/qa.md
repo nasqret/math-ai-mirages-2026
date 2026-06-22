@@ -122,7 +122,7 @@ appears before the argument begins.
 
 No material visual mismatch remains.
 
-Live verification on 22 June 2026 passed for Pages commit `0d45d4c`: 33 slides
-and 33 note blocks, the expanded ECDSA.fail, IGP24, and VENIANI-64 slides, their
-evidence images, the JupyterBook theme, and desktop rendering all loaded without
-browser errors. Source commit: `947ce09`.
+Live verification on 22 June 2026 passed for Pages commit `b323d5d`: 33 slides
+and 33 note blocks, the IGP24 task-definition strip, the expanded case-study
+slides and their evidence images, the JupyterBook theme, and desktop rendering
+all loaded without browser errors. Source commit: `348bad1`.

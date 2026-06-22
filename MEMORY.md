@@ -94,6 +94,7 @@
 - Concrete-evidence deck commit: `2bd4969`; Pages commit: `b28b597`
 - Paper-formalization deck commit: `c321b09`; Pages commit: `79a6d44`
 - Case-study detail deck commit: `947ce09`; Pages commit: `0d45d4c`
+- IGP24 task-definition commit: `348bad1`; Pages commit: `b323d5d`
 - Pages source: `gh-pages`, HTTPS enforced, verified live on 22 June 2026
 - The generated Pages root must contain `.nojekyll`; otherwise GitHub Pages
   suppresses JupyterBook's `book/_static/` theme assets and renders raw HTML.
