@@ -141,3 +141,6 @@
 - Expanded slide 16 with the exact quartic incidence profile, both logarithmic
   Chern-number substitutions, the search objective `G=208`, and the certificate
   chain from finite-field search to exact replay.
+- Verified all 33 slides at 1440×810 and slides 14–16 at 390×844, then published
+  source commit `947ce09` and Pages commit `0d45d4c`. The live deck loads the
+  revised equations, protocol, image assets, and note blocks without errors.
