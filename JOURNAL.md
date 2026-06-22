@@ -153,3 +153,12 @@
 - Published source commit `348bad1` and Pages commit `b323d5d`; the live
   `#igp24` route renders the definition strip with zero desktop overflow and no
   browser errors.
+
+## 2026-06-22 — concrete teaching artifacts
+
+- Replaced the statistic-only teaching cards with three linked technical
+  systems: cryptanalysis simulators, neural-network proof/code artifacts and
+  assignments, and the 25-hour Codex research-workflow course.
+- Added direct links to the Rejewski and lattice applets, UAT proof machine,
+  tokenizer playground, workshop examples/project, and 24-paper reproduction
+  catalogue.

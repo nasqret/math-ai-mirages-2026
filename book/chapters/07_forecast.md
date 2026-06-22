@@ -7,14 +7,24 @@ environments. Agentic tools can now generate coherent notes, exercises, code,
 interactive applets, tests, and deployment workflows at a scale that was
 impractical for one instructor.
 
-The speaker's public teaching sites illustrate this:
+The speaker's public teaching sites expose concrete artifacts:
 
-- [Cryptography](https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/): 45 chapters,
-  with proofs and code;
-- [Neural networks](https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/): 42
-  chapters, 329 slides, and 22 applets;
-- [Codex workshop](https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/): a
-  25-hour course for university staff organized around durable project work.
+- [Elements of Cryptanalysis](https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/):
+  45 chapters in 15 parts and nine applets, including a
+  [Rejewski attack visualizer](https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/applets/rejewski-attack.html)
+  and a [lattice explorer](https://bnaskrecki.faculty.wmi.amu.edu.pl/crypto/applets/lattice-explorer.html);
+- [Classical Neural Networks](https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/):
+  42 chapters, 329 slides, and 22 core applets, including an interactive
+  [UAT contradiction proof](https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/applets/uat-contradiction.html)
+  and [tokenizer comparison](https://bnaskrecki.faculty.wmi.amu.edu.pl/nnets/applets/tokenizer-playground.html);
+- [Codex for Researchers](https://bnaskrecki.faculty.wmi.amu.edu.pl/workshop_gpt/):
+  a 25-hour course for university staff organized around a local repository,
+  plan, memory, journal, validation, Git, and deployment.
+
+The neural-net project specifications are technically substantial: implement
+reverse-mode automatic differentiation from scratch and check it against
+PyTorch; reproduce one of 24 classic papers; or build Tiny GPT and Polish
+character-RNN experiments.
 
 Participants built substantial discipline-specific software. The largest gains
 came from iteration, explicit tests, and handoff—not from one-shot answers.

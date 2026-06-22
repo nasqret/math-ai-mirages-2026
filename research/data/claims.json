@@ -170,11 +170,11 @@
     },
     {
       "id": "teaching-sites",
-      "claim": "The public cryptography site exposes 45 chapters; the neural-networks site exposes 42 chapters, 329 slides, and 22 applets.",
+      "claim": "The public cryptanalysis site exposes 45 chapters, 15 parts, and 9 applets; the neural-networks site exposes 42 chapters, 329 slides, and advertises 22 core applets.",
       "status": "verified",
       "evidence_class": "public_site_inventory",
       "source": "https://bnaskrecki.faculty.wmi.amu.edu.pl/",
-      "accessed": "2026-06-21",
+      "accessed": "2026-06-22",
       "caveat": "Counts describe the deployed site snapshot."
     },
     {

@@ -89,6 +89,21 @@ The later IGP24 definition strip was rechecked at 1440×810 and 390×844. Its
 object, verification condition, and score rule are all visible at desktop size;
 the mobile layout collapses to one column with zero horizontal overflow.
 
+## Teaching-specific revision
+
+The former four-number teaching slide was replaced by three inspectable public
+systems. The cryptanalysis card links the course, Rejewski visualizer, and
+lattice explorer; the neural-network card links the course, UAT proof machine,
+tokenizer playground, and paper-reproduction catalogue; the staff-workshop card
+links the 25-hour course, practical examples, and project workflow. Every target
+returned HTTP 200 during the revision audit.
+
+At 1440×810 the three cards, assignment strip, and all link chips fit without
+overflow. At 390×844 they collapse to one column with zero horizontal overflow
+and intentional vertical scrolling. Arrow navigation to `#structural-limit` and
+back was exercised; the console and page error logs remained empty. A complete
+33-slide desktop overflow audit also passed.
+
 ## Above-the-fold copy diff
 
 The title scene replaces the education-deck title, Polish subtitle, date, and
