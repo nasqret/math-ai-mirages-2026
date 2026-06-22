@@ -58,6 +58,8 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/03_agents_and_loops';</script>
     <script src="../_static/companion.js?v=8dd9cbcc"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -428,6 +430,10 @@ both a technical variable and a governance variable.</p>
 </section>
 <section id="sair-igp24-campaign-logic">
 <h2>SAIR.IGP24: campaign logic<a class="headerlink" href="#sair-igp24-campaign-logic" title="Link to this heading">#</a></h2>
+<p>IGP24 is an inverse Galois competition: construct a monic degree-24 polynomial
+in <span class="math notranslate nohighlight">\(\mathbb{Z}[x]\)</span>, verify that its Galois group is the transitive group labelled
+<span class="math notranslate nohighlight">\(24Tt\)</span>, and certify that it has exactly <span class="math notranslate nohighlight">\(r\)</span> real roots. A previously open pair
+<span class="math notranslate nohighlight">\((24Tt,r)\)</span> is the scoreable object.</p>
 <p>The speaker’s ongoing SAIR.IGP24 work is private, so only aggregate repository
 counts are reported. In the 17 June snapshot, 51 accepted distinct pairs were
 partitioned into:</p>

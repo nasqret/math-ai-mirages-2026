@@ -280,6 +280,11 @@ eml(a,b) := exp(a) − log(b)</code></pre>
         <span class="kicker">SAIR.IGP24 · private repository snapshot · 17 June</span>
         <h2>51 accepted pairs came from three campaign phases.</h2>
       </header>
+      <div class="competition-brief" aria-label="IGP24 competition task">
+        <div><span>OBJECT</span><b>monic f ∈ ℤ[x], deg f = 24</b></div>
+        <div><span>VERIFY</span><b>Gal(f/ℚ) = 24Tt and f has r real roots</b></div>
+        <div><span>SCORE</span><b>a previously open pair (24Tt,r)</b></div>
+      </div>
       <div class="campaign-counts campaign-counts--detail">
         <article><b>5</b><span>pilot</span><p>manual calibration</p></article>
         <article><b>18</b><span>autonomous</span><p>stateful search</p></article>
@@ -289,7 +294,7 @@ eml(a,b) := exp(a) − log(b)</code></pre>
         <span>generate candidate</span><i>→</i><span>exact Magma verification</span><i>→</i><span>live-open check</span><i>→</i><span>canonicalize + deduplicate</span><i>→</i><strong>accept</strong>
       </div>
       <p class="igp-summary"><b>5 + 18 + 28 = 51 distinct accepted pairs.</b><span>Private instances withheld; this is a campaign audit, not a public leaderboard result.</span></p>
-      <aside class="notes">The 17 June repository snapshot contains 51 distinct accepted pairs. Five came from the pilot phase used to calibrate the workflow, 18 from autonomous stateful search, and 28 from targeted follow-up with exact Magma computations. Acceptance required a candidate, exact verification, a live-open check, canonicalization, and deduplication. The method is the result I can discuss publicly. Because the instances and ongoing competition are private, these counts must not be presented as a reproducible public benchmark score.</aside>
+      <aside class="notes">IGP24 is an inverse Galois competition. A submission is a monic degree-24 polynomial with integer coefficients. It must be verified to have Galois group 24Tt, the database label for a transitive degree-24 group, and exactly r real roots. A previously open pair (24Tt,r) is the scoreable object. The 17 June repository snapshot contains 51 distinct accepted pairs. Five came from the pilot phase used to calibrate the workflow, 18 from autonomous stateful search, and 28 from targeted follow-up with exact Magma computations. Acceptance required a candidate, exact verification, a live-open check, canonicalization, and deduplication. The method is the result I can discuss publicly. Because the instances and ongoing competition are private, these counts must not be presented as a reproducible public benchmark score.</aside>
     </section>
 
     <section class="slide slide--image" id="quartic" data-title="Quartic lines" data-duration="120">
